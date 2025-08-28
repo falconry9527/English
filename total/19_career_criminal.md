@@ -18,13 +18,18 @@ civil servant/officer : 公务员
 reveal the reason : rɪˈviːl
 a sense of achievement : əˈtʃiːvmənt
 
-'LMAD' is short off laugh my ass off
+'LMAD' is short for laugh my ass off
 
 破坏:
 Damage -> destroy -> spoil
 
-she want a divorce (dɪˈvɔːrs)
+she want a divorce (dɪˈvɔːrs) :离婚
 
+```
+
+### demand
+```
+she demand (dɪˈmænd)  money from the cashier (kæˈʃɪr)
 ```
 
 ### inevitable
