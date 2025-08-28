@@ -23,12 +23,16 @@ a sense of achievement : əˈtʃiːvmənt
 破坏:
 Damage -> destroy -> spoil
 
-不可避免的:
-A long prison sentence is inevitable (ɪnˈevɪtəbl)
-
 she want a divorce (dɪˈvɔːrs)
 
 ```
+
+### inevitable
+```
+A long prison sentence is inevitable (ɪnˈevɪtəbl)
+不可避免的
+```
+
 
 ### 类似读音单词：  ʃl 
 ```
