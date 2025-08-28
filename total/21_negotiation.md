@@ -1,0 +1,3 @@
+negotiation : nɪˌɡoʊʃiˈeɪʃn
+negotiate : nɪˌɡoʊʃiˈeɪt
+
