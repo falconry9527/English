@@ -27,6 +27,9 @@ Damage -> destroy -> spoil
 
 she want a divorce (dɪˈvɔːrs) :离婚
 
+prison sentence
+suspended sentence
+community sentence 
 ```
 
 ### demand
