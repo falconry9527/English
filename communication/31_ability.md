@@ -16,7 +16,7 @@ i excellent at doing
 speak english fluently
 start a business
 
-it make me proud that i lost 10kg
+it make me proud（praʊd） that i lost 10kg
 i am glad/hapypy that 
 
 embarrassed (ɪmˈbærəst)
