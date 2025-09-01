@@ -1,3 +1,5 @@
+# career(kəˈrɪr) criminal
+
 ### vocabulary
 ```
 judge
