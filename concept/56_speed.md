@@ -38,7 +38,7 @@ match : ball
 contest :skill / talent 
 compeition: 
 rat race : 内卷
-racial(ˈreɪʃl) /gender(ˈdʒendər)/ region(ˈriːdʒən) discrimination 
+racial(ˈreɪʃl) /gender(ˈdʒendər)/ region(ˈriːdʒən) discrimination （dɪˌskrɪmɪˈneɪʃn）
 ```
 
 ### lots
