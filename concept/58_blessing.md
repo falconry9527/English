@@ -43,3 +43,8 @@ cursed/damnd  weather
 ```
 the number of visitors is increased/decreased
 ```
+
+### plant
+```
+transplant 
+```
