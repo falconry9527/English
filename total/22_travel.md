@@ -1,5 +1,6 @@
 ### vehicle (ˈviːəkl)
 ```
+vehicle-> transport
 transportation
 
 boat: 船
@@ -20,14 +21,27 @@ carsick： 晕车
 smell
 ```
 
-### 音标 tr
+### 音标 tr ： 踹 
 ```
+trust ：trʌst
 petrol（ˈpetrəl）/ gas 汽油
 strawberry ：（ˈstrɔːbəri）
 ```
 
+### 音标 tr/dr
+```
+tr ： chue
+dr :  zuo
+trip: trɪp
+trust ：trʌst
+petrol（ˈpetrəl）/ gas 汽油
+strawberry ：（ˈstrɔːbəri）
+
+type: taɪp
+```
+
 ### travel
 ```
-tour/trip -> travel-> journey (long)
+tour/trip(trɪp)-> travel(ˈtrævl)-> journey (ˈdʒɜːrni)(long)
 vivid-> i have a picture in my mind 
 ```

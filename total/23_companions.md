@@ -4,7 +4,7 @@
 ```
 companion(kəmˈpæniən) -> accompany
 
-chased: tʃeɪst 
+chased: tʃeɪsd
 
 Europe（ˈjʊrəp）：
 asia （eɪʒə）
