@@ -1,11 +1,11 @@
 # vocabulary
 
-### normal
+## normal
 ```
 patent his idea (申请专利)
 ```
 
-### asia
+## asia
 ```
 patent his idea (申请专利)
 it swept(swept) across(əˈkrɔːs) asia (eɪʒə) /europe / africa    ->Asian/African
@@ -15,7 +15,7 @@ area(ˈeriə)
 korea(kəˈriə)
 ```
 
-### martial
+## martial
 ```
 martial art :
 judo,kongfu,karate(kəˈrɑːti)

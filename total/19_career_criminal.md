@@ -1,6 +1,6 @@
 # career(kəˈrɪr) criminal
 
-### vocabulary
+## vocabulary
 ```
 judge
 witness : 目击者
@@ -32,19 +32,19 @@ suspended sentence
 community sentence 
 ```
 
-### demand
+## demand
 ```
 she demand (dɪˈmænd)  money from the cashier (kæˈʃɪr)
 ```
 
-### inevitable
+## inevitable
 ```
 A long prison sentence is inevitable (ɪnˈevɪtəbl)
 不可避免的
 ```
 
 
-### 类似读音单词：  ʃl 
+## 类似读音单词：  ʃl 
 ```
 residential roads :
 potential : (pəˈtenʃl)
@@ -52,13 +52,13 @@ essential :
 social:
 ```
 
-### 类似读音单词： ac
+## 类似读音单词： ac
 ```
 accommodation: əˌkɒməˈdeɪʃn
 accept : əkˈsept
 ```
 
-### 易混单词
+## 易混单词
 ```
 affect :
 affect (əˈfekt): his acton affect their business (ˈbɪznəs) -> busy (ˈbɪzi)
@@ -66,7 +66,7 @@ infect :The virus (ˈva/ɪ/rə/s) can infect humans
 effort (ˈefərt): he make lots of efforts to study english
 ```
 
-### p读b的单词
+## p读b的单词
 ```
 split (splɪt  p->b ) up 
 experience 

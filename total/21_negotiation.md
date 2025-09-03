@@ -1,5 +1,5 @@
 
-### negotiation
+## negotiation
 ```
 negotiation : nɪˌɡoʊʃiˈeɪʃn
 negotiate : nɪˌɡoʊʃiˈeɪt
@@ -7,7 +7,7 @@ negotiate : nɪˌɡoʊʃiˈeɪt
 don't let emotion get over 
 ```
 
-### work
+## work
 ```
 bonus
 dividend (ˈdɪvɪdend) 分红
@@ -21,14 +21,14 @@ cv: resume rɪˈzuːm
 employee: ɪmˈplɔɪiː员工
 ```
 
-### related
+## related
 ```
 be related to 
 be associated(əˈsoʊsieɪtɪd) to
 be connected to
 ```
 
-### interview
+## interview
 ```
 relevant (ˈreləvənt) question
 It is lonely at the top ： 高处不胜寒
@@ -36,7 +36,7 @@ secretary : ˈsekrəteri 秘书
 wage  is payied weekly 
 ```
 
-### criminal
+## criminal
 ```
 judge [dʒʌdʒ]
 conscience（ˈkɑːnʃəns） 良心

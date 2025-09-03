@@ -1,13 +1,13 @@
 # vocabulary
 
-### normal
+## normal
 ```
 plastic bags
 the cost of living is no less than sz 
 i am allergic(əˈlɜːrdʒɪk) to mongoes 
 ```
 
-### wheel
+## wheel
 ```
 spare wheel 
 wheel chair
@@ -16,7 +16,7 @@ third wheel ： 电灯泡
 mistree ： 小三
 ```
 
-### 对手
+## 对手
 ```
 rival : bussiness/ralatnship  
         he is my rival in love 
@@ -24,14 +24,14 @@ competitor(kəmˈpe/tɪtə(r)): game
 opponent(əˈpoʊnənt): political 
 ```
 
-### explode
+## explode
 ```
 explode -> explosion -> explosive 
 gas explosion 
 set fireworks / firecrackers
 ```
 
-### race 
+## race 
 ```
 race : speed , horse race
 match : ball 
@@ -41,7 +41,7 @@ rat race : 内卷
 racial(ˈreɪʃl) /gender(ˈdʒendər)/ region(ˈriːdʒən) discrimination （dɪˌskrɪmɪˈneɪʃn）
 ```
 
-### lots
+## lots
 ```
 there are a great number of things to do (plenty of = many )
 there are a great deal/amount of water to drink (musch)

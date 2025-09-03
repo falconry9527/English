@@ -1,6 +1,6 @@
 # vocabulary
 
-### ability
+## ability
 ```
 i am able to 
 i have the ability to
@@ -11,7 +11,7 @@ i excellent at doing
 
 ```
 
-### achievements
+## achievements
 ```
 speak english fluently
 start a business
@@ -22,7 +22,7 @@ i am glad/hapypy that
 embarrassed (ɪmˈbærəst)
 ```
 
-### pushchair
+## pushchair
 ```
 buggy
 

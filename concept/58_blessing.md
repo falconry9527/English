@@ -1,6 +1,6 @@
 # A blessing in disguise
 
-### superstition
+## superstition
 ```
 fortune teller
 future  
@@ -12,14 +12,14 @@ rotten apple
 disguise(dɪsˈɡaɪz)
 ```
 
-### bless
+## bless
 ```
 cherish（ˈtʃerɪʃ） the blessing (ˈblesɪŋ)
 more children ,more blessing
 under/over  estimate(ˈestɪmeɪt) human nature
 ```
 
-### disguise
+## disguise
 ```
 pretend
 A gentleman in disguise
@@ -27,24 +27,24 @@ hypo critial (ˌhɪpəˈkrɪtɪkl) : 虚伪的
 sophis ticated(səˈfɪstɪkeɪtɪd) : 圆滑的
 ```
 
-### possess(pəˈzes)
+## possess(pəˈzes)
 ```
 brother(ˈbrʌðər)
 possession
 possessive(所有格)
 ```
 
-### curse (诅咒)
+## curse (诅咒)
 ```
 cursed/damnd  weather 
 ```
 
-### increase
+## increase
 ```
 the number of visitors is increased/decreased
 ```
 
-### plant
+## plant
 ```
 v:
 transplant 
@@ -54,7 +54,7 @@ eggplant
 power plant: 发电厂
 ```
 
-### church
+## church
 ```
 church
 he is as poor as a mouse in a church 
@@ -72,7 +72,7 @@ burn incense
 
 ```
 
-### evil reputation
+## evil reputation
 ```
 evil （ˈiːvl）
 v: evil reputation/behavior/eyes
@@ -87,7 +87,7 @@ civil servant
 rival（ˈraɪvl）
 ```
 
-### reputation
+## reputation
 ```
 reputation(ˌrepjuˈteɪʃn)=fame
 ys has gained  its evil reputation by overcharging / fake(feɪk) goods
@@ -96,7 +96,7 @@ ys is the qunique tourism town that lives up to its reputation (名副其实)
 
 ```
 
-### claim 
+## claim 
 ```
 claim（kleɪm）
 declare
@@ -108,14 +108,14 @@ Calm（kɑːm） down.
 exclaim insurance  (保险索赔)
 ```
 
-### Congratulations
+## Congratulations
 ```
 Congratulations
 celebrate
 etc
 ```
 
-### victim
+## victim
 ```
 innocent 
 guilty
@@ -123,7 +123,7 @@ guilty
 vicar : 牧师
 ```
 
-### source
+## source
 ```
 source ： 来源 
 toy source
@@ -131,7 +131,7 @@ resource ： 资源
 hr:human resource
 ```
 
-### income
+## income
 ```
 rich/gray income
 salary
@@ -140,14 +140,27 @@ wage
 stock （stɑːk） ：股票
 ```
 
-### said
+## said
 ```
 it is said that,the number of visitors is increased/decreased
 the number of visitors  is said  to be increased
 that being said:话虽如此，同种意思换种说法
 ```
 
-### mention
+## mention
+```
+Don't mention about the past
+```
+
+## die
+```
+die(daɪ)
+dead(ded) : 
+many people died for revolution (be thirsty for 为了... 而生)
+he died of illness (死于 内因)
+he died from drinking (死于 外因)
+```
+## mention
 ```
 Don't mention about the past
 ```

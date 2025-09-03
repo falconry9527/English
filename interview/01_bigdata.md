@@ -18,14 +18,14 @@ LinkedHashMap：在 HashMap 的基础上维护了插入顺序，也支持迭代�
 TreeMap：基于红黑树实现，键（Key）按自然顺序或自定义比较器排序。
 ```
 # sql
-### sql优化
+## sql优化
 ```
 1.分区分桶
 2.先过滤/distnct 再jioin
 3.减少不必要的数据插入： 微批架构
 ```
 
-### in/exist （ɪɡˈzɪst）
+## in/exist （ɪɡˈzɪst）
 ```
 in： 某个字段是否存在某些值
 exist ： 是否存在某个字段
@@ -36,11 +36,11 @@ exist ：存在性检查， 先外后内 ：拿着基础表的数据去逐条匹
 一般在开发中都不用，用join 
 
 ```
-### mysql b+tree
+## mysql b+tree
 ```
 ```
 
-### in/exist （ɪɡˈzɪst）
+## in/exist （ɪɡˈzɪst）
 ```
 in： 某个字段是否存在某些值
 exist ： 是否存在某个字段
@@ -50,7 +50,7 @@ exist ： 在基础表里面逐条数据
 ```
 
 # flink
-### 游戏行业常用指标
+## 游戏行业常用指标
 ```
 roi（Return on Investment）： 投资回报率
 ltv（Lifetime Value）： 用户生命周期价值（充值，广告收益）
@@ -59,7 +59,7 @@ ARPU：平均每用户收益 (Average Revenue Per User)
 ARPPU：平均每付费用户收益 (Average Revenue Per Paying User)
 ```
 
-### flink 时间和水位线
+## flink 时间和水位线
 ```
 Flink 提供了三种时间语义，用于确定窗口计算的时间基础：
 处理时间（Process Time）：:以执行计算的机器的本地时间作为事件时间。
