@@ -133,10 +133,9 @@ vicar : 牧师
 ## source
 ```
 source ： 来源 
-toy source income ： 收入来源
-source of 
+source of ： 收入来源
 resource ： 资源
-hr:human resource
+hr: human resource
 ```
 
 ## income

@@ -2,10 +2,10 @@
 
 ## companions
 ```
+company(ˈkʌmpəni)
 companion(kəmˈpæniən) -> accompany
 
-chased: tʃeɪsd
-
+chase: tʃe/ɪ/s
 Europe（ˈjʊrəp）：
 asia （eɪʒə）
 

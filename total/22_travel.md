@@ -21,23 +21,30 @@ carsick： 晕车
 smell
 ```
 
-## 音标 tr ： 踹 
+## 发音：音标 tr ： 踹 
 ```
 trust ：trʌst
 petrol（ˈpetrəl）/ gas 汽油
 strawberry ：（ˈstrɔːbəri）
 ```
 
-## 音标 tr/dr
+## 发音：音标 tr/dr
 ```
-tr ： chue
-dr :  zuo
-trip: trɪp
+tr : 踹 
+travel(ˈtrævl)
+
+tr  -> ts (chi)
+control （kənˈtroʊl）
+trip: trɪp 
 trust ：trʌst
 petrol（ˈpetrəl）/ gas 汽油
-strawberry ：（ˈstrɔːbəri）
 
-type: taɪp
+dr :  zuo -> ds : zhi
+dream /driːm/ - n. 梦想； v. 做梦
+strawberry （ˈstrɔːbəri）（浊化）
+
+type（taɪp）
+
 ```
 
 ## travel
