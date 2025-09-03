@@ -1,5 +1,12 @@
 # A blessing in disguise
 
+## common
+```
+Don't mention about the past
+mystery  （ˈmɪstəri）
+mistress （ˈmɪstrəs）
+```
+
 ## superstition
 ```
 fortune teller
@@ -126,7 +133,8 @@ vicar : 牧师
 ## source
 ```
 source ： 来源 
-toy source
+toy source income ： 收入来源
+source of 
 resource ： 资源
 hr:human resource
 ```
@@ -159,8 +167,4 @@ dead(ded) :
 many people died for revolution (be thirsty for 为了... 而生)
 he died of illness (死于 内因)
 he died from drinking (死于 外因)
-```
-## mention
-```
-Don't mention about the past
 ```
