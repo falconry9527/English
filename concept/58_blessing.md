@@ -76,7 +76,10 @@ burn incense
 ```
 evil （ˈiːvl）
 v: evil reputation/behavior/eyes
-n: money is the root of all evil
+n: 
+money is the root of all evil
+desire poverty is the  original root of all evil
+
 greed / desire(dɪˈzaɪər)
 
 devil （ˈdevl）: speak of devil and he comes 
@@ -141,6 +144,7 @@ stock （stɑːk） ：股票
 ```
 it is said that,the number of visitors is increased/decreased
 the number of visitors  is said  to be increased
+that being said:话虽如此，同种意思换种说法
 ```
 
 ### mention
