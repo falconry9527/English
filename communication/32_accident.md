@@ -71,7 +71,6 @@ cheers(tʃɪrz)
 
 ## 发音: 浊化
 ```
-p/t 遇到s浊化 p->b ; k -> g
 experience(ɪkˈspɪəriəns)  p-> b 
 
 there a scar（skɑːr） on my skull（skʌl）
