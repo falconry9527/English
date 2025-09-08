@@ -42,15 +42,3 @@ fair skin
 sleazy
 disgusting
 ```
-
-## 读音ex ？
-```
-experience （ɪkˈspɪəriənsɪz）
-excited （ɪkˈsaɪtɪd）
-
-exercise （ˈeksərsaɪz）
-
-exhausted（ɪɡˈzɔːstɪd）
-exist （ɪɡˈzɪst）
-
-```
