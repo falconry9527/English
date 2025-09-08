@@ -34,3 +34,13 @@ strawberry （ˈstrɔːbəri）（浊化）
 type（taɪp）
 
 ```
+
+
+
+## 发音：  ʃl
+```
+residential roads :
+potential : (pəˈtenʃl)
+essential :
+social:
+```

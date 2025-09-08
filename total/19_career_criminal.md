@@ -44,28 +44,6 @@ A long prison sentence is inevitable (ɪnˈevɪtəbl)
 ```
 
 
-## 类似读音单词：  ʃl 
-```
-residential roads :
-potential : (pəˈtenʃl)
-essential :
-social:
-```
-
-## 类似读音单词： ac
-```
-accommodation: əˌkɒməˈdeɪʃn
-accept : əkˈsept
-```
-
-## 易混单词
-```
-affect :
-affect (əˈfekt): his acton affect their business (ˈbɪznəs) -> busy (ˈbɪzi)
-infect :The virus (ˈva/ɪ/rə/s) can infect humans
-effort (ˈefərt): he make lots of efforts to study english
-```
-
 ## p读b的单词
 ```
 split (splɪt  p->b ) up 

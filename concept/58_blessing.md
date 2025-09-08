@@ -37,13 +37,13 @@ sophis ticated(səˈfɪstɪkeɪtɪd) : 圆滑的
 ## possess(pəˈzes)
 ```
 brother(ˈbrʌðər)
-possession
+possession (pəˈzeʃn)
 possessive(所有格)
 ```
 
 ## curse (诅咒)
 ```
-cursed/damnd  weather 
+cursed (kɜːst)/damn(dæm)  weather 
 ```
 
 ## increase
@@ -63,7 +63,7 @@ power plant: 发电厂
 
 ## church
 ```
-church
+church (tʃɜːtʃ)
 he is as poor as a mouse in a church 
 
 temple is a holly place
@@ -85,9 +85,9 @@ evil （ˈiːvl）
 v: evil reputation/behavior/eyes
 n: 
 money is the root of all evil
-desire poverty is the  original root of all evil
+desire/poverty is the  original root of all evil
 
-greed / desire(dɪˈzaɪər)
+greedy / desire(dɪˈzaɪər)
 
 devil （ˈdevl）: speak of devil and he comes 
 civil servant
@@ -99,7 +99,7 @@ rival（ˈraɪvl）
 reputation(ˌrepjuˈteɪʃn)=fame
 ys has gained  its evil reputation by overcharging / fake(feɪk) goods
 
-ys is the qunique tourism town that lives up to its reputation (名副其实)
+ys is the  unique tourism town that lives up to its reputation (名副其实)
 
 ```
 
@@ -110,7 +110,6 @@ declare
 announce
 
 Calm（kɑːm） down.
-
 
 exclaim insurance  (保险索赔)
 ```
@@ -154,10 +153,6 @@ the number of visitors  is said  to be increased
 that being said:话虽如此，同种意思换种说法
 ```
 
-## mention
-```
-Don't mention about the past
-```
 
 ## die
 ```

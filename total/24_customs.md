@@ -1,6 +1,6 @@
 ## customs （ˈkʌstəmz）弱化
 ```
-super/stitious （ˌsuːpəˈstɪʃəs）：  迷信的
+superstitious （ˌsuːpəˈstɪʃəs）：  迷信的 ->superstition(n)
 wave
 handshake （n） -> shake hand 
 

@@ -27,7 +27,7 @@ conscience （ˈkɒnʃəns）
 ```
 
 
-## breath
+## 发音 breath
 ```
 take a breath(breθ) , i can't breathe(briːð)
 ```
@@ -39,7 +39,40 @@ experience （ɪkˈspɪəriənsɪz）
 excited （ɪkˈsaɪtɪd）
 
 exercise （ˈeksərsaɪz）
+exhibition （ˌeksɪˈbɪʃn）
 
 exhausted（ɪɡˈzɔːstɪd）
 exist （ɪɡˈzɪst）
+
+
+
 ```
+
+## 发音 ous -> əs
+```
+superstitious （ˌsuːpəˈstɪʃəs）：  迷信的
+delicious /dɪˈlɪʃəs/ - 美味的
+ambiguous （æmˈbɪɡjuəs）： 模棱两可
+dangerous /ˈdeɪndʒərəs/ 
+
+```
+
+## 发音： ac
+```
+accommodation (əˌkɒməˈdeɪʃn)
+accept (əkˈsept)
+accurate (ˈækjərət)
+```
+
+## 易混单词
+```
+affect :
+affect (əˈfekt): his acton affect their business (ˈbɪznəs) -> busy (ˈbɪzi)
+infect :The virus (ˈva/ɪ/rə/s) can infect humans
+effort (ˈefərt): he make lots of efforts to study english
+```
+
+
+
+
+
