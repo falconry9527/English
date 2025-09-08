@@ -29,4 +29,5 @@ petrol（ˈpetrəl）/ gas 汽油
 ```
 tour/trip(trɪp)-> travel(ˈtrævl)-> journey (ˈdʒɜːrni)(long)
 vivid-> i have a picture in my mind 
+vividly
 ```
