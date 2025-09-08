@@ -15,4 +15,8 @@ when in rome，do as romans do
 
 polite(pəˈlaɪt) : 礼貌的
 performance
+
+candidate（ˈkændɪdət） ： 候选人
+candidates (ˈkændədeɪts) 
+
 ```

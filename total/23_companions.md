@@ -47,7 +47,7 @@ i can't bear cold weather
 i can't fall asleep（不能入睡） ->i can't sleep (不能去睡觉)
 i was sleepless 
 i had  insomnia (失眠 严重)
-
+sleep (sliːp)
 annoy -> annoiesd 
 ```
 

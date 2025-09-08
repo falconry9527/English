@@ -52,28 +52,3 @@ expert ： 专家
 expect
 mental
 ```
-
-## 发音 un
-```
-ankle(ˈæŋkl) ： 
-uncle (ˈʌŋkl)  ： ong
-an(ən) : en 
-unhppy （ʌnˈhæpi）
-```
-
-## 发音 chase
-```
-chest（tʃest）：胸
-chess (tʃes) 切s
-chase a girl （tʃe/ɪ/s） 切 i s
-cheers(tʃɪrz)  
-```
-
-## 发音: 浊化
-```
-experience(ɪkˈspɪəriəns)  p-> b 
-
-there a scar（skɑːr） on my skull（skʌl）
-scar（skɑː(r） k 遇到s浊化 t-> g
-skull（skʌl） k 遇到s浊化 t-> g
-```
