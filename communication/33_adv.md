@@ -1,5 +1,4 @@
 ## adv
-
 ```
 generally speaking 
 obviously
@@ -10,4 +9,10 @@ certainly
 actually  
 suddenly 
 he could hardly move
+```
+
+## chicken
+```
+chicken （ˈtʃɪkɪn）
+kitchen （ˈkɪtʃɪn）
 ```
