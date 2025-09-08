@@ -1,0 +1,18 @@
+## customs （ˈkʌstəmz）弱化
+```
+superstitious （ˌsuːpəˈstɪʃəs）：  迷信的
+wave
+handshake （n） -> shake hand 
+
+clock（klɒk）
+preferred distance 
+tend to stand  quite close 
+
+etcetera（et'setərə） 等等
+italy （'ɪtəlɪ]）
+
+when in rome，do as romans do 
+
+polite(pəˈlaɪt) : 礼貌的
+performance
+```

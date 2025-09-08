@@ -1,6 +1,6 @@
 ## common
 ```
-expert
+expert ： 专家
 skilful
 sly
 责任：responsibility -> responsible
@@ -41,4 +41,16 @@ fair skin
 ```
 sleazy
 disgusting
+```
+
+## 读音ex ？
+```
+experience （ɪkˈspɪəriənsɪz）
+excited （ɪkˈsaɪtɪd）
+
+exercise （ˈeksərsaɪz）
+
+exhausted（ɪɡˈzɔːstɪd）
+exist （ɪɡˈzɪst）
+
 ```
