@@ -57,10 +57,12 @@ as clear as crystal
 
 ## relation 
 ```
-close relative （ˈrelətɪv） : 近亲
-distant relative （ˈrelətɪv）: 远亲 
-relevant （ˈreləvənt）
+close relative （ˈrelətɪv）n : 近亲
+distant relative （ˈrelətɪv）n: 远亲 
+relative ： adj ： 相对的
+relevant （ˈreləvənt） ： adj 相关的 
 
+上面的读音和下面不一样：
 relation （rɪˈleɪʃn） : 亲属
 relationship （rɪˈleɪʃnʃɪp）
 
