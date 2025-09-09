@@ -2,7 +2,7 @@
 ```
 expert : 专家
 skilful
-sly (slaɪ)  fox : 狡猾的
+sly (slaɪ)  fox : 狡猾的狐狸
 责任:responsibility -> responsible
 ```
 
@@ -12,6 +12,7 @@ bright future
 fortune-teller 
 future
 fate（feɪt）: 缘分
+fake (feɪk) : 假的
 destiny（ˈdestəni） : 命
 
 coincidence （kəʊˈɪnsɪdəns）: 巧合
@@ -21,10 +22,8 @@ Life lies in experience : 生命在于体验
 predict accurately ((ˈækjərət)li)
 
 bright  future 
-
 future burden-> blueprint
-
-diamond cuts diamond  : 山外有山，人外有人。
+diamond（ˈdaɪəmənd） cuts diamond  : 山外有山，人外有人。
 
 ```
 
@@ -40,7 +39,7 @@ canton fair
 cartoon
 temple fair -> world exhibition
 fair - equal 
-fair skin
+fair skin （skɪn 浊化 k->g）
 ```
 
 ## temper
@@ -69,7 +68,7 @@ relationship （rɪˈleɪʃnʃɪp）
 
 ## patience
 ```
-patience -> patient -> impatient
+patience（ˈpeɪʃns） -> patient -> impatient
 ```
 
 
