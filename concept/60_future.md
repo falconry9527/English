@@ -1,9 +1,9 @@
 ## common
 ```
-expert ： 专家
+expert : 专家
 skilful
 sly (slaɪ)  fox : 狡猾的
-责任：responsibility -> responsible
+责任:responsibility -> responsible
 ```
 
 ## fortune(ˈfɔːtʃuːn)
@@ -11,16 +11,20 @@ sly (slaɪ)  fox : 狡猾的
 bright future
 fortune-teller 
 future
-fate（feɪt）： 缘分
-destiny（ˈdestəni） ： 命
+fate（feɪt）: 缘分
+destiny（ˈdestəni） : 命
 
-coincidence （kəʊˈɪnsɪdəns）： 巧合
+coincidence （kəʊˈɪnsɪdəns）: 巧合
 
-Life lies in experience ： 生命在于体验
+Life lies in experience : 生命在于体验
 
 predict accurately ((ˈækjərət)li)
 
+bright  future 
+
 future burden-> blueprint
+
+diamond cuts diamond  : 山外有山，人外有人。
 
 ```
 
@@ -32,13 +36,48 @@ nature (ˈneɪtʃə(r))
 
 ## feature(ˈfiːtʃə)
 ```
+canton fair 
+cartoon
 temple fair -> world exhibition
 fair - equal 
 fair skin
 ```
 
-## sleazy
+## temper
+```
+She has great temper （脾气）
+She has great temperament (气质)
+```
+
+## crystal
+```
+crystal coffin 
+transparent
+as clear as crystal
+```
+
+## relation 
+```
+close relative （ˈrelətɪv） : 近亲
+distant relative （ˈrelətɪv）: 远亲 
+relevant （ˈreləvənt）
+
+relation （rɪˈleɪʃn） : 亲属
+relationship （rɪˈleɪʃnʃɪp）
+
+```
+
+## patience
+```
+patience -> patient -> impatient
+```
+
+
+## common
 ```
 sleazy
 disgusting
 ```
+
+
+
