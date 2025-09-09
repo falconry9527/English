@@ -16,6 +16,8 @@ What type/kind of music do you like best?
 
 turn （tɜːn）:  特恩
 
+word (wɜːd) :
+
 ``` 
 
 ## 发音: 浊化
