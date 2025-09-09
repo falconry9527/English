@@ -4,7 +4,18 @@ e: 短音ai
 well  (wel)
 sleep (sliːp)
 clock (klɒk)
-file  (faɪl)
+
+file  (faɪl) 发ai尔
+
+come (kʌm)
+came （keɪm）
+
+style （staɪl）三音节 s/taɪ/l （斯带尔）t浊化成d :
+type （taɪp ）两个音节 taɪ/p （太普）:
+What type/kind of music do you like best?
+
+turn （tɜːn）:  特恩
+
 ``` 
 
 ## 发音: 浊化
@@ -36,8 +47,6 @@ type（taɪp）
 
 ```
 
-
-
 ## 发音：  ʃl
 ```
 residential roads :
@@ -45,3 +54,12 @@ potential : (pəˈtenʃl)
 essential :
 social:
 ```
+
+## 发音：  əʊ
+```
+əʊ ：拼音： ou
+Give a comb（kəʊm） to a bald（bɔːld） person
+
+```
+
+

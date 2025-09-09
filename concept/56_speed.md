@@ -13,7 +13,7 @@ spare wheel
 wheel chair
 extra choice 
 third wheel ： 电灯泡
-mistree ： 小三
+mistress ： 小三
 ```
 
 ## 对手

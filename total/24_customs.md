@@ -7,6 +7,8 @@ handshake （n） -> shake hand
 clock（klɒk）
 preferred distance 
 tend to stand  quite close 
+quite (kwaɪt)
+quiet (ˈkwaɪət)
 
 etcetera（et'setərə） 等等
 italy （'ɪtəlɪ]）
@@ -44,4 +46,11 @@ Give a comb（kəʊm） to a bald（bɔːld） person
 toy(tɔɪ) :
 tragedy（ˈtrædʒədi） : 悲剧
 Brother-in-law : 大舅哥
+
+To rub（rʌb） salt（sɔːlt） in my wound （wuːnd）： 
+
+concentrate -> concentrated
+
 ```
+
+

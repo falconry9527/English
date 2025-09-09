@@ -19,11 +19,17 @@ cheers(tʃɪrz)
 electric (adj)(ɪˈlektrɪk) : 带电的
 electricity(n)(ɪˌlekˈtrɪsəti) ： 电
 electrical (ɪˈlektrɪkl) ： 用电的
-elec/tro/ni/c (ɪˌlekˈtrɑːnɪk) ： 电子的
+elec/tro/ni/c (ɪˌlekˈtrɑːnɪk) ： 电子的 
+digital - 电子的
 
 science  （n）（ˈsaɪəns）-> scientific(adj) -> scientist (科学)
 license  （ˈlaɪsns）
-conscience （ˈkɒnʃəns）
+
+conscience （ˈkɒnʃəns）-- 良心
+
+sentence -- 句子/判的刑
+nonsense --胡言乱语的
+
 ```
 
 

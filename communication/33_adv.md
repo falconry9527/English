@@ -9,6 +9,7 @@ certainly
 actually  
 suddenly 
 he could hardly move
+basically
 ```
 
 ## chicken
@@ -26,7 +27,7 @@ overcharge : 过度收费
 overnight 
 willpower : 意志力
 overlook : 忽视
-overcome:克服
+overcome: 克服
 over estimate : 高估
 get over : 走出..(前夫)
 go over  file/documents :  检查
@@ -53,6 +54,5 @@ colorful ，traditional ，
 
 paint the wall
 put up a shelf
-
 
 ```
