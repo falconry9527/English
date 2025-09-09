@@ -15,7 +15,8 @@ chase a girl （tʃe/ɪ/s） 切 i s
 cheers(tʃɪrz)  
 ```
 
-``` 发音 ： science
+## 发音 science
+```
 electric (adj)(ɪˈlektrɪk) : 带电的
 electricity(n)(ɪˌlekˈtrɪsəti) ： 电
 electrical (ɪˈlektrɪkl) ： 用电的
