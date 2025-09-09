@@ -1,9 +1,10 @@
-## 发音: e
+## 发音: 简单易错
 ```
 e: 短音ai
 well  (wel)
 sleep (sliːp)
 clock (klɒk)
+file  (faɪl)
 ``` 
 
 ## 发音: 浊化
