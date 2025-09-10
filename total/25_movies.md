@@ -58,6 +58,15 @@ depressed
 depressing (dɪˈpresɪŋ):
 
 excellent (ˈeksələnt)
+
+believable (bɪˈliːvəbl) :
+brilliant (ˈbrɪliənt)
+
+incredible （ɪnˈkredəbl）
+
+responsibility
+responsible
+
 ```
 
 ## mature
@@ -69,5 +78,7 @@ sort of
 kind of
 
 various （ˈveəriəs）
-variety（vəˈraɪəti）
+va/rie/ty（vəˈraɪəti） （沃 叶 ti）
+
+huge diversity (daɪˈvɜːsəti)
 ```
