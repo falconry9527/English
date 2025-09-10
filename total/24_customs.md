@@ -49,7 +49,6 @@ Brother-in-law : 大舅哥
 
 To rub（rʌb） salt（sɔːlt） in my wound （wuːnd）： 
 
-concentrate -> concentrated
 
 ```
 

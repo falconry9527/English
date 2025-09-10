@@ -73,11 +73,43 @@ relationship （rɪˈleɪʃnʃɪp）
 patience（ˈpeɪʃns） -> patient -> impatient
 ```
 
+## ask
+```
+ask，tell，advise，remind，order，warn，want to do sth
+prevent sb from sth/doing sth
+```
+
+## moment
+```
+the moment ： as soon as
+at the moment = right now =now 
+at that moment ： 在当时
+can u  spare me a moment/second  ?
+can i take you a moment/second  ?
+can i have a word with u ?
+can i speak to u a moment/second ?
+
+in case / in case that 
+in that case 
+```
+
+## lead
+```
+you can lead the horse to the river ,but you can't make it drink
+i take initiative（ɪˈnɪʃətɪv） to do study english (主动性)
+```
 
 ## common
 ```
 sleazy
 disgusting
+
+Investigate (ɪnˌvestɪˈɡeɪt)
+investigation (ɪnˌvestɪˈɡeɪʃn) : 调查
+
+concentrate -> concentrated 集中（注意力/精力）
+self-mativation ： 自驱力
+neighbor ： 邻居
 ```
 
 

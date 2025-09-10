@@ -10,6 +10,8 @@ actually
 suddenly 
 he could hardly move
 basically
+already
+
 ```
 
 ## chicken

@@ -24,7 +24,7 @@ scenery : 风景
 
 edit -> edition (节目)
 sponsor  ( spɒnsə(r) ) : 赞助商
-sponsored  (ˈspɑːnsərd) :赞助
+sponsored  (ˈspɒnsəd) : 赞助
 
 muse (希腊女神: muse) 
 inspiration (ˌɪnspəˈreɪʃn) : 鼓舞人心的
@@ -35,6 +35,13 @@ turning（ˈtɜːnɪŋ） point in my life
 simp : 添狗 -> backup 
 
 basically : 基本上
+
+inspired  (ɪnˈspaɪəd)
+inspiring (ɪnˈspaɪərɪŋ)
+
+amazing (əˈmeɪzɪŋ)
+amazed  (əˈmeɪzd)
+
 
 ```
 
@@ -55,4 +62,7 @@ inmature
 
 sort of
 kind of
+
+various （ˈveəriəs）
+variety（vəˈraɪəti）
 ```
