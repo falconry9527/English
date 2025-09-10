@@ -5,8 +5,8 @@ obviously
 particularly
 especially
 of course 
-certainly
-actually  
+certainly ： 确实的
+actually   ： 实际上
 suddenly 
 he could hardly move
 basically

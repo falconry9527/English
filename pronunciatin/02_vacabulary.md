@@ -45,12 +45,12 @@ take a breath(breθ) , i can't breathe(briːð)
 experience （ɪkˈspɪəriənsɪz）
 excited （ɪkˈsaɪtɪd）
 
+excellent (ˈeksələnt)
 exercise （ˈeksərsaɪz）
 exhibition （ˌeksɪˈbɪʃn）
 
 exhausted（ɪɡˈzɔːstɪd）
 exist （ɪɡˈzɪst）
-
 
 
 ```
@@ -71,13 +71,21 @@ accept (əkˈsept)
 accurate (ˈækjərət)
 ```
 
-## 易混单词
+##  发音：易混单词
 ```
 affect :
 affect (əˈfekt): his acton affect their business (ˈbɪznəs) -> busy (ˈbɪzi)
 infect :The virus (ˈva/ɪ/rə/s) can infect humans
 effort (ˈefərt): he make lots of efforts to study english
 ```
+
+##  发音：易混单词
+```
+career（kəˈrɪə(r)]）
+cancel （ˈkænsl）
+cancer （[ˈkænsə(r)]）
+```
+
 
 
 
