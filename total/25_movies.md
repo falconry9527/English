@@ -62,7 +62,7 @@ excellent (ˈeksələnt)
 believable (bɪˈliːvəbl) :
 brilliant (ˈbrɪliənt)
 
-incredible （ɪnˈkredəbl）
+incredible （ɪnˈkredəbl）: 不可置信的
 
 responsibility
 responsible

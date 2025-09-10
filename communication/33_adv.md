@@ -5,8 +5,8 @@ obviously
 particularly
 especially
 of course 
-certainly ： 确实的
-actually   ： 实际上
+certainly : 确实的
+actually   : 实际上
 suddenly 
 he could hardly move
 basically
@@ -24,13 +24,14 @@ kitchen （ˈkɪtʃɪn）
 ```
 take over : 接管
 all over  : 到处都市
+bead over : 弯腰捡东西
 overnight
 overcharge : 过度收费
 overnight 
 willpower : 意志力
 overlook : 忽视
 overcome: 克服
-over estimate : 高估
+over estimate (ˈestɪmeɪt) : 高估
 get over : 走出..(前夫)
 go over  file/documents :  检查
 turn over the channel : 跳转频道
@@ -47,14 +48,14 @@ time heals(hiːlz) all wounds (wuːndz)
 ```
 
 
-## decorate （ˈdekəreɪt）
+## decorate 
 ```
-decorate our house
+decorate（ˈdekəreɪt） our house
 redecorate
 style :  modern
 colorful ，traditional ，
 
 paint the wall
-put up a shelf
+put up a shelf(ʃelf)
 
 ```
