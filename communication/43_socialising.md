@@ -36,3 +36,11 @@ umbrella (ʌmˈbrelə)
 get soaked ,wet 
 ```
 
+## sentence
+```
+i have forgetten what i was saying 
+
+what were you saying  ?
+
+as i was saying 
+```
