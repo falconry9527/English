@@ -59,10 +59,10 @@ as clear as crystal
 ```
 close relative （ˈrelətɪv）n : 近亲
 distant relative （ˈrelətɪv）n: 远亲 
-relative ： adj ： 相对的
-relevant （ˈreləvənt） ： adj 相关的 
+relative : adj : 相对的
+relevant （ˈreləvənt） : adj 相关的 
 
-上面的读音和下面不一样：
+上面的读音和下面不一样:
 relation （rɪˈleɪʃn） : 亲属
 relationship （rɪˈleɪʃnʃɪp）
 
@@ -81,9 +81,9 @@ prevent sb from sth/doing sth
 
 ## moment
 ```
-the moment ： as soon as
+the moment : as soon as
 at the moment = right now =now 
-at that moment ： 在当时
+at that moment : 在当时
 can u  spare me a moment/second  ?
 can i take you a moment/second  ?
 can i have a word with u ?
@@ -99,6 +99,33 @@ you can lead the horse to the river ,but you can't make it drink
 i take initiative（ɪˈnɪʃətɪv） to do study english (主动性)
 ```
 
+## set
+```
+i can set up the exact time  /  schedule
+set out/ off
+set in 
+```
+
+## due
+```
+due to : 因为
+Due to bad weather, the flight was delayed.
+
+be due to : 归因于（强调责任）
+The accident was due to human error.
+
+overdue : 逾期 
+an overdue bill 
+expired :过期
+
+```
+
+## decide
+```
+decide to do sth= make my mind to do sth 
+```
+
+
 ## common
 ```
 sleazy
@@ -108,8 +135,8 @@ Investigate (ɪnˌvestɪˈɡeɪt)
 investigation (ɪnˌvestɪˈɡeɪʃn) : 调查
 
 concentrate -> concentrated 集中（注意力/精力）
-self-mativation ： 自驱力
-neighbor ： 邻居
+self-mativation : 自驱力
+neighbor : 邻居
 ```
 
 
