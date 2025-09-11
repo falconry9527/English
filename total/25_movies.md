@@ -67,6 +67,8 @@ incredible （ɪnˈkredəbl）: 不可置信的
 responsibility
 responsible
 
+
+
 ```
 
 ## mature
@@ -81,4 +83,26 @@ various （ˈveəriəs）
 va/rie/ty（vəˈraɪəti） （沃 叶 ti）
 
 huge diversity (daɪˈvɜːsəti)
+
+a tight schedule(ˈskedʒuːl)
+ 
+```
+
+## appreciate
+```
+appreciate(əˈpriːʃieɪt) a music/musical/musican
+anxious (ˈæŋkʃəs)
+troublesome 
+security (sɪˈkjʊərəti)
+expected （ɪkˈspektɪd）= look forward to 
+
+communication
+
+100 square meters house is split to 10 rooms for rent 
+
+violent (ˈvaɪələnt)
+
+bloody(ˈblʌdi) film 
+blind（ˌblaɪnd） date
+
 ```
