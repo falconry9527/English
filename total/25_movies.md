@@ -106,3 +106,10 @@ bloody(ˈblʌdi) film
 blind（ˌblaɪnd） date
 
 ```
+
+## movies
+``` 
+The Shawshank Redemption
+
+```
+
