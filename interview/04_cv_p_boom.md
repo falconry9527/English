@@ -18,8 +18,9 @@ efficient （ɪˈfɪʃnt） ： 高效的
 ## Project
 ```
 Data Reporting 
-Provided multi-dimensional and real-time statistics and analysis of  clicks, downloads,  activations, registrations, logins,  payments, retention, DAU, LTV,  ROI,  ARPU,  ARRPU
-
+Provided multi-dimensional, real-time statistics and analysis 
+on key metrics (pickup, dispatch, arrival, delivery, and signature) 
+for every distribution center, depot, and courier.
 Advertising Monitor(Funnel Analysis)
 Integrated with major advertising platforms to  analyze conversion rates for clicks, downloads,  activations, registrations,logins,  payments
 
