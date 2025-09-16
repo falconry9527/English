@@ -20,13 +20,14 @@ capacity (kəˈpæsəti)
 ```
 Reporting System 
 
-Provided  multi-dimensional and real-time statistics and analysis of
+Provided  multi-dimensional and real-time statistics and analysis on key metris
 pickup, dispatch, arrival, delivery, and signature for each 
 distribution center, depot, and courier.
 
 Analyzed distribution center and vehicle data to identify the fastest delivery routes.
 
 dimensional （daɪˈmenʃənl）
+metris (ˈmetrɪk)
 dispatch （dɪˈspætʃ）
 arrival （əˈraɪvl）
 signature （ˈsɪɡnətʃə）
