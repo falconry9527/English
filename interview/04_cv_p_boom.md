@@ -35,4 +35,7 @@ Integrated （ˈɪntɪɡreɪtɪd）
 churned(tʃɜːnd)
 targeted (ˈtɑːɡɪtɪd)
 metrics （/ˈme-trɪks/）
+depot(ˈdepəʊ)
+courier (ˈkʊriə(r))
+
 ```
