@@ -8,7 +8,7 @@ the order and transportation capacity systems.
 
 global(ˈɡləʊbl)
 delivery(dɪˈlɪvəri)
-statistics (stəˈtɪstɪks)
+statistics (stəˈtɪstɪks) -> (steiˈtɪstɪks) 
 a/naly/sis(əˈnæləsɪs) （5个音节 1；2；2） ə：奶酪：sis
  ana/lyze (ˈænəlaɪz) （5个音节 2:3 ） 爱哪：lyze
 
