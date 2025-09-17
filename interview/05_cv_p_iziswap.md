@@ -27,17 +27,6 @@ Open zeppelin （ˈoʊpən ˈzepəˌlɪn）  普林
 
 ## Project
 ```
-Contracts
-Developed on-chain smart contracts for DEX  (pool creation, mint, burn, collect, swap)
-Upgraded contracts using Transparent Proxy
-
-Backend/Data
-Developed a multi-chain event collection system using go-ethereum,
-fetched on-chain events (pool creation, mint, burn, collect, swap) in real time,
-and provided API services.
-
-Developed iZiSwap-SDK-go to estimate prices  and slippage by simulating token swaps
-
 creation (kriˈeɪʃn)
 upgraded (ˌʌpˈɡreɪdɪd)
 contracts (kənˈtrækts)
