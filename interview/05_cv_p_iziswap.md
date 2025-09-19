@@ -9,7 +9,7 @@ designed to provide efficient trading
 and liquidity management for digital assets.
 
 multi-chain (mʌlti) :  multiple chains  
-DeFi （dai-fei）：Decentralized Finance
+DeFi （dai-fei）:Decentralized Finance
 protocol（ˈprəʊtəkɒl）
 
 ecosystem (ˈiːkəʊsɪstəm)

@@ -4,7 +4,7 @@
 ```
 calculate (ˈkælkjuleɪt)
 effective (ɪˈfektɪv) : 有效的 
-efficient （ɪˈfɪʃnt） ： 高效的
+efficient （ɪˈfɪʃnt） : 高效的
 ```
 
 

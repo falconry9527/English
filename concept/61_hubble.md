@@ -39,12 +39,12 @@ Judge a book by its cover : 以貌取人
 
 ## atmosphere （ˈætməsfɪə）
 ```
-atmosphere ： 大气层 
+atmosphere : 大气层 
 the pressure of the atmosphere 
-atmosphere ： 气氛  intensive/relaxing
+atmosphere : 气氛  intensive/relaxing
 the restaurant romatic atmosphere
 
-naughty （ˈnɔːti ）：淘气的
+naughty （ˈnɔːti ）:淘气的
 ```
 
 ## universe

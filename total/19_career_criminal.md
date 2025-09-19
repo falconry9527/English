@@ -13,8 +13,8 @@ poison :  ˈpɔɪzn  poisonous(ˈpɔɪzənəs)
 thief (θiːf)
 theory  (ˈθiːəri) : scientific theory support
 
-civil  court ： 民事法庭
-criminal court ： 刑事法庭
+civil  court : 民事法庭
+criminal court : 刑事法庭
 civil servant/officer : 公务员
 
 reveal the reason : rɪˈviːl

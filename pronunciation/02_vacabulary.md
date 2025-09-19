@@ -1,15 +1,15 @@
 
 ## 发音 un
 ```
-ankle(ˈæŋkl) ： 
-uncle (ˈʌŋkl)  ： ong
+ankle(ˈæŋkl) : 
+uncle (ˈʌŋkl)  : ong
 an(ən) : en 
 unhppy （ʌnˈhæpi）
 ```
 
 ## 发音 chase
 ```
-chest（tʃest）：胸
+chest（tʃest）:胸
 chess (tʃes) 切s
 chase a girl （tʃe/ɪ/s） 切 i s
 cheers(tʃɪrz)  
@@ -18,9 +18,9 @@ cheers(tʃɪrz)
 ## 发音 science
 ```
 electric (adj)(ɪˈlektrɪk) : 带电的
-electricity(n)(ɪˌlekˈtrɪsəti) ： 电
-electrical (ɪˈlektrɪkl) ： 用电的
-elec/tro/ni/c (ɪˌlekˈtrɑːnɪk) ： 电子的 
+electricity(n)(ɪˌlekˈtrɪsəti) : 电
+electrical (ɪˈlektrɪkl) : 用电的
+elec/tro/ni/c (ɪˌlekˈtrɑːnɪk) : 电子的 
 digital - 电子的
 
 science  （n）（ˈsaɪəns）-> scientific(adj) -> scientist (科学)
@@ -57,21 +57,21 @@ exist （ɪɡˈzɪst）
 
 ## 发音 ous -> əs
 ```
-superstitious （ˌsuːpəˈstɪʃəs）：  迷信的
+superstitious （ˌsuːpəˈstɪʃəs）:  迷信的
 delicious /dɪˈlɪʃəs/ - 美味的
-ambiguous （æmˈbɪɡjuəs）： 模棱两可
+ambiguous （æmˈbɪɡjuəs）: 模棱两可
 dangerous /ˈdeɪndʒərəs/ 
 
 ```
 
-## 发音： ac
+## 发音: ac
 ```
 accommodation (əˌkɒməˈdeɪʃn)
 accept (əkˈsept)
 accurate (ˈækjərət)
 ```
 
-##  发音：易混单词
+##  发音:易混单词
 ```
 affect :
 affect (əˈfekt): his acton affect their business (ˈbɪznəs) -> busy (ˈbɪzi)
@@ -79,7 +79,7 @@ infect :The virus (ˈva/ɪ/rə/s) can infect humans
 effort (ˈefərt): he make lots of efforts to study english
 ```
 
-##  发音：易混单词
+##  发音:易混单词
 ```
 career（kəˈrɪə(r)]）
 cancel （ˈkænsl）

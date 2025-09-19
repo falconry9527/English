@@ -31,7 +31,7 @@ be connected to
 ## interview
 ```
 relevant (ˈreləvənt) question
-It is lonely at the top ： 高处不胜寒
+It is lonely at the top : 高处不胜寒
 secretary : ˈsekrəteri 秘书
 wage  is payied weekly 
 ```

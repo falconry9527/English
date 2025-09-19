@@ -6,7 +6,7 @@ company(ˈkʌmpəni)
 companion(kəmˈpæniən)(n) -> accompany(v)(əˈkʌmpəni)
 
 chase: tʃe/ɪ/s
-Europe（ˈjʊrəp）：
+Europe（ˈjʊrəp）:
 asia （eɪʒə）
 
 emulate （模仿）

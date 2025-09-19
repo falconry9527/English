@@ -2,7 +2,7 @@
 ```
 optics (ˈɒptɪks)
 latency (leɪtənsɪ)
-terrestrial （təˈrestriəl） ： 地球的
+terrestrial （təˈrestriəl） : 地球的
 satellite（ˈsætəlaɪt）
 wreck（rek）
 

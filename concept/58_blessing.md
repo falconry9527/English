@@ -131,9 +131,9 @@ vicar : 牧师
 
 ## source
 ```
-source ： 来源 
-source of ： 收入来源
-resource ： 资源
+source : 来源 
+source of : 收入来源
+resource : 资源
 hr: human resource
 ```
 
@@ -143,7 +143,7 @@ rich/gray income
 salary
 wage
 
-stock （stɑːk） ：股票
+stock （stɑːk） :股票
 ```
 
 ## said

@@ -1,22 +1,22 @@
 ## optics
 ```
 
-mellifluous (meˈlɪfluəs) ： 声音甜美的
+mellifluous (meˈlɪfluəs) : 声音甜美的
 the gift of gab
 
 lend a job 
 
-aspiring （əˈspaɪərɪŋ） ： 有志成为…的
-earn a living ： 谋生
+aspiring （əˈspaɪərɪŋ） : 有志成为…的
+earn a living : 谋生
 
-lucky break ： 幸运的转机
+lucky break : 幸运的转机
 
 fill someone shoes : 替代某人 
-the shoes are too big to fill ： 花费很大的力气 
+the shoes are too big to fill : 花费很大的力气 
 
-role model ： 榜样
+role model : 榜样
 
-follow your footstep ： 效仿
+follow your footstep : 效仿
 resign （rɪˈzaɪn）
 
 ```

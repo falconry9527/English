@@ -30,7 +30,7 @@ skull（skʌl） k 遇到s浊化 t-> g
 ```
 
 
-## 发音：音标 tr/dr
+## 发音:音标 tr/dr
 ```
 tr : 踹 
 travel(ˈtrævl)
@@ -38,7 +38,7 @@ travel(ˈtrævl)
 tr  -> ts (chi)
 control （kənˈtroʊl）
 trip: trɪp 
-trust ：trʌst
+trust :trʌst
 petrol（ˈpetrəl）/ gas 汽油
 
 dr :  着 -> ds : zhi
@@ -49,7 +49,7 @@ type（taɪp）
 
 ```
 
-## 发音：  ʃl
+## 发音:  ʃl
 ```
 residential roads :
 potential : (pəˈtenʃl)
@@ -57,7 +57,7 @@ essential :
 social:
 ```
 
-## 发音：  v
+## 发音:  v
 ```
 /v/ 是浊辅音，需要声带振动 
 发音时，将下唇的内侧轻触上齿的后部
@@ -66,9 +66,9 @@ very
 ```
 
 
-## 发音：  əʊ
+## 发音:  əʊ
 ```
-əʊ ：拼音： ou
+əʊ :拼音: ou
 Give a comb（kəʊm） to a bald（bɔːld） person
 
 ```

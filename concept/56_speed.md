@@ -12,8 +12,8 @@ i am allergic(əˈlɜːrdʒɪk) to mongoes
 spare wheel 
 wheel chair
 extra choice 
-third wheel ： 电灯泡
-mistress ： 小三
+third wheel : 电灯泡
+mistress : 小三
 ```
 
 ## 对手

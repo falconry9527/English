@@ -4,7 +4,7 @@ vehicle-> transport
 transportation
 
 boat: 船
-cruise（kruːz） ship： 游轮
+cruise（kruːz） ship: 游轮
 ferry : 渡轮
 raft : 竹排
 
@@ -17,7 +17,7 @@ train: second class
 
 subway
 
-carsick： 晕车
+carsick: 晕车
 smell
 
 petrol（ˈpetrəl）/ gas 汽油

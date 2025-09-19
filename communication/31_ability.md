@@ -27,6 +27,6 @@ embarrassed (ɪmˈbærəst)
 buggy
 
 moustache : 小胡子
-beard ： 大胡子
+beard : 大胡子
 
 ```

@@ -5,7 +5,7 @@
 global(ˈɡləʊbl)
 delivery(dɪˈlɪvəri)
 statistics (stəˈtɪstɪks) -> (steiˈtɪstɪks) 
-ana/lyze (ˈænəlaɪz) （5个音节 2:3 ） 爱哪：lyze
+ana/lyze (ˈænəlaɪz) （5个音节 2:3 ） 爱哪:lyze
 
 transportation (ˌtrænspɔːˈteɪʃn)
 ```
