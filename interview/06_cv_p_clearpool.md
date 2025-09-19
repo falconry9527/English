@@ -2,17 +2,17 @@
 
 ## introduction
 ```
-ClearPool is a lending protocol 
-on Ethereum and EVM-compatible chains (Polygon, BNB Chain) 
-that enables  whitelisted institutions 
-to lend and borrow digital assets 
-from permissioned liquidity pools. 
+ClearPool is a decentralized lending protocol 
+operating on Ethereum and EVM-compatible chains (Polygon, BNB Chain). 
+It enables whitelisted institutions to borrow and lend digital assets 
+from permissioned liquidity pools.
 
+decentralized （ˌdiːˈsentrəlaɪzd ）
 compatible(kəmˈpætəbl)
 Polygon (ˈpɒlɪɡən)
 institutions (ˌɪnstɪˈtjuːʃənz) 英式 踢球 行: 日
 
-enables （ɪˈneɪblz）
+e/na/bles （ɪˈneɪblz）
 liquidity (lɪˈkwɪdəti)
 ```
 
@@ -51,10 +51,13 @@ security （sɪˈkjʊərəti） （最后两个词读 yer ti）
 ```
 Developed an event collection system based on go-ethereum 
 to collect on-chain events (pool creation, lending, staking, settlement, liquidation) in real time
+
 Developed high-concurrency API services 
 using Golang (Redis caching, database read-write separation, database hot/cold data separation).
-high-concurrency （kənˈkʌrənsi）
+
+high-concurrency （haɪ kənˈkʌrənsi）
 separation (ˌsepəˈreɪʃn)
+
 ```
 
 ## data

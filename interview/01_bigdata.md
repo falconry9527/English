@@ -7,7 +7,7 @@ ArrayList：基于数组实现，查询快，增删慢，线程不安全。
 LinkedList：基于链表实现，查询慢，增删快，线程不安全。
 Vector：基于数组实现，线程安全，效率较低。
 
-set:无序（HashSet），不允许重复元素
+set: 无序（HashSet），不允许重复元素
 HashSet：基于哈希表实现，元素无序且不可重复。
 LinkedHashSet：在 HashSet 的基础上维护了插入顺序，也支持迭代。
 TreeSet：基于红黑树实现，元素按自然顺序或自定义比较器排序。

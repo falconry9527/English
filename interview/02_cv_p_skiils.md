@@ -7,15 +7,17 @@ Hardhat
 Foundry （ˈfaʊn.dri）
 
 Ethers （ˈiː.ðəz）
-Ethereum : aˈ/θe/riə/m 
+Ethereum : iˈ/θe/riə/m 
 
 Security (sɪˈkjʊərəti)
 Audit (ˈɔːdɪt)
-reentrancy (riːˈɛntrənsi) prevention (trə -> tree )
+
+reentrancy (riːˈɛntrənsi) (trə -> tree ) prevention 
+
 gas optimization (ˌɒptɪmaɪˈzeɪʃn)
 Proxy (ˈprɒksi)
 goroutines （ˈɡoʊˌruːˌtiːnz）
-channels
+channels （ˈtʃænlz）
 infra （ˈɪnfrə）
  
 ```
