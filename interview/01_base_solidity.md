@@ -11,7 +11,6 @@ view 只读状态；pure 不读写状态；普通函数可修改状态。
 
 fallback & receive 函数？
 receive()：接收 ETH；fallback()：处理未匹配函数或 ETH 调用。
-
 ```
 
 
@@ -19,7 +18,6 @@ receive()：接收 ETH；fallback()：处理未匹配函数或 ETH 调用。
 ```
 构造函数是什么？
 在合约部署时执行一次，用于初始化状态变量。
-
 
 delegatecall vs call
 delegatecall 在调用者上下文执行，被调用合约修改调用者状态；call 修改被调用合约状态。
@@ -30,7 +28,6 @@ selfdestruct
 mapping 特点
 无法遍历、默认值 0、常用于地址 → 数据。
 
-
 动态 vs 固定数组
 动态可增减长度，固定长度 gas 更低。
 
@@ -39,9 +36,14 @@ mapping 特点
 
 ```
 
-## uups 和 transparent代理的区别
+## Difference between UUPS and Transparent Proxy
 ```
+Transparent Proxy: 升级逻辑在代理合约，更费gas，更安全
+UUPS ：升级逻辑在实现合约，更节省gas
 
+Difference between UUPS and Transparent Proxy
+Transparent Proxy: The upgrade logic resides in the proxy contract, which consumes more gas but is safer.
+UUPS: The upgrade logic resides in the implementation contract, consuming less gas.
 ```
 
 ## 安全问题
