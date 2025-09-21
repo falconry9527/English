@@ -27,7 +27,7 @@ routes (ruːts)
 calculate (ˈkælkjuleɪt)
 
 heuristic (hjuˈrɪstɪk)
-algorithms (ˈælgərɪðmz)
+algorithms (ˈælgərɪðmz) 艾尔-格-ri-ð姆z
 mechanism (ˈmekənɪzəm) 麦可尼 热幕  （复数 s读z）
 
 ```
