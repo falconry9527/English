@@ -18,6 +18,11 @@ turn （tɜːn）:  特恩
 
 word (wɜːd) :
 
+next (nekst)
+last  time   （英（lɑːst） 美（læst））
+latest （ˈleɪtɪst） 
+at least （liːst）
+
 ``` 
 
 ## 发音: 浊化
