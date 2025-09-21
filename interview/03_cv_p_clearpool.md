@@ -41,5 +41,5 @@ volume （ˈvɒljuːm）
 Revenue (ˈrevənju)
 fees (fiːz)
 redeem(redeem)
-
+loan (ləʊn)
 ```

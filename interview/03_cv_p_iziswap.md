@@ -2,12 +2,6 @@
 
 ## introduction
 ```
-iZi Finance is a multi-chain DeFi protocol. 
-As part of the ecosystem, 
-iZiSwap is a DEX on the ethereum blockchain, 
-designed to provide efficient trading 
-and liquidity management for digital assets.
-
 multi-chain (mʌlti) :  multiple chains  
 DeFi （dai-fei）:Decentralized Finance
 protocol（ˈprəʊtəkɒl）
