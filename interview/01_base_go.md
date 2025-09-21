@@ -6,7 +6,7 @@ Go 的并发哲学：不要通过共享内存来通信，而通过通信来共�
 常见模式：
 工作池（Worker Pool）：主 goroutine 生成任务，发送到 channel，worker goroutine 从 channel 中取任务并处理。
 
-Goroutine：Goroutine is a lightweight thread，it allows thousands of goroutines to run concurrently in a single Go program
+Goroutine：Goroutine is a lightweight thread，thousands of goroutines can run concurrently in a single Go program
 Channel： Channel is Go’s communication mechanism, used for safely passing data between goroutines.
 Go’s concurrency philosophy: Do not communicate by sharing memory; instead, share memory by communicating.
 
