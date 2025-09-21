@@ -2,11 +2,6 @@
 
 ## introduction
 ```
-ClearPool is a decentralized lending protocol 
-operating on Ethereum and EVM-compatible chains (Polygon, BNB Chain). 
-It enables whitelisted institutions to borrow and lend digital assets 
-from permissioned liquidity pools.
-
 decentralized （ˌdiːˈsentrəlaɪzd ）
 compatible(kəmˈpætəbl)
 Polygon (ˈpɒlɪɡən)
@@ -18,14 +13,6 @@ liquidity (lɪˈkwɪdəti)
 
 ## solidity
 ```
-Developed core lending protocol contracts (pool creation, lending, staking, settlement, liquidation)
-
-Designed and implemented a gas-efficient Merkle-tree-based whitelisting mechanism
-to reduce sybil attack and unauthorized access risks.
-
-Designed and implemented multi-signature wallet, time-lock, and emergency pause mechanisms 
-to enhance assets security
-
 Developed（dɪˈveləpt）
 creation （kriˈeɪʃn）
 liquidation （ˌlɪkwɪˈdeɪʃn ）
@@ -44,28 +31,8 @@ emergency （iˈmɜːdʒənsi）
 enhance （ɪnˈhæns）
 security （sɪˈkjʊərəti） （最后两个词读 yer ti）
 
-```
-
-
-## golang
-```
-Developed an event collection system based on go-ethereum 
-to collect on-chain events (pool creation, lending, staking, settlement, liquidation) in real time
-
-Developed high-concurrency API services 
-using Golang (Redis caching, database read-write separation, database hot/cold data separation).
-
 high-concurrency （haɪ kənˈkʌrənsi）
 separation (ˌsepəˈreɪʃn)
-
-```
-
-## data
-```
-Developed a TiDB-based reporting system 
-to deliver multi-dimensional analytics 
-on key metrics (Total Value Locked (TVL), Supply Volume, Borrow Volume, 
-Protocol Revenue (interest spread and fees), Liquidation Volume , refund Volume, redeem Volume)
 
 analyze (ˈænəlaɪz)
 analytics (ˌænəˈlɪtɪks)
