@@ -24,9 +24,9 @@ identify (aɪˈdentɪfaɪ)
 fastest(ˈfɑːstɪst)
 routes (ruːts)
 
-heuristic (hjuˈrɪstɪk)
 calculate (ˈkælkjuleɪt)
 
+heuristic (hjuˈrɪstɪk)
 algorithms (ˈælgərɪðmz)
 mechanism (ˈmekənɪzəm) 麦可尼 热幕  （复数 s读z）
 
