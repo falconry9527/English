@@ -14,7 +14,7 @@ Audit (ˈɔːdɪt)
 
 reentrancy (riːˈɛntrənsi) (trə -> tree ) prevention 
 
-gas optimization (ˌɒptɪmaɪˈzeɪʃn)
+gas optimization (ˌɑːptɪməˈzeɪʃn)
 Proxy (ˈprɒksi)
 goroutines （ˈɡoʊˌruːˌtiːnz）
 channels （ˈtʃænlz）
