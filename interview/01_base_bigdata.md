@@ -17,11 +17,12 @@ HashMap:基于哈希表实现，键值对无序，线程不安全。
 LinkedHashMap:在 HashMap 的基础上维护了插入顺序，也支持迭代。
 TreeMap:基于红黑树实现，键（Key）按自然顺序或自定义比较器排序。
 ```
+
 # sql
 ## sql优化
 ```
 1.分区分桶
-2.先过滤/distnct 再jioin
+2.先过滤/distnct 再join
 3.减少不必要的数据插入: 微批架构
 ```
 
@@ -30,7 +31,7 @@ TreeMap:基于红黑树实现，键（Key）按自然顺序或自定义比较器
 in: 某个字段是否存在某些值
 exist : 是否存在某个字段
 
-in :集合操作:先内后外 : 拿着集合去便利每一条数据 ；适合大表 join 小表
+in : 集合操作: 先内后外 : 拿着集合去便利每一条数据 ；适合大表 join 小表
 exist :存在性检查， 先外后内 :拿着基础表的数据去逐条匹配  ； 适合大表 join 大表
 
 一般在开发中都不用，用join 
@@ -39,7 +40,33 @@ exist :存在性检查， 先外后内 :拿着基础表的数据去逐条匹配 
 
 ## mysql b+tree
 ```
+hash tree : 只适合单点查询，不适合范围（><）查询
+二叉树： 在极端情况下（1，2，3，4，5）会弱化成链，查询很慢
+红黑树： 虽然用颜色重构数，但是，树的深度可能很深，查询会比较慢
+ b+tree ： 多叉树（每个父节点可以有 100个子节点），树的深度不会很深
+```
 
+## 开窗函数
+```
+排名类：ROW_NUMBER(), RANK(), DENSE_RANK()
+聚合类：SUM(), AVG(), MAX(), MIN()
+
+SELECT *,ROW_NUMBER() OVER(PARTITION BY region ORDER BY amount DESC) AS rn FROM sales;
+RANK() : 同分并列排名，跳过下一个排名
+DENSE_RANK() : 同分并列排名，不跳过下一个排名
+
+SELECT region,
+SUM(amount) OVER(PARTITION BY region ORDER BY amount DESC 
+ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS sum_last_3
+FROM sales;
+
+```
+
+
+## 行列互转
+```
+行转列 （转成大宽表）： case
+列转行 ： union
 ```
 
 # flink
