@@ -1,13 +1,5 @@
 ## 常见问题
 ```
-storage、memory、calldata 的区别？
-storage：链上永久存储，memory：函数内部临时存储，calldata：函数外部调用传入只读参数。
-
-Storage, Memory, and Calldata Differences:
-Storage: On-chain permanent storage.
-Memory: Temporary storage used within functions.
-Calldata: Read-only data passed as input from external function calls.
-
 --------------------------
 EVM的数据存储：
 Memory (内存)     ：临时内存： 存储函数的参数和返回值。
@@ -18,6 +10,19 @@ EVM Data Storage:
 Stack: Temporary values, storing intermediate results during computations.
 Memory: Temporary memory, storing function parameters and return values.
 Storage: Permanent storage, storing global variables such as mappings and dynamic arrays.
+
+--------------------------
+storage、memory、calldata 的区别？
+storage：链上永久存储，memory：函数内部临时存储，calldata：函数外部调用传入只读参数。
+
+Storage, Memory, and Calldata Differences:
+Storage: permanent storage On-chain .
+Memory:  Temporary storage used within functions.
+Calldata: Read-only data passed as parameters from external function calls.
+
+permanent (ˈpɜːrmənənt)
+temporary (ˈtemprəri)
+external (ɪkˈstɜːnl)
 
 --------------------------
 public、external、internal、private 区别？
