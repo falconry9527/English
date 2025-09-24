@@ -12,7 +12,7 @@ Ethereum : iˈ/θe/riə/m
 Security (sɪˈkjʊərəti)
 Audit (ˈɔːdɪt)
 
-reentrancy (riːˈɛntrənsi) (trə -> tree ) prevention 
+reentrancy (riːˈɛntrənsi) (trə -> tree ) prevention (prɪˈvenʃn)
 
 gas optimization (ˌɑːptɪməˈzeɪʃn)
 Proxy (ˈprɒksi)
