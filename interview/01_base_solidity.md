@@ -7,9 +7,9 @@ Stack (栈)        ：临时值： 存储计算过程中的中间结果。
 Storage (存储)    ：永久存储： 映射 (Mapping)，动态数组 等全局变量
 
 EVM Data Storage:
-Stack: Temporary values, storing intermediate results during computations.
-Memory: Temporary memory, storing function parameters and return values.
-Storage: Permanent storage, storing global variables such as mappings and dynamic arrays.
+Memory: Temporary memory, storing function parameters(pəˈræmɪtəz) and return values.
+Stack: Temporary values, storing intermediate(ˌɪntəˈmiːdiət) results(rɪˈzʌlts) during computations.
+Storage: Permanent(ˈpɜːmənənt) storage, storing global variables(ˈveəriəblz) such as mappings and dynamic(daɪˈnæmɪk) arrays.
 
 --------------------------
 storage、memory、calldata 的区别？
