@@ -9,25 +9,25 @@ I have worked at 4 companies . In the first two companies, I worked as a data en
 and in the last two , I worked as a blockchain backend engineer.
 
 There are 4 projects for each company
-The first company is J&T Express:
+The first project is J&T Express  data center platform :
 J&T Express is a global express delivery company.
 The data center platform provides analytics for the order and transportation systems.
 I worked as a data engineer on this project.
 The frameworks used in this project are Flink and Doris.
 
-The second  company is Boom Games:
+The second  project is Boom Games: Data Center System  
 Boom Games is a game development and publishing company.
 The Boom Games Data Center System is designed to collect, store, calculate, and analyze the game data in real time, providing data support for game publishing, helping make cost-effective advertising plans.
 I worked as a data engineer on this project.
 The frameworks used in this project are Flink and TiDB.
 
-The third  company is IZI Finance:
+The third  project is IZISwap :
 IZI Finance is a DeFi protocol operating on Ethereum and EVM-compatible chains (Polygon, BNB Chain).
-As part of the ecosystem, IZI Swap is a DEX operating on the Ethereum chain.
+As part of the ecosystem, IZISwap is a DEX operating on the Ethereum chain.
 I worked as a Blockchain Backend Engineer.
 The frameworks used in this project are Go, Solidity, Hardhat, and OpenZeppelin.
 
-The latest  company is ClearPool Finance:
+The latest  project is ClearPool :
 ClearPool is a decentralized lending protocol operating on Ethereum and EVM-compatible chains (Polygon, BNB Chain).
 Whitelisted institutions can borrow and lend digital assets from the liquidity pools.
 I worked as a Blockchain Backend Engineer on this project.
