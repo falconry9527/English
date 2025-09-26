@@ -33,6 +33,7 @@ private:  accessible only within the contract
 external: Accessible only from contract outside
 
 Accessible （əkˈsesəbl）
+derived (dɪˈraɪvd)
 
 --------------------------
 view、pure、普通函数区别？
