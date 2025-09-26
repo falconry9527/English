@@ -40,10 +40,11 @@ view、pure、普通函数区别？
 view 只读状态；pure 不读写状态；普通函数可修改状态。
 
 Differences between view, pure, and regular functions in Solidity:
-Solidity Function Types:
 view: can only read the state
 pure: can neither read nor modify the state
 regular: can both read and modify the state
+
+pure (pjʊr)
 
 --------------------------
 fallback 和 receive 的区别？
@@ -51,7 +52,7 @@ receive()：接收 ETH ；
 fallback()：处理未匹配函数或 ETH 调用。
 
 receive(): receives ETH
-fallback(): handles unmatched function calls or receives ETH
+fallback(): receives ETH or handles unmatched function calls 
 ```
 
 
@@ -71,6 +72,8 @@ delegatecall vs call:
 call: executes in the callee’s context and modifies the callee’s state.
 delegatecall: executes in the caller’s context and modifies  caller’s state.
 
+callee(ˈkɔːli)
+caller(ˈkɔːlə(r))
 --------------------------
 selfdestruct
 销毁合约，返还剩余 ETH 给指定地址。
@@ -105,8 +108,9 @@ UUPS ：升级逻辑在实现合约，更节省gas
 
 Difference between UUPS and Transparent Proxy
 Transparent Proxy: The upgrade logic is located in in the proxy contract, which costs more gas
-UUPS: The upgrade logic is located in in the implementation contract, which costs less gas.
+UUPS: The upgrade logic is located in the implementation contract, which costs less gas.
 
+located(ˈloʊkeɪtɪd)
 ```
 
 ## 安全问题
@@ -128,15 +132,15 @@ UUPS: The upgrade logic is located in in the implementation contract, which cost
 
 ## gas 优化
 ```
-在存储数组中使用 uint256 而不是较小的类型，以避免昂贵的打包/解包操作。
-使用 calldata 作为外部函数参数以节省 gas。
-使用内存存储临时变量，避免存储写入操作。
-逻辑优化：使用 Merkle 树作为白名单，以减少存储空间。
+在存储中使用 uint256 代替较小的整数类型，以避免打包和解包的额外成本。
+使用 calldata 作为外部函数参数，以降低 gas 成本。
+使用 memory 作为临时变量，以避免存储写入。
+逻辑优化：使用 Merkle 树作为白名单，以降低存储成本。
 
-Use uint256 over smaller types in storage arrays to avoid costly packing/unpacking.
-Use calldata for external function parameters to save gas.
-Use memory for temporary  variables  avoid storage writes.
-logic Optimizztion: use Merkle-tree for whitelists to reduce storage.
+Use uint256 instead of smaller integer types in storage to avoid the extra costs of packing and unpacking.
+Use calldata for external function parameters to reduce gas costs.
+Use memory for temporary variables to avoid storage writes.
+Logic Optimization: Use a Merkle tree for whitelists to reduce storage costs.
 ```
 
 
