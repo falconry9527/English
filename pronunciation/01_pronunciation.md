@@ -79,3 +79,13 @@ Give a comb（kəʊm） to a bald（bɔːld） person
 ```
 
 
+## 发音: re -> ri
+```
+red（red）rai
+read （riːd） 瑞
+
+Revenue (ˈrevənju)
+review （rɪˈvju）
+value （ˈvæljuː）
+```
+
