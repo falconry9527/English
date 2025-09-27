@@ -66,4 +66,6 @@ A Radix Tree is a prefix-compressed trie that merges common prefixes to reduce m
 Q7: How does Go handle concurrency safety?
 By using channels for communication, or using the sync package such as Mutex, RWMutex, and WaitGroup.
 
+sync （sɪŋk） 
+
 ```

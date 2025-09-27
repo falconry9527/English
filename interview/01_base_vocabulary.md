@@ -11,6 +11,9 @@ Stack Memory （stæk）
 乘 → multiply （ˈmʌltɪplaɪ）
 除 → divide
 
+encrypt → 加密 encryption
+decrypt → 解密 decryption
+
 ```
 
 
