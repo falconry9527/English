@@ -1,18 +1,22 @@
 ## Goroutine and  Channel
 ```
-Goroutine（协程）: Goroutine 是一个轻量级线程，它允许在单个 Go 程序中并发运行数十万个 Goroutine
+Goroutine（协程）: Goroutine 是一个轻量级线程，它允许在单个Go程序中并发运行数十万个 Goroutine
 Channel 是 Go 的 通信机制，用于 goroutine 之间安全地传递数据。
 Go 的并发哲学：不要通过共享内存来通信，而通过通信来共享内存
 常见模式：
 工作池（Worker Pool）：主 goroutine 生成任务，发送到 channel，worker goroutine 从 channel 中取任务并处理。
 
-Goroutine：Goroutine is a lightweight thread，thousands of goroutines can run concurrently in a single Go program
+Goroutine：Goroutine is a lightweight thread，hundreds of thousands of goroutines can run in a single Go program concurrently
 Channel： Channel is Go’s communication mechanism, used for safely passing data between goroutines.
 Go’s concurrency philosophy: Do not communicate by sharing memory; instead, share memory by communicating.
 
 Typical example (bin):
 Worker Pool: the main goroutine generates tasks and sends them to a channel, 
 while worker goroutines get tasks from the channel and process them.
+
+thread(θred)
+philosophy(fəˈlɒsəfi)
+generates（ˈdʒenəreɪts）
 
 ```
 
@@ -43,11 +47,11 @@ Q1: What’s the difference between arrays and slices in Go?
 Arrays have a fixed length and are value types.
 Slices have a dynamic length, are reference types, and internally point to an array.
 
+reference（ˈrefrəns）
+
 Q2: What’s the purpose of the context package?
 It manages the lifecycle of goroutines, supporting timeout, cancellation, and passing metadata.
-
-Q3:What is Go’s escape analysis?
-The compiler decides whether a variable should be allocated on the stack or the heap.
+cancellation (ˌkænsəˈleɪʃn)
 
 Q4:What’s Go’s garbage collection mechanism?
 Go uses a concurrent tri-color mark-sweep (Mark-Sweep) GC algorithm, which minimizes stop-the-world (STW) pauses.
@@ -60,6 +64,6 @@ Gin is based on a radix tree for routing and supports middleware chaining.
 A Radix Tree is a prefix-compressed trie that merges common prefixes to reduce memory usage.
 
 Q7: How does Go handle concurrency safety?
-By using channels for communication, or synchronization primitives from the sync package such as Mutex, RWMutex, and WaitGroup.
+By using channels for communication, or using the sync package such as Mutex, RWMutex, and WaitGroup.
 
 ```
