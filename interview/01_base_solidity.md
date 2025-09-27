@@ -85,6 +85,7 @@ mapping 特点
 Mapping :
 Cannot be iterated, Commonly used for address: data 
 
+iterated （ˈɪtəreɪtɪd）
 --------------------------
 动态 vs 固定数组
 动态可增减长度，固定长度 gas 更低。
