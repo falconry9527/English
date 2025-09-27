@@ -123,7 +123,7 @@ located(ˈloʊkeɪtɪd)
 
 1. Access Control: Ownable / AccessControl
 1. Multi-signature:TimelockController + AccessControl 
-      Fee withdrawals by the admin require the consent of at least 3 out of 5 administrators.
+      Fees withdrawal by the admin require the consent of at least 3 out of 5 administrators.
 2. Time-lock: TimelockController
 3. Emergency Pause: Pausable 
 4. Reentrancy Attack : use ReentrancyGuard.
