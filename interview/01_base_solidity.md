@@ -63,6 +63,8 @@ fallback(): receives ETH or handles unmatched function calls
 
 Constructor: executed once when the contract is deployed, used to initialize state variables.
 
+initialize （ɪˈnɪʃəlaɪz）
+
 --------------------------
 delegatecall vs call
 delegatecall 在调用者上下文执行，修改调用者状态；
@@ -82,8 +84,7 @@ selfdestruct
 mapping 特点
 无法遍历、默认值 0、常用于地址: 数据。
 
-Mapping :
-Cannot be iterated, Commonly used for address: data 
+Mapping : Cannot be iterated, Commonly used for address: data 
 
 iterated （ˈɪtəreɪtɪd）
 --------------------------
