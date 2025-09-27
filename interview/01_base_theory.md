@@ -68,7 +68,7 @@ with the probability of being selected proportional to the amount staked.
 ```
 
 
-## btc 区块的数据结构
+## eth 区块的数据结构
 ```
 区块头（Block Header）
 Parent Hash：父区块哈希
