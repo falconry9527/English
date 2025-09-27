@@ -121,6 +121,7 @@ located(ˈloʊkeɪtɪd)
 3. 紧急停止: Pausable （ whenPaused/whenNotPaused）
 4. 重入攻击-> ReentrancyGuard(nonReentrant)
 
+security problem:
 1. Access Control: Ownable / AccessControl
 1. Multi-signature:TimelockController + AccessControl 
       Fees withdrawal by the admin require the consent of at least 3 out of 5 administrators.
@@ -138,9 +139,10 @@ located(ˈloʊkeɪtɪd)
 逻辑优化：使用 Merkle 树作为白名单，以降低存储成本。
 
 Use uint256 instead of smaller integer types in storage to avoid the extra costs of packing and unpacking.
-Use calldata for external function parameters to reduce gas costs.
-Use memory for temporary variables to avoid storage writes.
-Logic Optimization: Use a Merkle tree for whitelists to reduce storage costs.
+Use calldata for external function parameters to reduce costs of gas .
+Use memory for temporary variables to reduce  costs of storage/gas .
+Logic Optimization: Use Merkle-tree–based whitelists to reduce costs of storage/gas  .
+
 ```
 
 
