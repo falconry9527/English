@@ -1,32 +1,32 @@
-EVM Data Storage:
+Q1: EVM Data Storage:
 Memory: Temporary storage, storing function parameters and return values .
 Stack: Temporary storage, storing intermediate results during computations  within functions.
 Storage: Permanent storage On-chain , storing global variables such as mappings and dynamic arrays.
 Calldata: Read-only data , storing function parameters  from external calls.
 
-Solidity Visibility:
+Q2: Solidity Visibility:
 public: Accessible from anywhere: within the contract, derived contracts, and externally.
 internal: Accessible within the contract and derived (child) contracts.
 private:  accessible only within the contract
 external: Accessible only from contract outside
 
-Differences between view, pure, and regular functions in Solidity:
+Q3: Differences between view, pure, and regular functions in Solidity:
 view: can only read the state
 pure: can neither read nor modify the state
 regular: can both read and modify the state
 
-Constructor: executed once when the contract is deployed, used to initialize state variables.
-Mapping : Cannot be iterated, Commonly used for address: data
+Q4: Constructor: executed once when the contract is deployed, used to initialize state variables.
+Q5: Mapping : Cannot be iterated, Commonly used for address: data
 
-delegatecall vs call:
+Q6: delegatecall vs call:
 call: executes in the callee’s context and modifies the callee’s state.
 delegatecall: executes in the caller’s context and modifies  caller’s state.
 
-Difference between UUPS and Transparent Proxy
+Q7: Difference between UUPS and Transparent Proxy
 Transparent Proxy: The upgrade logic is located in in the proxy contract, which costs more gas
 UUPS: The upgrade logic is located in the implementation contract, which costs less gas.
 
-security problem:
+Q8: security problem:
 1. Access Control: Ownable / AccessControl
 1. Multi-signature:TimelockController + AccessControl
       Fees withdrawal by the admin require the consent of at least 3 out of 5 administrators.
@@ -34,14 +34,10 @@ security problem:
 3. Emergency Pause: Pausable
 4. Reentrancy Attack : use ReentrancyGuard.
 
-gas optimization :
+Q9: gas optimization :
 Use uint256 instead of smaller integer types in storage to avoid the extra costs of packing and unpacking.
 Use calldata for external function parameters to reduce costs of gas .
 Use memory for temporary variables to reduce  costs of storage/gas .
 Logic Optimization: Use Merkle-tree–based whitelists to reduce costs of storage/gas  .
-
-Mapping :
-Cannot be iterated, Commonly used for address: data
-
 
 
