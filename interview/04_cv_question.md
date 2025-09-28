@@ -8,6 +8,7 @@
 1. 等待 12 个区块确认（约 3 分钟）后再处理数据。
 2. 根据 removed 字段回滚相关数据：若 removed = true，说明区块发生分叉，该事件已无效。
 
+There are two ways to handle this problem. 
 1. Wait for 12 block confirmations (≈3 minutes) before processing data.
 2. Roll back data based on the removed field: if removed = true, the block was part of a fork and the event is invalid.
 
