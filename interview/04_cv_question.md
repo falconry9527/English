@@ -1,4 +1,4 @@
-## 数据抓取问题: 数据抓取的时候，怎么处理分叉
+## 数据同步过程中,如何处理区块链分叉问题？
 ```
 硬分叉 (Hard Fork) ： 底层协议发生不兼容改动，旧节点无法理解新区块,长期分裂(Ethereum Classic)
 软分叉 (Soft Fork) ： 协议规则收紧，旧节点仍能接受新区块,最终会收敛到一条链(比特币 SegWit)
@@ -8,6 +8,7 @@
 1. 等待 12 个区块确认（约 3 分钟）后再处理数据。
 2. 根据 removed 字段回滚相关数据：若 removed = true，说明区块发生分叉，该事件已无效。
 
+How to handle blockchain fork issues during data synchronization?
 There are two ways to handle this problem. 
 1. Wait for 12 block confirmations (≈3 minutes) before processing data.
 2. Roll back data based on the removed field: if removed = true, the block was part of a fork and the event is invalid.
