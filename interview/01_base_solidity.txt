@@ -1,6 +1,6 @@
 Q1: EVM Data Storage:
-Memory: Temporary storage, storing function parameters and return values .
-Stack: Temporary storage, storing intermediate results during computations  within functions.
+Memory: Temporary Memory, storing function parameters and return values .
+Stack: Temporary values, storing intermediate results during computations  within functions.
 Storage: Permanent storage On-chain , storing global variables such as mappings and dynamic arrays.
 Calldata: Read-only data , storing function parameters  from external calls.
 
