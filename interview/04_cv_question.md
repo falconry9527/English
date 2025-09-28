@@ -6,12 +6,12 @@
 
 处理方法
 1. 等待 12 个区块确认（约 3 分钟）后再处理数据。
-2. 根据 removed 字段回滚相关数据：若 removed = true，说明区块发生分叉，该事件已无效。
+2. 同步 removed 字段，其中 removed = true 表示事件无效且已被废弃。
 
-How to handle blockchain fork issues during data synchronization?
+How should we handle blockchain fork problem during data sync?
 There are two ways to handle this problem. 
 1. Wait for 12 block confirmations (≈3 minutes) before processing data.
-2. Roll back data based on the removed field: if removed = true, the block was part of a fork and the event is invalid.
+2. Synchronize the removed field, where removed = true indicates that the event is invalid and discarded.
 
 ```
 
