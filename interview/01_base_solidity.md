@@ -117,19 +117,25 @@ located(ˈloʊkeɪtɪd)
 
 ## 安全问题
 ```
-1. 权限控制: Ownable / AccessControl 
-1. 多签:  TimelockController + AccessControl : 管理员提取费用需要至少 5 名管理员中的 3 名同意。
-2. 时间锁: TimelockController 
-3. 紧急停止: Pausable （ whenPaused/whenNotPaused）
-4. 重入攻击-> ReentrancyGuard(nonReentrant)
+安全问题：
+1. 使用基于 Merkle 树的白名单机制，防止 Sybil 攻击。
+2. 使用多重签名机制，防止密钥丢失或被盗。
+    如果管理员想要提取交易费，需要至少 5 名管理员中的 3 名批准。
+3. 使用 OpenZeppelin 的安全合约（例如：Ownable、AccessControl、TimelockController、Pausable、ReentrancyGuard）。
+a. 使用 Ownable/AccessControl 合约管理访问控制。
+b. 使用 TimelockController 合约延迟某些危险操作。
+c. 使用 Pausable 合约进行紧急暂停。
+d. 使用 ReentrancyGuard 合约防止重入攻击。
 
 security problem:
-1. Access Control: Ownable / AccessControl
-1. Multi-signature:TimelockController + AccessControl 
-      The withdrawal of trading fees by the admin requires approval from at least 3 out of 5 administrators.
-2. Time-lock: TimelockController
-3. Emergency Pause: Pausable 
-4. Reentrancy Attack : use ReentrancyGuard.
+1. Use a Merkle-tree-based whitelisting mechanism to prevent Sybil attacks.
+2. Use a Multi-signature mechanism  to prevent the loss or theft of keys.
+    If an admin wants to withdraw trading fees, they will need approval from at least 3 out of 5 administrators.
+3.Use OpenZeppelin’s security contracts (e.g.,Ownable, AccessControl,TimelockController,Pausable, ReentrancyGuard  ).
+a. Use the Ownable/AccessControl contract to manage access control.
+b. Use TimelockController contract to delay some dangerous actions
+c. Use Pausable contract to Emergency Pause
+d. Use ReentrancyGuard contract to prevent Reentrancy Attacks
 
 approval (əˈpruːvl)
 administrators(ədˈmɪnɪstreɪtəz)
