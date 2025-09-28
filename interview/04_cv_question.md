@@ -5,14 +5,17 @@
 短期分叉 (temporary Fork) ：由于网络延迟原因，进行的短期分叉,协议会自动选择最长链
 
 处理方法
-1. 等待 12 个区块确认（约 3 分钟）
-2. 根据 Removed = true 字断回滚数据
+1. 等待 12 个区块确认（约 3 分钟）后再处理数据。
+2. 根据 removed 字段回滚相关数据：若 removed = true，说明区块发生分叉，该事件已无效。
+
+Wait for 12 block confirmations (≈3 minutes) before processing data.
+Roll back data based on the removed field: if removed = true, the block was part of a fork and the event is invalid.
 
 ```
 
 ## 怎么防止交易 滑点过大
 ```
-多池路由、限价单(Limit Order)、价格预言机
+限价单(Limit Order)、价格预言机
 ```
 
 ## Merkle tree
@@ -20,8 +23,21 @@
 Merkle root :
 merkle Proof : bytes32[]: 兄弟节点hash 路径（sibling hash path）
 
-验证一个地址是否在白名单中，只需要提供该地址及其对应的 Merkle proof（从叶子节点到根节点的兄弟节点哈希路径）
-Verification of an address against the whitelist requires only the address and its  Merkle proof (sibling hash path).
+Merkle Tree 是哈希树/二叉树：叶子节点存数据哈希，父节点存子节点哈希组合，根节点递归组合所有子节点哈希。若任一子节点哈希变化，所有父节点哈希也会随之变化，从而便于高效验证。
+A Merkle Tree is a hash tree/binary tree: 
+leaf nodes store data hashes, 
+parent nodes store combinations of child hashes, 
+and the root node recursively combines all child hashes.
+If any child hash changes, 
+all parent hashes change accordingly, enabling efficient verification.
+
+对于白名单，存储时只需保存根节点哈希，无需保存所有用户地址，从而显著减少存储开销。
+For a whitelist, only the root hash needs to be stored, not all user addresses, 
+significantly reducing costs data storage.
+
+验证的时候，您只需要提供叶哈希和 Merkle 证明（兄弟哈希数组）。
+For verification, you only need to provide the leaf hash and the Merkle proof (an array of sibling hashes).
+
 ```
 
 ## Collateralization Ratio（抵押率）
@@ -29,7 +45,9 @@ Verification of an address against the whitelist requires only the address and i
 Collateralization Ratio =  Value  of  Collateral / Value  of  Loan 
 （200-300 %）
 
-Liquidation Threshold（ 清算率 150% )
+Collateralization Ratio （抵押率）
+LTV (Loan-to-Value Ratio) (和抵押率互为倒数)
+Liquidation Threshold（ 清算阈值 150% )
 
 ```
 
@@ -50,4 +68,9 @@ Oracle 价格操纵 (Price manipulation)
 1. 聚合多个价格源（Chainlink、备用 Oracle、DEX TWAP）
 2. 在执行清算前再次验证
 
+Aggregate multiple price sources (Chainlink, backup oracles, DEX TWAP).
+Re-validate prices before executing liquidation.
+
 ```
+
+
