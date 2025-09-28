@@ -136,7 +136,7 @@ a. Use the Ownable/AccessControl contract to manage access control.
 b. Use TimelockController contract to delay some dangerous actions
 c. Use Pausable contract to Emergency Pause
 d. Use ReentrancyGuard contract to prevent Reentrancy Attacks
-
+   Update state first, then transfer funds
 approval (əˈpruːvl)
 administrators(ədˈmɪnɪstreɪtəz)
 

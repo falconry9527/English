@@ -35,6 +35,7 @@ a. Use the Ownable/AccessControl contract to manage access control.
 b. Use TimelockController contract to delay some dangerous actions
 c. Use Pausable contract to Emergency Pause
 d. Use ReentrancyGuard contract to prevent Reentrancy Attacks
+   Update state first, then transfer funds
 
 Q9: gas optimization :
 Use uint256 instead of smaller integer types in storage to avoid the extra costs of packing and unpacking.

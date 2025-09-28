@@ -7,11 +7,12 @@
 处理方法
 1. 等待 12 个区块确认（约 3 分钟）
 2. 根据 Removed = true 字断回滚数据
+
 ```
 
 ## 怎么防止交易 滑点过大
 ```
-多池路由、限价单、价格预言机
+多池路由、限价单(Limit Order)、价格预言机
 ```
 
 ## Merkle tree
@@ -21,5 +22,11 @@ merkle Proof : bytes32[]: 兄弟节点hash 路径（sibling hash path）
 
 验证一个地址是否在白名单中，只需要提供该地址及其对应的 Merkle proof（从叶子节点到根节点的兄弟节点哈希路径）
 Verification of an address against the whitelist requires only the address and its  Merkle proof (sibling hash path).
+```
+
+## 抵押率
+```
+Collateralization Ratio (CR)
+
 ```
 
