@@ -42,11 +42,13 @@ If any child hash changes,
 all parent hashes change accordingly, enabling efficient verification.
 
 对于白名单，存储时只需保存根节点哈希，无需保存所有用户地址，从而显著减少存储开销。
-For a whitelist, only the root hash needs to be stored, not all user addresses, 
+For a whitelist, only the root hash needs to be stored instead of  all user addresses, 
 significantly reducing costs data storage.
 
 验证的时候，您只需要提供叶哈希和 Merkle 证明（兄弟哈希数组）。
 For verification, you only need to provide the leaf hash and the Merkle proof (an array of sibling hashes).
+
+verification (ˌvɛrəfəˈkeɪʃən)
 
 ```
 
@@ -56,10 +58,17 @@ Q4 :   Please talk about Collateralization
 
 Collateralization Ratio =  Value  of  Collateral / Value  of  Loan 
 （200-300 %）
-
 Collateralization Ratio （抵押率）
 LTV (Loan-to-Value Ratio) (和抵押率互为倒数)
 Liquidation Threshold（ 清算阈值 150% )
+
+Collateral （kəˈlætərəl）
+Collateralization （/ˌkɒlˈæ.tə.raɪ.zeɪ.ʃən ）
+Ratio （ˈreɪʃiəʊ）
+Loan（loʊn）
+
+
+
 
 ```
 
@@ -73,14 +82,13 @@ Q5 : How to ensure the safety of investors' assets
 
 ##  闪电贷攻击（Flash Loan Attack）
 ```
-Q5 :   Please talk about Flash Loan Attack
+1. 聚合多个价格源（Chainlink、备用 Oracle、DEX TWAP）
+2. 在执行清算前再次验证
 闪电贷攻击（Flash Loan Attack）
 Oracle 数据安全（Chainlink, Band Protocol）
 Oracle 价格操纵 (Price manipulation)
 
-1. 聚合多个价格源（Chainlink、备用 Oracle、DEX TWAP）
-2. 在执行清算前再次验证
-
+Q6 :   Please talk about Flash Loan Attack
 Aggregate multiple price sources (Chainlink, backup oracles, DEX TWAP).
 Re-validate prices before executing liquidation.
 
