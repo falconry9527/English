@@ -9,6 +9,12 @@ A chain-based data structure: each block is linked to the previous one through a
 A distributed ledger: immutability is ensured by cryptographic hashing and the consensus mechanism.
 ```
 
+## lawyer2
+```
+L1 是基础主链，L2 是主链上的扩容层，L3 是构建在 L2 上的应用层。
+L1 is the base blockchain, L2 is the scaling layer on top of it, and L3 is the application layer built on L2.
+```
+
 ## 共识机制
 ```
 共识机制：数据块在加入链之前，必须得到大多数节点（服务器节点/矿机）的验证和确认。
