@@ -4,14 +4,19 @@
 软分叉 (Soft Fork) ： 协议规则收紧，旧节点仍能接受新区块,最终会收敛到一条链(比特币 SegWit)
 短期分叉 (temporary Fork) ：由于网络延迟原因，进行的短期分叉,协议会自动选择最长链
 
+
 处理方法
 1. 等待 12 个区块确认（约 3 分钟）后再处理数据。
 2. 同步 removed 字段，其中 removed = true 表示事件无效且已被废弃。
 
+2 ways to sync on-chain event 
+1.Monitor on-chain events using WebSocket. 
+2.send HTTP requests in a loop to fetch new data.
+
 How should we handle blockchain fork problem during data sync?
 There are two ways to handle this problem. 
-1. Wait for 12 block confirmations (≈3 minutes) before processing data.
-2. Synchronize the removed field, where removed = true indicates that the event is invalid and discarded.
+1. Wait for 12 block confirmations (about 3 minutes) before data sync.
+2. Sync the removed field; removed field indicates whether the event was discarded during a fork.
 
 ```
 
