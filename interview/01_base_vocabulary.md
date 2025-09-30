@@ -16,6 +16,8 @@ decrypt → 解密 decryption
 
 senior (ˈsiːniə(r) )
 
+random (ˈrændəm) : 随机的
+ 
 ```
 
 
