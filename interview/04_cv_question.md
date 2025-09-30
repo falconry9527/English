@@ -10,30 +10,32 @@
 2. 同步 removed 字段，其中 removed = true 表示事件无效且已被废弃。
 
 Q1 : how to sync on-chain event 
-1.Monitor on-chain events using WebSocket. 
-2.send HTTP requests in a loop to fetch data.
+There are two ways to sync on-chain event 
+1.WebSocket: Monitor on-chain events using WebSocket. 
+2.HTTP: send HTTP requests in a loop to fetch data.
 
 Q2 :How should we handle blockchain fork problem during data sync?
 There are two ways to handle this problem. 
 1. Wait for 12 block confirmations (about 3 minutes) before data sync.
-2. Sync the removed field; removed field indicates whether the event was discarded during a fork.
+2. Sync the removed field: removed field indicates whether the event was discarded during a fork.
 
+discarded(dɪˈskɑːdɪd])
 ```
 
 ## 怎么防止交易滑点过大
 ```
 Q3.How to prevent excessive slippage in trades
-限价单(Limit Order)、价格预言机
+限价单(Limit Order)、价格预言机 (oracle )
 
 excessive (ɪkˈsesɪv)
-
 ```
 
 ## Merkle tree
 ```
-
 Merkle root :
 merkle Proof : bytes32[]: 兄弟节点hash 路径（sibling hash path）
+btc Data Structure is Merkle tree too .
+Structure (ˈdeɪtə ˈstrʌktʃər)
 
 Q4 : Please talk about Merkle Tree
 Merkle Tree 是哈希树/二叉树：叶子节点存数据哈希，父节点存子节点哈希组合，根节点递归组合所有子节点哈希。
@@ -41,17 +43,19 @@ Merkle Tree 是哈希树/二叉树：叶子节点存数据哈希，父节点存�
 A Merkle Tree is a hash tree/binary tree: 
 leaf nodes store data hashes, 
 parent nodes store combinations of child hashes, 
-and the root node recursively combines all child hashes.
 If any child hash changes, 
-all parent hashes change accordingly, enabling efficient verification.
+all parent hashes change too, enabling efficient verification.
 
 对于白名单，存储时只需保存根节点哈希，无需保存所有用户地址，从而显著减少存储开销。
-For a whitelist, only the root hash needs to be stored instead of  all user addresses, 
-significantly reducing costs data storage.
+For a whitelist, we only need to store the root hash instead of all user addresses, 
+significantly reducing  costs of data storage . 
 
 验证的时候，您只需要提供叶哈希和 Merkle 证明（兄弟哈希数组）。
-For verification, you only need to provide the leaf hash and the Merkle proof (an array of sibling hashes).
+For verification, you only need to provide the leaf hash and the Merkle proof (which is an array of sibling node hashes).
 
+significantly (sɪɡˈnɪfɪkəntli)
+enabling (ɪˈneɪblɪŋ)
+sibling（ˈsɪblɪŋ）
 verification (ˌvɛrəfəˈkeɪʃən)
 
 ```
@@ -60,7 +64,7 @@ verification (ˌvɛrəfəˈkeɪʃən)
 ```
 Q5 :   Please talk about Collateralization
 
-Collateralization Ratio =  Value  of  Collateral / Value  of  Loan 
+Collateralization Ratio =  Value  of  Collateralization / Value  of  Loan 
 （200-300 %）
 Collateralization Ratio （抵押率）
 LTV (Loan-to-Value Ratio) (和抵押率互为倒数)
@@ -70,9 +74,6 @@ Collateral （kəˈlætərəl）
 Collateralization （/ˌkɒlˈæ.tə.raɪ.zeɪ.ʃən ）
 Ratio （ˈreɪʃiəʊ）
 Loan（loʊn）
-
-
-
 
 ```
 
@@ -95,6 +96,8 @@ Oracle 价格操纵 (Price manipulation)
 Q7 :   Please talk about Flash Loan Attack
 Aggregate multiple price sources (Chainlink, backup oracles, DEX TWAP).
 Re-validate prices before executing liquidation.
+
+Aggregate（ˈæɡrɪɡeɪt）
 
 ```
 
