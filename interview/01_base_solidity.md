@@ -121,20 +121,16 @@ located(ˈloʊkeɪtɪd)
 2. 使用多重签名机制，防止密钥丢失或被盗。
     如果管理员想要提取交易费，需要至少 5 名管理员中的 3 名批准。
 3. 使用 OpenZeppelin 的安全合约（例如：Ownable、AccessControl、TimelockController、Pausable、ReentrancyGuard）。
-a. 使用 Ownable/AccessControl 合约管理访问控制。
-b. 使用 TimelockController 合约延迟某些危险操作。
-c. 使用 Pausable 合约进行紧急暂停。
-d. 使用 ReentrancyGuard 合约防止重入攻击。
+a. 使用 Pausable 合约进行紧急暂停。
+b. 使用 ReentrancyGuard 合约防止重入攻击。
 
-security problem:
-1. Use a Merkle-tree-based whitelisting mechanism to prevent Sybil attacks.
-2. Use a Multi-signature mechanism  to prevent the loss or theft of keys.
+Q8: security problem:
+1. Use a whitelisting mechanism to prevent Sybil attacks.
+2. Use a Multi-signature mechanism  to prevent the loss or theft of private key.
     If an admin wants to withdraw trading fees, they will need approval from at least 3 out of 5 administrators.
-3.Use OpenZeppelin’s security contracts (e.g.,Ownable, AccessControl,TimelockController,Pausable, ReentrancyGuard  ).
-a. Use the Ownable/AccessControl contract to manage access control.
-b. Use TimelockController contract to delay some dangerous actions
-c. Use Pausable contract to Emergency Pause
-d. Use ReentrancyGuard contract to prevent Reentrancy Attacks
+3.Use OpenZeppelin’s security contracts (Ownable, AccessControl,TimelockController,Pausable, ReentrancyGuard  ).
+a.  Pausable contract is used to Emergency Pause
+b.  ReentrancyGuard is used contract to prevent Reentrancy Attacks
    Update state first, then transfer funds
 
 theft(θeft)

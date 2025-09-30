@@ -11,7 +11,7 @@
 
 Q1 : how to sync on-chain event 
 1.Monitor on-chain events using WebSocket. 
-2.send HTTP requests in a loop to fetch new data.
+2.send HTTP requests in a loop to fetch data.
 
 Q2 :How should we handle blockchain fork problem during data sync?
 There are two ways to handle this problem. 
