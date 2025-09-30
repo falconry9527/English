@@ -36,7 +36,7 @@ b.  ReentrancyGuard is used contract to prevent Reentrancy Attacks
    Update state first, then transfer funds
 
 Q9: gas optimization :
-Use uint256 instead of smaller integer types in storage to avoid the extra costs of packing and unpacking.
+Use uint256 instead of smaller integer types in storage to avoid the extra costs of slot packing and unpacking.
 Use calldata for external function parameters to reduce costs of gas .
 Use memory for temporary variables to reduce  costs of storage/gas .
 Logic Optimization: Use Merkle-tree–based whitelists to reduce costs of storage/gas  .
