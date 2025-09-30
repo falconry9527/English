@@ -14,6 +14,8 @@ Stack Memory （stæk）
 encrypt → 加密 encryption
 decrypt → 解密 decryption
 
+senior (ˈsiːniə(r) )
+
 ```
 
 
