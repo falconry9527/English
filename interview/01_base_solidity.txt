@@ -27,14 +27,12 @@ Transparent Proxy: The upgrade logic is located in the proxy contract, which cos
 UUPS: The upgrade logic is located in the implementation contract, which costs less gas.
 
 Q8: security problem:
-1. Use a Merkle-tree-based whitelisting mechanism to prevent Sybil attacks.
+1. Use a whitelisting mechanism to prevent Sybil attacks.
 2. Use a Multi-signature mechanism  to prevent the loss or theft of keys.
     If an admin wants to withdraw trading fees, they will need approval from at least 3 out of 5 administrators.
-3.Use OpenZeppelin’s security contracts (e.g.,Ownable, AccessControl,TimelockController,Pausable, ReentrancyGuard  ).
-a. Use the Ownable/AccessControl contract to manage access control.
-b. Use TimelockController contract to delay some dangerous actions
-c. Use Pausable contract to Emergency Pause
-d. Use ReentrancyGuard contract to prevent Reentrancy Attacks
+3.Use OpenZeppelin’s security contracts (Ownable, AccessControl,TimelockController,Pausable, ReentrancyGuard  ).
+a.  Pausable contract is used to Emergency Pause
+b.  ReentrancyGuard is used contract to prevent Reentrancy Attacks
    Update state first, then transfer funds
 
 Q9: gas optimization :
@@ -42,11 +40,3 @@ Use uint256 instead of smaller integer types in storage to avoid the extra costs
 Use calldata for external function parameters to reduce costs of gas .
 Use memory for temporary variables to reduce  costs of storage/gas .
 Logic Optimization: Use Merkle-tree–based whitelists to reduce costs of storage/gas  .
-
-Constructor
-administrators
-funds
-storage
-
-variables
-Pausable

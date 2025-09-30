@@ -8,7 +8,7 @@ I am mainly good at backend and data development.
 I have worked at 4 companies . In the first two companies, I worked as a data engineer. 
 and in the last two , I worked as a blockchain backend engineer.
 
-There are 4 projects for each company
+There are 4 projects , Each project maps to a company.
 The first project is J&T Express  data center platform :
 J&T Express is a global express delivery company.
 The data center platform provides analytics for the order and transportation systems.
