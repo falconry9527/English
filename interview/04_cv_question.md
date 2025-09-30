@@ -20,9 +20,13 @@ There are two ways to handle this problem.
 
 ```
 
-## 怎么防止交易 滑点过大
+## 怎么防止交易滑点过大
 ```
+Q3.How to prevent excessive slippage in trades
 限价单(Limit Order)、价格预言机
+
+excessive (ɪkˈsesɪv)
+
 ```
 
 ## Merkle tree
@@ -31,7 +35,7 @@ There are two ways to handle this problem.
 Merkle root :
 merkle Proof : bytes32[]: 兄弟节点hash 路径（sibling hash path）
 
-Q3 : Please talk about Merkle Tree
+Q4 : Please talk about Merkle Tree
 Merkle Tree 是哈希树/二叉树：叶子节点存数据哈希，父节点存子节点哈希组合，根节点递归组合所有子节点哈希。
 若任一子节点哈希变化，所有父节点哈希也会随之变化，从而便于高效验证。
 A Merkle Tree is a hash tree/binary tree: 
@@ -54,7 +58,7 @@ verification (ˌvɛrəfəˈkeɪʃən)
 
 ## Collateralization Ratio（抵押率）
 ```
-Q4 :   Please talk about Collateralization
+Q5 :   Please talk about Collateralization
 
 Collateralization Ratio =  Value  of  Collateral / Value  of  Loan 
 （200-300 %）
@@ -74,7 +78,7 @@ Loan（loʊn）
 
 ## 怎么保证投人的资产安全
 ```
-Q5 : How to ensure the safety of investors' assets
+Q6 : How to ensure the safety of investors' assets
 1. 超额抵押（Over-Collateralization）
 2. 清算机制（Liquidation Mechanism）
 
@@ -88,7 +92,7 @@ Q5 : How to ensure the safety of investors' assets
 Oracle 数据安全（Chainlink, Band Protocol）
 Oracle 价格操纵 (Price manipulation)
 
-Q6 :   Please talk about Flash Loan Attack
+Q7 :   Please talk about Flash Loan Attack
 Aggregate multiple price sources (Chainlink, backup oracles, DEX TWAP).
 Re-validate prices before executing liquidation.
 
