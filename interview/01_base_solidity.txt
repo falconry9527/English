@@ -18,7 +18,7 @@ regular: can both read and modify the state
 Q4: Constructor: executed once when the contract is deployed, used to initialize state variables.
 Q5: Mapping : Cannot be iterated, Commonly used for address: data
 
-Q6: delegatecall vs call:
+Q6: delegatecall vs(versus) call:
 call: executes in the callee’s context and modifies the callee’s state.
 delegatecall: executes in the caller’s context and modifies  caller’s state.
 
@@ -43,4 +43,10 @@ Use calldata for external function parameters to reduce costs of gas .
 Use memory for temporary variables to reduce  costs of storage/gas .
 Logic Optimization: Use Merkle-tree–based whitelists to reduce costs of storage/gas  .
 
+Constructor
+administrators
+funds
+storage
 
+variables
+Pausable

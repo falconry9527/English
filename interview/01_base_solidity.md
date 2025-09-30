@@ -136,8 +136,16 @@ b. Use TimelockController contract to delay some dangerous actions
 c. Use Pausable contract to Emergency Pause
 d. Use ReentrancyGuard contract to prevent Reentrancy Attacks
    Update state first, then transfer funds
+
+theft(θeft)
 approval (əˈpruːvl)
+funds(fʌndz)
+Pause(pɔːz)
+Pausable （ˈpɔː.zə.bəl）
+
+contract (kənˈtrækt)
 administrators(ədˈmɪnɪstreɪtəz)
+Constructor (kənˈstrʌktər)
 
 ```
 

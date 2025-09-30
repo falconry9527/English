@@ -39,6 +39,7 @@ skull（skʌl） k 遇到s浊化 t-> g
 ```
 tr : 踹 
 travel(ˈtrævl)
+contract (kənˈtrækt)
 
 tr  -> ts (chi)
 control （kənˈtroʊl）
@@ -46,11 +47,14 @@ trip: trɪp
 trust :trʌst
 petrol（ˈpetrəl）/ gas 汽油
 
+
 dr :  着 -> ds : zhi
 dream /driːm/ - n. 梦想； v. 做梦
 strawberry （ˈstrɔːbəri）（浊化）
 
-type（taɪp）
+administrators(ədˈmɪnɪstreɪtəz)
+Constructor (kənˈstrʌktər)
+
 
 ```
 
