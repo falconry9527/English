@@ -28,7 +28,7 @@ UUPS: The upgrade logic is located in the implementation contract, which costs l
 
 Q8: security problem:
 1. Use a whitelisting mechanism to prevent Sybil attacks.
-2. Use a Multi-signature mechanism  to prevent the loss or theft of keys.
+2. Use a Multi-signature mechanism  to prevent the loss or theft of private key.
     If an admin wants to withdraw trading fees, they will need approval from at least 3 out of 5 administrators.
 3.Use OpenZeppelin’s security contracts (Ownable, AccessControl,TimelockController,Pausable, ReentrancyGuard  ).
 a.  Pausable contract is used to Emergency Pause
