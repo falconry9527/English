@@ -22,7 +22,6 @@ It manages the lifecycle of goroutines, supporting timeout, cancellation, and pa
 cancellation (ˌkænsəˈleɪʃn)
 lifecycle(laɪfˈsaɪkl)
 metadata (ˈmetədeɪtə)
-data(ˈdeɪtə)
 
 Q4: How does Go ensure stability in distributed systems?
 By using timeout control (context), rate limiting, circuit breakers, and retry mechanisms.
