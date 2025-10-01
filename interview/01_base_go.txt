@@ -9,6 +9,7 @@ while worker goroutines get tasks from the channel and process them.
 
 run(rʌn)
 generates（ˈdʒenəreɪts）
+sends （sendz）
 
 Q2: What’s the difference between arrays and slices in Go?
 Arrays have a fixed length and are value types.
