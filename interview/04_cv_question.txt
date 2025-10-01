@@ -11,18 +11,18 @@ There are two ways to handle this problem.
 Q3.How to prevent excessive slippage in trades
 限价单(Limit Order)、价格预言机 (oracle )
 
-
 Q4 : Please talk about Merkle Tree
+For data structure:
 A Merkle Tree is a hash tree/binary tree:
 leaf nodes store data hashes,
 parent nodes store combinations of child hashes,
 If any child hash changes,
 all parent hashes change too, enabling efficient verification.
 
-For a whitelist, we only need to store the root hash instead of all user addresses,
-significantly reducing  costs of data storage .
+For storage:  such as a whitelist, we only need to store the root hash instead of all user addresses,
+significantly reducing the cost of data storage.
 
-For verification, you only need to provide the leaf hash and
+For verification: we only need to provide the leaf hash and
 the Merkle proof (which is an array of sibling node hashes).
 
 Q5 : Please talk about Collateralization
