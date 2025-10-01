@@ -1,6 +1,7 @@
 ## currency
 ```
 Crypto  currency (ˈkɜːrənsi)
+concurrency （kənˈkɜːrənsi）
 concurrently  （kənˈkɜrəntli）
 bachelor degree  （ˈbætʃələr ）
 
