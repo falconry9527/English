@@ -1,9 +1,7 @@
-## introduction
-```
-My name is Conry, and I come from Shenzhen, China. 
+My name is Conry, and I come from Shenzhen, China.
 I graduated from Hubei University of Arts & Science , and my major is Computer Science and Technology.
 
-I am mainly good at backend and data development.
+I am mainly focused on Go, Solidity, and data engineering.
 
 I have worked at 4 companies . In the first two companies, I worked as a data engineer. 
 and in the last two , I worked as a blockchain backend engineer.
@@ -33,6 +31,5 @@ Whitelisted institutions can borrow and lend digital assets from the liquidity p
 I worked as a Blockchain Backend Engineer on this project.
 The frameworks used in this project are Go, Solidity, Hardhat, and OpenZeppelin.
 
-```
 
 
