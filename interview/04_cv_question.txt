@@ -1,8 +1,31 @@
 Q1 : how to sync on-chain event
-1.Monitor on-chain events using WebSocket.
-2.send HTTP requests in a loop to fetch data.
+There are two ways to sync on-chain event
+1.WebSocket: Monitor on-chain events using WebSocket.
+2.HTTP: send HTTP requests in a loop to fetch data.
 
 Q2 :How should we handle blockchain fork problem during data sync?
 There are two ways to handle this problem.
 1. Wait for 12 block confirmations (about 3 minutes) before data sync.
-2. Sync the removed field; removed field indicates whether the event was discarded during a fork.
+2. Sync the removed field: removed field indicates whether the event was discarded during a fork.
+
+Q3.How to prevent excessive slippage in trades
+限价单(Limit Order)、价格预言机 (oracle )
+
+
+Q4 : Please talk about Merkle Tree
+A Merkle Tree is a hash tree/binary tree:
+leaf nodes store data hashes,
+parent nodes store combinations of child hashes,
+If any child hash changes,
+all parent hashes change too, enabling efficient verification.
+
+For a whitelist, we only need to store the root hash instead of all user addresses,
+significantly reducing  costs of data storage .
+
+For verification, you only need to provide the leaf hash and
+the Merkle proof (which is an array of sibling node hashes).
+
+Q5 : Please talk about Collateralization
+Collateralization Ratio =  Value  of  Collateralization / Value  of  Loan （200-300 %）
+liquidation Threshold（ 清算阈值 150% )
+

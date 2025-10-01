@@ -34,26 +34,28 @@ excessive (ɪkˈsesɪv)
 ```
 Merkle root :
 merkle Proof : bytes32[]: 兄弟节点hash 路径（sibling hash path）
-btc Data Structure is Merkle tree too .
+The data structure of BTC is a Merkle tree too.
 Structure (ˈdeɪtə ˈstrʌktʃər)
 
-Q4 : Please talk about Merkle Tree
 Merkle Tree 是哈希树/二叉树：叶子节点存数据哈希，父节点存子节点哈希组合，根节点递归组合所有子节点哈希。
 若任一子节点哈希变化，所有父节点哈希也会随之变化，从而便于高效验证。
+对于白名单，存储时只需保存根节点哈希，无需保存所有用户地址，从而显著减少存储开销。
+验证的时候，您只需要提供叶哈希和 Merkle 证明（兄弟哈希数组）。
+
+Q4 : Please talk about Merkle Tree
 A Merkle Tree is a hash tree/binary tree: 
 leaf nodes store data hashes, 
 parent nodes store combinations of child hashes, 
 If any child hash changes, 
 all parent hashes change too, enabling efficient verification.
 
-对于白名单，存储时只需保存根节点哈希，无需保存所有用户地址，从而显著减少存储开销。
 For a whitelist, we only need to store the root hash instead of all user addresses, 
 significantly reducing  costs of data storage . 
 
-验证的时候，您只需要提供叶哈希和 Merkle 证明（兄弟哈希数组）。
-For verification, you only need to provide the leaf hash and the Merkle proof (which is an array of sibling node hashes).
+For verification, you only need to provide the leaf hash and 
+the Merkle proof (which is an array of sibling node hashes).
 
-significantly (sɪɡˈnɪfɪkəntli)
+significantly (sɪɡˈnɪfɪkəntli) 谁个‘泥肥cant理
 enabling (ɪˈneɪblɪŋ)
 sibling（ˈsɪblɪŋ）
 verification (ˌvɛrəfəˈkeɪʃən)
@@ -62,18 +64,16 @@ verification (ˌvɛrəfəˈkeɪʃən)
 
 ## Collateralization Ratio（抵押率）
 ```
-Q5 :   Please talk about Collateralization
-
-Collateralization Ratio =  Value  of  Collateralization / Value  of  Loan 
-（200-300 %）
-Collateralization Ratio （抵押率）
-LTV (Loan-to-Value Ratio) (和抵押率互为倒数)
-Liquidation Threshold（ 清算阈值 150% )
+Q5 : Please talk about Collateralization
+Collateralization Ratio =  Value  of  Collateralization / Value  of  Loan （200-300 %）
+liquidation Threshold（ 清算阈值 150% )
 
 Collateral （kəˈlætərəl）
-Collateralization （/ˌkɒlˈæ.tə.raɪ.zeɪ.ʃən ）
+Collateralization （kəlætərəlaɪ'zeɪʃn）靠-来特热li'zeɪʃn
 Ratio （ˈreɪʃiəʊ）
 Loan（loʊn）
+
+Threshold（ˈθreʃhoʊld）
 
 ```
 
@@ -83,6 +83,7 @@ Q6 : How to ensure the safety of investors' assets
 1. 超额抵押（Over-Collateralization）
 2. 清算机制（Liquidation Mechanism）
 
+investors （ɪnˈvɛstərz）
 ```
 
 ##  闪电贷攻击（Flash Loan Attack）
