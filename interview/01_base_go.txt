@@ -10,10 +10,12 @@ while worker goroutines get tasks from the channel and process them.
 run(rʌn)
 generates（ˈdʒenəreɪts）
 sends （sendz）
+process（prəˈses）
 
 Q2: What’s the difference between arrays and slices in Go?
 Arrays have a fixed length and are value types.
-Slices have a dynamic length and are reference types, and internally point to an array.
+Slices have a dynamic length and are reference types, and  point to an array internally.
+
 length(leŋθ)
 Slices (ˈslaɪsɪz)
 reference（ˈre/f/rəns）
@@ -26,9 +28,10 @@ lifecycle(laɪfˈsaɪkl)
 metadata (ˈmetədeɪtə)
 
 Q4: How does Go ensure stability in distributed systems?
-By using timeout control (context), rate limiting, circuit breakers, and retry mechanisms.
+By using timeout control (context),  and retry mechanisms.
 ensure(ɪnˈʃʊr)
 stability(stəˈbɪləti)
 
 Q5: How does Go handle concurrency safety?
-By using channels for communication, or using the sync package such as Mutex, RWMutex, and WaitGroup.
+1. use Goroutine  and channels,channels are used for communication,
+2. use the sync package, such as Mutex, RWMutex, and WaitGroup.
