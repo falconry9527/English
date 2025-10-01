@@ -94,6 +94,7 @@ Dynamic vs Fixed-size Arrays:
 Dynamic arrays: length can increase or decrease
 Fixed-size arrays: length is constant, lower gas cost
 --------------------------
+constant（ˈkɑːnstənt）
 重入攻击 ： 解决：使用ReentrancyGuard。
 权限控制 ：使用 Ownable 或 AccessControl 模块限制操作。
 
