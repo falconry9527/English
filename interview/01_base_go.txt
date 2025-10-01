@@ -1,29 +1,22 @@
-Q0: Goroutine
-Goroutine：Goroutine is a lightweight thread，thousands of goroutines can run concurrently in a single Go program
+Q1: Goroutine
+Goroutine：Goroutine is a lightweight thread，hundreds of thousands of goroutines can run in a single Go program concurrently
 Channel： Channel is Go’s communication mechanism, used for safely passing data between goroutines.
 Go’s concurrency philosophy: Do not communicate by sharing memory; instead, share memory by communicating.
 Typical example (bin):
 Worker Pool: the main goroutine generates tasks and sends them to a channel,
 while worker goroutines get tasks from the channel and process them.
 
-Q1: What’s the difference between arrays and slices in Go?
+Q2: What’s the difference between arrays and slices in Go?
 Arrays have a fixed length and are value types.
 Slices have a dynamic length, are reference types, and internally point to an array.
 reference（ˈrefrəns）
 
-Q2: What’s the purpose of the context package?
+Q3: What’s the purpose of the context package?
 It manages the lifecycle of goroutines, supporting timeout, cancellation, and passing metadata.
 cancellation (ˌkænsəˈleɪʃn)
 
-Q4:What’s Go’s garbage collection mechanism?
-Go uses a concurrent tri-color mark-sweep (Mark-Sweep) GC algorithm, which minimizes stop-the-world (STW) pauses.
-
-Q5:How does Go ensure stability in distributed systems?
+Q4:How does Go ensure stability in distributed systems?
 By using timeout control (context), rate limiting, circuit breakers, and retry mechanisms.
 
-Q6: What’s the principle behind the Gin framework?
-Gin is based on a radix tree for routing and supports middleware chaining.
-A Radix Tree is a prefix-compressed trie that merges common prefixes to reduce memory usage.
-
-Q7: How does Go handle concurrency safety?
+Q5: How does Go handle concurrency safety?
 By using channels for communication, or using the sync package such as Mutex, RWMutex, and WaitGroup.
