@@ -8,15 +8,23 @@ while worker goroutines get tasks from the channel and process them.
 
 Q2: What’s the difference between arrays and slices in Go?
 Arrays have a fixed length and are value types.
-Slices have a dynamic length, are reference types, and internally point to an array.
-reference（ˈrefrəns）
+Slices have a dynamic length and are reference types, and internally point to an array.
+length(leŋθ)
+Slices (ˈslaɪsɪz)
+reference（ˈre/f/rəns）
+internally (ɪnˈtɜːnəli)
 
 Q3: What’s the purpose of the context package?
 It manages the lifecycle of goroutines, supporting timeout, cancellation, and passing metadata.
 cancellation (ˌkænsəˈleɪʃn)
+lifecycle(laɪfˈsaɪkl)
+metadata (ˈmetədeɪtə)
+data(ˈdeɪtə)
 
-Q4:How does Go ensure stability in distributed systems?
+Q4: How does Go ensure stability in distributed systems?
 By using timeout control (context), rate limiting, circuit breakers, and retry mechanisms.
+ensure(ɪnˈʃʊr)
+stability(stəˈbɪləti)
 
 Q5: How does Go handle concurrency safety?
 By using channels for communication, or using the sync package such as Mutex, RWMutex, and WaitGroup.

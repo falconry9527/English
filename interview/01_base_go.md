@@ -18,6 +18,15 @@ thread(θred)
 philosophy(fəˈlɒsəfi)
 generates（ˈdʒenəreɪts）
 
+Typical(ˈtɪpɪkl)
+type(taɪp)
+
+generates(ˈdʒenəreɪts)
+sends(sendz)
+process(prəˈses)
+
+types(taɪps)
+tasks(tæsks)
 ```
 
 ``` 其他常见面试题

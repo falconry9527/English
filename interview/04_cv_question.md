@@ -96,8 +96,10 @@ Oracle 价格操纵 (Price manipulation)
 
 Q7 :   Please talk about Flash Loan Attack
 Aggregate multiple price sources (Chainlink, backup oracles, DEX TWAP).
-Re-validate prices before executing liquidation.
+Validate the price again before executing liquidation.
 
+price（praɪs）
+prices（ˈpraɪsɪz）
 Aggregate（ˈæɡrɪɡeɪt）
 
 ```

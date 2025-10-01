@@ -29,3 +29,6 @@ Q5 : Please talk about Collateralization
 Collateralization Ratio =  Value  of  Collateralization / Value  of  Loan （200-300 %）
 liquidation Threshold（ 清算阈值 150% )
 
+Q6 : How to ensure the safety of investors' assets
+1. 超额抵押（Over-Collateralization）
+2. 清算机制（Liquidation Mechanism）
