@@ -2,6 +2,8 @@ Q1: Goroutine
 Goroutine：Goroutine is a lightweight thread，hundreds of thousands of goroutines can run in a single Go program concurrently
 Channel： Channel is Go’s communication mechanism, used for safely passing data between goroutines.
 Go’s concurrency philosophy: Do not communicate by sharing memory; instead, share memory by communicating.
+
+run(rʌn)
 Typical example (bin):
 Worker Pool: the main goroutine generates tasks and sends them to a channel,
 while worker goroutines get tasks from the channel and process them.
