@@ -1,6 +1,7 @@
 ## currency
 ```
-Crypto  currency (ˈkʌrənsi)
+Crypto  currency (ˈkɜːrənsi)
+concurrently  （kənˈkɜrəntli）
 bachelor degree  （ˈbætʃələr ）
 
 Heap Memory （hiːp ） （ˈmeməri）

@@ -4,6 +4,7 @@ Channel： Channel is Go’s communication mechanism, used for safely passing da
 Go’s concurrency philosophy: Do not communicate by sharing memory; instead, share memory by communicating.
 
 run(rʌn)
+
 Typical example (bin):
 Worker Pool: the main goroutine generates tasks and sends them to a channel,
 while worker goroutines get tasks from the channel and process them.
