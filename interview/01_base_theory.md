@@ -9,7 +9,6 @@ Chain-based data structure: Each block is linked sequentially in chronological o
 Distributed ledger: Immutability is ensured by cryptography and consensus mechanisms.
 ```
 
-
 ## 共识机制
 ```
 共识机制：数据块在加入链之前，必须得到大多数节点（服务器节点/矿机）的验证和确认。
@@ -20,7 +19,6 @@ it must be validated and confirmed by the majority of nodes (server nodes/miners
 Consensus Mechanism of BTC is Proof of Work ,
 Consensus Mechanism of ETH is Proof of Stake ,
 Consensus (kənˈsensəs)
-
 ```
 
 ## 工作量证明（Proof of Work, PoW）
@@ -53,13 +51,9 @@ and double-hash the block header with SHA-256
 until the hash is below the target, 
 earning the right to add the block.
 The target is a difficulty value that a miner’s hash must be below to  mine a block successfully.
-
 ```
 
-
-
-
-## btc 区块的数据结构
+## btc数据结构
 ```
 btc 区块的数据结构：
 A Bitcoin block consists of two main parts:
@@ -76,9 +70,7 @@ Contains all transactions packed in the block, each with its own inputs and outp
 ```
 
 
-
-
-## eth 区块的数据结构
+## eth数据结构
 ```
 区块头（Block Header）
 Parent Hash：父区块哈希
@@ -90,7 +82,6 @@ Receipts Root：收据树根
 其他字段：Difficulty, Number, Gas Limit, Timestamp 等
 交易列表（Transactions）
 
-
 状态树（State Trie）：存储账户状态，包括余额、nonce 和合约存储。
 交易树（Transactions Trie）：存储区块内的所有交易，保证交易完整性。
 收据树（Receipts Trie）：存储每笔交易的执行结果和事件日志，用于验证交易结果。
@@ -100,7 +91,7 @@ Transactions Trie: Stores all transactions in the block, ensuring transaction in
 Receipts Trie: Stores execution results and event logs for each transaction, used to verify outcomes.
 ```
 
-## lawyer2
+## lawyer1-3
 ```
 L1 是基础主链，L2 是主链上的扩容层，L3 是构建在 L2 上的应用层。
 L1 is the base blockchain, L2 is the scaling layer on top of it, and L3 is the application layer built on L2.
