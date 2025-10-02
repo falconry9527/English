@@ -40,3 +40,8 @@ Validate the price again before executing liquidation.
 Q8 : please talk about tidb
 TiDB is a MySQL-compatible distributed MPP database.
 It supports OLTP (Online Transaction Processing) and OLAP (Online Analytical Processing) workloads.
+
+MySQL (maiˈsiːkwəl)
+distributed (dɪˈstrɪbjuːtɪd)
+Transaction (trænˈzækʃn)
+workloads (ˈwɜrˌkloʊdz)

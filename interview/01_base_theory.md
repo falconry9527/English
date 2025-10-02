@@ -1,19 +1,14 @@
 ## 区块链
 ```
 区块链：
-是一种链式数据结构：每个区块通过哈希指针连接到上一个区块，从而按时间顺序形成链。
-是一种分布式账本：结合密码学哈希与共识机制，保证其不可篡改。
+链式数据结构：每个区块按时间顺序依次链接形成链条。
+分布式账本：通过密码学和共识机制，保持其不可篡改性 
 
 block-chain:
-A chain-based data structure: each block is linked to the previous one through a hash pointer, forming a chronological chain.
-A distributed ledger: immutability is ensured by cryptographic hashing and the consensus mechanism.
+Chain-based data structure: Each block is linked sequentially in chronological order.
+Distributed ledger: Immutability is ensured by cryptography and consensus mechanisms.
 ```
 
-## lawyer2
-```
-L1 是基础主链，L2 是主链上的扩容层，L3 是构建在 L2 上的应用层。
-L1 is the base blockchain, L2 is the scaling layer on top of it, and L3 is the application layer built on L2.
-```
 
 ## 共识机制
 ```
@@ -22,15 +17,46 @@ L1 is the base blockchain, L2 is the scaling layer on top of it, and L3 is the a
 Consensus Mechanism:
 Before a data block is added to the chain,
 it must be validated and confirmed by the majority of nodes (server nodes/miners).
+Consensus Mechanism of BTC is Proof of Work ,
+Consensus Mechanism of ETH is Proof of Stake ,
+Consensus (kənˈsensəs)
 
 ```
 
 ## 工作量证明（Proof of Work, PoW）
 ```
-中文：矿工通过计算复杂哈希题竞争记账，第一个找到有效解的矿工可出块并获奖励，保证区块链安全与一致性。
-
-English：Miners compete by solving complex hash puzzles; the first to find a valid solution can add a block and receive a reward, ensuring blockchain security and consistency.
+中文：矿工通过执行大量复杂的哈希计算来竞争记账权。这个过程消耗了大量的能量。
+Miners compete for the right to add new blocks to the blockchain by performing extensive complex hash computations.
+this process consumes a significant amount of energy.
 ```
+
+## 权益证明（Proof of Stake, PoS）
+```
+中文（专业版）：
+权益证明（PoS）：通过持有并质押代币来获得记账权，出块概率与质押数量成正比。
+English (Professional Version):
+Proof of Stake (PoS): Validators compete for the right to add new blocks to the blockchain by staking a certain amount of cryptocurrency, 
+this process that far less energy than Proof of Work
+```
+
+## 挖矿
+```
+Hash=SHA256(SHA256(Version+Prev Hash+Merkle Root+Timestamp+Bits+Nonce))<Target
+
+中文（简短版）：
+矿工们反复尝试不同的Nonce值，并使用SHA-256对区块头进行双哈希运算，直到哈希值低于目标值，从而获得添加区块的权利。
+目标值是一种难度数值，矿工计算出的哈希必须低于它才能成功挖出区块。
+
+English (Concise Version):
+Miners repeatedly try different Nonce values 
+and double-hash the block header with SHA-256 
+until the hash is below the target, 
+earning the right to add the block.
+The target is a difficulty value that a miner’s hash must be below to  mine a block successfully.
+
+```
+
+
 
 
 ## btc 区块的数据结构
@@ -49,29 +75,7 @@ Transaction List
 Contains all transactions packed in the block, each with its own inputs and outputs.
 ```
 
-## 挖矿
-```
-Hash=SHA256(SHA256(Version+Prev Hash+Merkle Root+Timestamp+Bits+Nonce))<Target
 
-中文（简短版）：
-比特币挖矿是不断尝试不同的 Nonce，使区块头的双重 SHA-256 哈希小于目标值，从而获得出块权和奖励。
-
-English (Concise Version):
-Bitcoin mining involves repeatedly trying different Nonce values until the block header’s double SHA-256 hash is below the target, 
-earning the right to add a block and receive a reward.
-```
-
-
-## 权益证明（Proof of Stake, PoS）
-```
-中文（专业版）：
-权益证明（PoS）：通过持有并质押代币来获得记账权，出块概率与质押数量成正比。
-
-English (Professional Version):
-Proof of Stake (PoS): Validators gain the right to propose blocks by holding and staking tokens, 
-with the probability of being selected proportional to the amount staked.
-
-```
 
 
 ## eth 区块的数据结构
@@ -84,7 +88,6 @@ State Root：状态树根
 Transactions Root：交易树根
 Receipts Root：收据树根
 其他字段：Difficulty, Number, Gas Limit, Timestamp 等
-
 交易列表（Transactions）
 
 
@@ -92,7 +95,13 @@ Receipts Root：收据树根
 交易树（Transactions Trie）：存储区块内的所有交易，保证交易完整性。
 收据树（Receipts Trie）：存储每笔交易的执行结果和事件日志，用于验证交易结果。
 
-State tree: Stores account states, including balances, nonces, and contract storage.
-Transactions tree: Stores all transactions in the block, ensuring transaction integrity.
-Receipts tree: Stores execution results and event logs for each transaction, used to verify outcomes.
+State Trie: Stores account states, including balances, nonces, and contract storage.
+Transactions Trie: Stores all transactions in the block, ensuring transaction integrity.
+Receipts Trie: Stores execution results and event logs for each transaction, used to verify outcomes.
+```
+
+## lawyer2
+```
+L1 是基础主链，L2 是主链上的扩容层，L3 是构建在 L2 上的应用层。
+L1 is the base blockchain, L2 is the scaling layer on top of it, and L3 is the application layer built on L2.
 ```
