@@ -39,6 +39,8 @@ and compute the double hash of the block header using SHA-256
 until the hash is below the target,
 earning the right to add the block.
 The target value is adjusted based on both mining time and difficulty to maintain an average block interval of about 10 minutes.
+computation （ˌkɑːmpjuˈteɪʃn）
+compute（kəmˈpjuːt）
 
 Q6 : The data structure of the btc :
 A Bitcoin block  contains two main parts:
