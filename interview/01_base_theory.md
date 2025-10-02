@@ -14,18 +14,18 @@ Distributed ledger: Immutability is ensured by cryptography and consensus mechan
 共识机制：数据块在加入链之前，必须得到大多数节点（服务器节点/矿机）的验证和确认。
 
 Consensus Mechanism:
-Before a data block is added to the chain,
-it must be validated and confirmed by the majority of nodes (server nodes/miners).
+Before a data block is added to the chain, 
+it must be validated and confirmed by most nodes (server nodes/miners).
 Consensus Mechanism of BTC is Proof of Work ,
 Consensus Mechanism of ETH is Proof of Stake ,
-Consensus (kənˈsensəs)
 ```
 
 ## 工作量证明（Proof of Work, PoW）
 ```
 中文：矿工通过执行大量复杂的哈希计算来竞争记账权。这个过程消耗了大量的能量。
-Miners compete for the right to add new blocks to the blockchain by performing extensive complex hash computations.
-this process consumes a significant amount of energy.
+Miners compete for the right to add new blocks to the chain by performing extensive complex hash computations.
+this process consumes a large  amount of energy.
+
 ```
 
 ## 权益证明（Proof of Stake, PoS）
@@ -42,16 +42,15 @@ this process that far less energy than Proof of Work
 Hash=SHA256(SHA256(Version+Prev Hash+Merkle Root+Timestamp+Bits+Nonce))<Target
 
 中文（简短版）：
-矿工们反复尝试不同的Nonce值，并使用SHA-256对区块头进行双哈希运算，直到哈希值低于目标值，从而获得添加区块的权利。
-目标值是一种难度数值，矿工计算出的哈希必须低于它才能成功挖出区块。
+矿工们反复尝试不同的Nonce值，并对区块头进行SHA-256的双哈希运算，直到哈希值低于目标值，从而获得添加区块的权利。
+目标值是一种难度数值，是由区块链根据挖矿时间来调整的。
 
 English (Concise Version):
 Miners repeatedly try different Nonce values 
 and double-hash the block header with SHA-256 
 until the hash is below the target, 
 earning the right to add the block.
-The target is a difficulty value that a miner’s hash must be below to  mine a block successfully.
-```
+The target value is a difficulty parameter that the blockchain adjusts based on the actual mining time.```
 
 ## btc数据结构
 ```

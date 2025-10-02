@@ -1,29 +1,41 @@
 Q1: block-chain:
 Chain-based data structure: Each block is linked sequentially in chronological order.
-Distributed ledger: Immutability is ensured by cryptography and consensus mechanisms.
+Distributed ledger: Cryptography and consensus mechanism ensure data  immutability
+sequentially(səˈkwɛntʃəli) 依次
+chronological （ˌkrɒnəˈlɒdʒɪkl）（ˌkrɑːnəˈlɑːdʒɪkl）时间顺序的
+ledger（ˈledʒər）
+Cryptography （krɪpˈtɒɡrəfi）（krɪpˈtɑːɡrəfi）克瑞普-塔-格费
+Consensus (kənˈsensəs)
+immutability（ɪˌmjuːtəˈbɪləti）
+ability(əˈbɪləti)
+theory (ˈθiːəri)
 
 Q2: Consensus Mechanism:
-Before a data block is added to the chain,
-it must be validated and confirmed by the majority of nodes (server nodes/miners).
+Before a data block is added to the chain, it must be validated and confirmed by most nodes (server nodes/miners).
 Consensus Mechanism of BTC is Proof of Work ,
 Consensus Mechanism of ETH is Proof of Stake ,
-Consensus (kənˈsensəs)
+confirmed（kənˈfɜːrmd）
 
-Q3: Proof of Work
-Miners compete for the right to add new blocks to the blockchain by performing extensive complex hash computations.
-this process consumes a significant amount of energy.
+Q3: Proof of Work(Pow)
+Miners compete for the right to add new blocks to the chain by performing extensive complex hash computations.
+this process consumes a large  amount of energy.
+compete(kəmˈpiːt)
+extensiveɪkˈstensɪv）
+large（lɑːrdʒ）
+consumes（kənˈsuːmz）
+energy（ˈe/nərdʒi）
 
-Q4 : Proof of Stake
-Proof of Stake (PoS): Validators compete for the right to add new blocks to the blockchain by staking a certain amount of cryptocurrency,
-this process that far less energy than Proof of Work
+Q4 : Proof of Stake(PoS)
+Validators compete for the right to add new blocks to the chain by staking a certain amount of cryptocurrency,
+this process consumes far less energy than Proof of Work
 
 Q5 : Bitcoin mining
 Hash=SHA256(SHA256(Version+Prev Hash+Merkle Root+Timestamp+Bits+Nonce))<Target
-Miners repeatedly try different Nonce values
+Miners try different Nonce values repeatedly
 and double-hash the block header with SHA-256
 until the hash is below the target,
 earning the right to add the block.
-The target is a difficulty value that a miner’s hash must be below to  mine a block successfully.
+The target value is a difficulty parameter that the blockchain adjusts based on the mining time.
 
 Q6 : The data structure of the btc :
 A Bitcoin block consists of two main parts:
