@@ -1,5 +1,5 @@
 Q1: block-chain:
-Chain-based data structure: Each block is linked sequentially in chronological order.
+Chain-based data structure: Each block is linked in chronological order.
 Distributed ledger: Cryptography and consensus mechanism ensure data  immutability
 sequentially(səˈkwɛntʃəli) 依次
 chronological （ˌkrɒnəˈlɒdʒɪkl）（ˌkrɑːnəˈlɑːdʒɪkl）时间顺序的
@@ -11,10 +11,12 @@ ability(əˈbɪləti)
 theory (ˈθiːəri)
 
 Q2: Consensus Mechanism:
-Before a data block is added to the chain, it must be validated and confirmed by most nodes (server nodes/miners).
+Before a data block is added to the chain, it must be validated and confirmed by the majority of nodes (server nodes/miners).
 Consensus Mechanism of BTC is Proof of Work ,
 Consensus Mechanism of ETH is Proof of Stake ,
 confirmed（kənˈfɜːrmd）
+majority(məˈdʒɔːrəti)
+major (ˈmeɪdʒər)
 
 Q3: Proof of Work(Pow)
 Miners compete for the right to add new blocks to the chain by performing extensive complex hash computations.
@@ -26,16 +28,17 @@ consumes（kənˈsuːmz）
 energy（ˈe/nərdʒi）
 
 Q4 : Proof of Stake(PoS)
-Validators compete for the right to add new blocks to the chain by staking a certain amount of cryptocurrency,
+Validators compete for the right to add new blocks to the chain by staking cryptocurrency,
+based on the amount and duration of their stake.
 this process consumes far less energy than Proof of Work
 
 Q5 : Bitcoin mining
 Hash=SHA256(SHA256(Version+Prev Hash+Merkle Root+Timestamp+Bits+Nonce))<Target
-Miners try different Nonce values repeatedly
-and double-hash the block header with SHA-256
+Miners try different nonce values repeatedly
+and compute the double hash of the block header using SHA-256
 until the hash is below the target,
 earning the right to add the block.
-The target value is a difficulty parameter that the blockchain adjusts based on the mining time.
+The target value is adjusted based on both mining time and difficulty to maintain an average block interval of about 10 minutes.
 
 Q6 : The data structure of the btc :
 A Bitcoin block consists of two main parts:

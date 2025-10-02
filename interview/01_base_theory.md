@@ -30,20 +30,21 @@ this process consumes a large  amount of energy.
 
 ## 权益证明（Proof of Stake, PoS）
 ```
-中文（专业版）：
-权益证明（PoS）：通过持有并质押代币来获得记账权，出块概率与质押数量成正比。
+权益证明（PoS）：验证者通过质押的代币的数量和时间来获得记账权
 English (Professional Version):
-Proof of Stake (PoS): Validators compete for the right to add new blocks to the blockchain by staking a certain amount of cryptocurrency, 
-this process that far less energy than Proof of Work
+Proof of Stake (PoS): 
+Validators compete for the right to add new blocks to the chain by staking cryptocurrency,
+based on the amount and duration of their stake.
+this process consumes far less energy than Proof of Work
+
 ```
 
-## 挖矿
+## 挖矿（mining）
 ```
 Hash=SHA256(SHA256(Version+Prev Hash+Merkle Root+Timestamp+Bits+Nonce))<Target
 
-中文（简短版）：
-矿工们反复尝试不同的Nonce值，并对区块头进行SHA-256的双哈希运算，直到哈希值低于目标值，从而获得添加区块的权利。
-目标值是一种难度数值，是由区块链根据挖矿时间来调整的。
+矿工们反复尝试不同的Nonce值，并使用SHA-256计算区块头的双重哈希，直到哈希值低于目标值，从而获得添加该区块的权利（记账权）。
+目标值会根据挖矿时间和难度进行调整，以使平均出块时间保持在约10分钟左右。
 
 English (Concise Version):
 Miners repeatedly try different Nonce values 
