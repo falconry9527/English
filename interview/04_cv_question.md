@@ -104,4 +104,15 @@ Aggregate（ˈæɡrɪɡeɪt）
 
 ```
 
+##  TiDB
+```
+TiDB 是一款兼容 MySQL 协议的分布式 MPP 数据库。
+它支持 OLTP（联机事务处理） 和 OLAP（联机分析处理）。
+
+please talk about tidb ： 
+TiDB is a MySQL-compatible distributed MPP database.
+It supports OLTP (Online Transaction Processing) and OLAP (Online Analytical Processing) workloads.
+
+```
+
 

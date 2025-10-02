@@ -32,3 +32,11 @@ liquidation Threshold（ 清算阈值 150% )
 Q6 : How to ensure the safety of investors' assets
 1. 超额抵押（Over-Collateralization）
 2. 清算机制（Liquidation Mechanism）
+
+Q7 : Please talk about Flash Loan Attack
+Aggregate multiple price sources (Chainlink, backup oracles, DEX TWAP).
+Validate the price again before executing liquidation.
+
+Q8 : please talk about tidb
+TiDB is a MySQL-compatible distributed MPP database.
+It supports OLTP (Online Transaction Processing) and OLAP (Online Analytical Processing) workloads.
