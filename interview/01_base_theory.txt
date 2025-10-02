@@ -41,7 +41,7 @@ earning the right to add the block.
 The target value is adjusted based on both mining time and difficulty to maintain an average block interval of about 10 minutes.
 
 Q6 : The data structure of the btc :
-A Bitcoin block consists of two main parts:
+A Bitcoin block  contains two main parts:
 ---Block Header
 Version: Block version number
 Previous Block Hash: Hash of the previous block

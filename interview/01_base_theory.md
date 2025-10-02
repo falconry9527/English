@@ -56,7 +56,7 @@ The target value is a difficulty parameter that the blockchain adjusts based on 
 ## btc数据结构
 ```
 btc 区块的数据结构：
-A Bitcoin block consists of two main parts:
+A Bitcoin block  contains two main parts:
 Block Header
 Version: Block version number
 Previous Block Hash: Hash of the previous block
