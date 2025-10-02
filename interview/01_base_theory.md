@@ -91,7 +91,7 @@ Transactions Trie: Stores all transactions in the block, ensuring transaction in
 Receipts Trie: Stores execution results and event logs for each transaction, used to verify outcomes.
 ```
 
-## lawyer1-3
+## layer1-3
 ```
 L1 是基础主链，L2 是主链上的扩容层，L3 是构建在 L2 上的应用层。
 L1 is the base blockchain, L2 is the scaling layer on top of it, and L3 is the application layer built on L2.

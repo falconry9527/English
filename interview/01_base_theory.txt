@@ -66,9 +66,9 @@ State Trie: Stores account states, including balances, nonces, and contract stor
 Transactions Trie: Stores all transactions in the block, ensuring transaction integrity.
 Receipts Trie: Stores execution results and event logs for each transaction, used to verify outcomes.
 
-Q8 :  Difference between lawyer1,lawyer2 and lawyer3
-L1 is the base blockchain,
-L2 is the scaling layer on top of it,
-and L3 is the application layer built on L2.
+Q8 :  Difference between layer1,layer2 and layer3
+L1 is the base blockchain, such as Bitcoin and Ethereum;
+L2 is the scaling layer on top of L1 that significantly increases TPS and reduces costs, such as Polygon;
+L3 is the application layer built on L2, such as Uniswap.
 
 
