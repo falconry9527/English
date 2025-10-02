@@ -11,7 +11,8 @@ ability(əˈbɪləti)
 theory (ˈθiːəri)
 
 Q2: Consensus Mechanism:
-Before a data block is added to the chain, it must be validated and confirmed by the majority of nodes (server nodes/miners).
+Before a data block is added to the chain,
+it must be validated and confirmed by the majority of nodes (server nodes/miners).
 Consensus Mechanism of BTC is Proof of Work ,
 Consensus Mechanism of ETH is Proof of Stake ,
 confirmed（kənˈfɜːrmd）
