@@ -22,9 +22,11 @@ minute（ˈmɪnɪt）
 encrypt → 加密 encryption
 decrypt → 解密 decryption
 
-senior (ˈsiːniə(r) )
+senior (ˈsiːniə(r) ) ： 高级的 
 
 random (ˈrændəm) : 随机的
+
+formula（ˈfɔːrmjələ） : 公式
  
 ```
 
