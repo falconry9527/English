@@ -17,9 +17,9 @@ A Merkle Tree is a hash tree/binary tree:
 leaf nodes store data hashes,
 parent nodes store combinations of child hashes,
 If any child hash changes,
-all parent hashes change too, enabling efficient verification.
+all parent hashes change too
 
-For storage:  such as a whitelist, we only need to store the root hash instead of all user addresses,
+For storage:  such as a whitelist, we only need to store the root hash instead of all users addresses,
 significantly reducing the cost of data storage.
 
 For verification: we only need to provide the leaf hash and
