@@ -153,10 +153,11 @@ Constructor (kənˈstrʌktər)
 使用 memory 作为临时变量，以避免存储写入。
 逻辑优化：使用 Merkle 树作为白名单，以降低存储成本。
 
-Use uint256 instead of smaller integer types in storage to avoid the extra costs of packing and unpacking.
-Use calldata for external function parameters to reduce costs of gas .
-Use memory for temporary variables to reduce  costs of storage/gas .
-Logic Optimization: Use Merkle-tree–based whitelists to reduce costs of storage/gas  .
+gas optimization :
+1.Use uint256 instead of smaller integer types in storage to avoid the extra costs of slot packing and unpacking.
+2.Use calldata for external function parameters to reduce costs of gas .
+3.Use memory for temporary variables to reduce  costs of storage/gas .
+4.code logic Optimization: Use Merkle-tree–based whitelists instead of a mapping of addresses to reduce costs of storage/gas  .
 
 ```
 
