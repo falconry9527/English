@@ -31,6 +31,7 @@ liquidation Threshold（ 清算阈值 150% )
 质押年化利率 → Staking Annual Percentage Yield (Staking APY) : 3-6%
 借贷年化利率 → Lending Annual Percentage Rate (Lending APR)  : 5-10%
 Annual（ˈæn.ju.əl）（爱牛哦）
+Yield（jiːld）
 
 Q6 : How to ensure the safety of investors' assets
 1. 超额抵押（Over-Collateralization）
