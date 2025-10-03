@@ -107,8 +107,8 @@ L3 is the application layer built on L2, such as Uniswap.
 
 ## Cryptography
 ```
-对称加密 (Symmetric Encryption)：加密和解密使用的是同一个密钥，密钥传输不安全(e.g., HTTPS/TLS encryption) 。
-非对称加密 (Asymmetric Encryption)：加密和解密使用一对不同的密钥（公钥 + 私钥），公钥用于加密或验证，私钥用于解密或签名 (e.g., SSH)。
+对称加密 ：加密和解密使用的是同一个密钥，密钥传输不安全(e.g., HTTPS/TLS encryption) 。
+非对称加密 ：加密和解密使用一对不同的密钥（公钥 + 私钥），公钥用于加密或验证，私钥用于解密或签名 (e.g., SSH)。
 
 Symmetric Encryption: Encryption and decryption use the same key, and key transmission is not secure(e.g., HTTPS/TLS encryption). 
 Asymmetric Encryption: Encryption and decryption use a pair of different keys (public key + private key); 
