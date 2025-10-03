@@ -140,5 +140,8 @@ Example: Bitcoin SegWit.
 ## (区块链分叉) blockchain Fork
 ``` 
 P2P网络是一种去中心化的网络，节点之间无需中央服务器即可直接通信和共享数据。
-P2P network is a decentralized network where nodes communicate and share data directly without a central server.
+每个节点既是客户端，也可以是服务器
+P2P network is a decentralized network 
+where nodes communicate and share data directly without a central server.
+Each node acts as both a client and a server. 
 ``` 

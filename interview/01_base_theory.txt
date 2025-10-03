@@ -102,4 +102,6 @@ The chain eventually converges to a single chain.
 Example: Bitcoin SegWit.
 
 Q11 : P2P network
-P2P network is a decentralized network where nodes communicate and share data directly without a central server.
+P2P network is a decentralized network
+where nodes communicate and share data directly without a central server.
+Each node acts as both a client and a server.
