@@ -5,8 +5,9 @@
 分布式账本：通过密码学和共识机制，保持其不可篡改性 
 
 block-chain:
-Chain-based data structure: Each block is linked sequentially in chronological order.
-Distributed ledger: Immutability is ensured by cryptography and consensus mechanisms.
+Chain-based data structure: Each block is linked in chronological order.
+Distributed ledger: Cryptography and consensus mechanism ensure data  immutability
+
 ```
 
 ## 共识机制
@@ -51,7 +52,8 @@ Miners repeatedly try different Nonce values
 and double-hash the block header with SHA-256 
 until the hash is below the target, 
 earning the right to add the block.
-The target value is a difficulty parameter that the blockchain adjusts based on the actual mining time.```
+The target value is a difficulty parameter that the blockchain adjusts based on the actual mining time.
+```
 
 ## btc数据结构
 ```
@@ -93,6 +95,24 @@ Receipts Trie: Stores execution results and event logs for each transaction, use
 
 ## layer1-3
 ```
-L1 是基础主链，L2 是主链上的扩容层，L3 是构建在 L2 上的应用层。
-L1 is the base blockchain, L2 is the scaling layer on top of it, and L3 is the application layer built on L2.
+L1 是基础主链，
+L2 是 L1 之上的扩展层。 它在链下批量处理交易，并将结果提交回主链，从而显著提高 TPS 并降低成本，例如 Polygon。，
+L3 是构建在 L2 上的应用层。
+L1 is the base blockchain，such as Bitcoin and Ethereum
+L2 is a scaling layer on top of L1.
+It processes transactions off-chain in batches and submits the results back to the main chain
+, which significantly increases TPS and reduces costs, such as Polygon.
+L3 is the application layer built on L2, such as Uniswap.
 ```
+
+## Cryptography
+```
+对称加密 (Symmetric Encryption)：加密和解密使用的是同一个密钥，密钥传输不安全(e.g., HTTPS/TLS encryption) 。
+非对称加密 (Asymmetric Encryption)：加密和解密使用一对不同的密钥（公钥 + 私钥），公钥用于加密或验证，私钥用于解密或签名 (e.g., SSH)。
+
+Symmetric Encryption: Encryption and decryption use the same key, and key transmission is not secure(e.g., HTTPS/TLS encryption). 
+Asymmetric Encryption: Encryption and decryption use a pair of different keys (public key + private key); 
+the public key is used for encryption or verification, 
+and the private key is used for decryption or signing(e.g., SSH).
+```
+
