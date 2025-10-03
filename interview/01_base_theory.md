@@ -115,6 +115,30 @@ Asymmetric Encryption: Encryption and decryption use a pair of different keys (p
 the public key is used for encryption or verification, 
 and the private key is used for decryption or signing(e.g., SSH).
 
-
 ```
 
+
+## (区块链分叉) blockchain Fork
+``` 
+硬分叉：
+不兼容的协议升级。旧节点无法验证新区块。可能导致永久性的链分裂。示例：ETH → ETC。
+软分叉：
+向后兼容的协议升级。旧节点仍然可以验证新区块。最终，该链会收敛为一条单链。示例：Bitcoin SegWit。
+
+Hard Fork:
+An incompatible protocol upgrade.
+Old nodes cannot validate new blocks.
+May result in a permanent chain split.
+Example: ETH → ETC.
+Soft Fork:
+A backward-compatible protocol upgrade.
+Old nodes can still validate new blocks.
+The chain eventually converges to a single chain.
+Example: Bitcoin SegWit.
+```
+
+## (区块链分叉) blockchain Fork
+``` 
+P2P网络是一种去中心化的网络，节点之间无需中央服务器即可直接通信和共享数据。
+P2P network is a decentralized network where nodes communicate and share data directly without a central server.
+``` 

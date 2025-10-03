@@ -88,3 +88,18 @@ Asymmetric(ˌeɪsɪˈmetrɪk)
 Encryption(ɪnˈkrɪpʃ(ə)n)
 Decryption(diˈkrɪpʃ(ə)n)
 signing(ˈsaɪnɪŋ)
+
+Q10 :  blockchain Fork
+Hard Fork:
+An incompatible protocol upgrade.
+Old nodes cannot validate new blocks.
+May result in a permanent chain split.
+Example: ETH → ETC.
+Soft Fork:
+A backward-compatible protocol upgrade.
+Old nodes can still validate new blocks.
+The chain eventually converges to a single chain.
+Example: Bitcoin SegWit.
+
+Q11 : P2P network
+P2P network is a decentralized network where nodes communicate and share data directly without a central server.
