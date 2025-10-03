@@ -2,9 +2,10 @@
 ```
 --------------------------
 EVM的数据存储：
-Memory (内存)     ：临时存储： 存储函数的参数和返回值。
-Stack (栈)        ：临时存储： 存储计算过程中的中间结果。
-Storage (存储)    ：永久存储： 映射 (Mapping)，动态数组 等全局变量
+Memory (内存)     ：临时内存： 存储函数的参数和返回值。
+Stack (栈)        ：临时值： 存储计算过程中的中间结果。
+Storage (存储)    ：链上永久存储： 映射 (Mapping)，动态数组 等全局变量
+Calldata：只读数据，存储来自外部调用的函数参数。
 
 EVM Data Storage:
 Memory: Temporary Memory, storing function parameters and return values .
