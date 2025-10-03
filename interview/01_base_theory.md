@@ -114,5 +114,7 @@ Symmetric Encryption: Encryption and decryption use the same key, and key transm
 Asymmetric Encryption: Encryption and decryption use a pair of different keys (public key + private key); 
 the public key is used for encryption or verification, 
 and the private key is used for decryption or signing(e.g., SSH).
+
+
 ```
 
