@@ -79,7 +79,7 @@ layer(ˈle/ɪə)
 application(ˌæplɪˈkeɪʃn)
 
 Q9 : Cryptography
-Symmetric Encryption: Encryption and decryption use the same key, and key transmission is not secure(e.g., HTTPS/TLS encryption).
+Symmetric Encryption: Encryption and decryption use the same key, but key transmission is not secure(e.g., HTTPS/TLS encryption).
 Asymmetric Encryption: Encryption and decryption use a pair of different keys (public key + private key);
 the public key is used for encryption or verification,
 and the private key is used for decryption or signing(e.g., SSH).
