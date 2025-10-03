@@ -1,7 +1,6 @@
 Q1: block-chain:
 Chain-based data structure: Each block is linked in chronological order.
 Distributed ledger: Cryptography and consensus mechanism ensure data  immutability
-sequentially(səˈkwɛntʃəli) 依次
 chronological （ˌkrɒnəˈlɒdʒɪkl）（ˌkrɑːnəˈlɑːdʒɪkl）时间顺序的
 ledger（ˈledʒər）
 Cryptography （krɪpˈtɒɡrəfi）（krɪpˈtɑːɡrəfi）克瑞普-塔-格费

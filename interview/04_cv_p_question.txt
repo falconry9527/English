@@ -47,10 +47,11 @@ It supports OLTP (Online Transaction Processing) and OLAP (Online Analytical Pro
 
 MySQL (maiˈsiːkwəl)
 distributed (dɪˈstrɪbjuːtɪd)
-Transaction (trænˈzækʃn)
 workloads (ˈwɜrˌkloʊdz)
 
+requests(rɪˈkwests)
 minutes (ˈmɪnɪts)
 binary (ˈbaɪnəri)
 combinations (ˌkɒmbɪˈneɪʃənz)
 enable (ɪˈneɪbl)
+Transaction (trænˈzækʃn)
