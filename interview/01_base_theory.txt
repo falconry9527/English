@@ -38,9 +38,13 @@ Miners try different nonce values repeatedly
 and compute the double hash of the block header using SHA-256
 until the hash is below the target,
 earning the right to add the block.
-The target value is adjusted based on both mining time and difficulty to maintain an average block interval of about 10 minutes.
+
+The target value is adjusted based on both mining time and difficulty.
+The purpose is to maintain an average block interval of about 10 minutes.
+
 computation （ˌkɑːmpjuˈteɪʃn）
 compute（kəmˈpjuːt）
+average(ˈævərɪdʒ)
 
 Q6 : The data structure of the btc :
 A Bitcoin block  contains two main parts:
@@ -81,12 +85,11 @@ Q9 : Cryptography
 Symmetric Encryption: Encryption and decryption use the same key, but key transmission is not secure(e.g., HTTPS/TLS encryption).
 Asymmetric Encryption: Encryption and decryption use a pair of different keys (public key + private key);
 the public key is used for encryption or verification,
-and the private key is used for decryption or signing(e.g., SSH).
+and the private key is used for decryption or signature(e.g., SSH).
 Symmetric（sɪ'metrɪk）
 Asymmetric(ˌeɪsɪˈmetrɪk)
 Encryption(ɪnˈkrɪpʃ(ə)n)
 Decryption(diˈkrɪpʃ(ə)n)
-signing(ˈsaɪnɪŋ)
 
 Q10 :  blockchain Fork
 Hard Fork:
