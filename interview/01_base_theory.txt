@@ -76,7 +76,7 @@ Q8 :  Difference between layer1,layer2 and layer3
 L1 is the base blockchain, such as Bitcoin and Ethereum;
 L2 is a scaling layer on top of L1.
 It processes transactions off-chain in batches and submits the results back to the main chain
-, which significantly increases TPS and reduces costs, such as Polygon.
+, which significantly increases TPS and reduces costs of gas , such as Polygon.
 L3 is the application layer built on L2, such as Uniswap.
 layer(ˈle/ɪə)
 application(ˌæplɪˈkeɪʃn)
@@ -95,12 +95,12 @@ Q10 :  blockchain Fork
 Hard Fork:
 An incompatible protocol upgrade.
 Old nodes cannot validate new blocks.
-May result in a permanent chain split.
+It results in a permanent chain split.
 Example: ETH → ETC.
 Soft Fork:
 A backward-compatible protocol upgrade.
 Old nodes can still validate new blocks.
-The chain eventually converges to a single chain.
+It eventually results in a single chain.
 Example: Bitcoin SegWit.
 
 Q11 : P2P network

@@ -12,24 +12,37 @@ J&T Express is a global express delivery company.
 The data center platform provides analytics for the order and transportation systems.
 I worked as a data engineer on this project.
 The frameworks used in this project are Flink and Doris.
+There is a notable feature of the project.
 
 The second  project is Boom Games: Data Center System  
 Boom Games is a game development and publishing company.
 The Boom Games Data Center System is designed to collect, store, calculate, and analyze the game data in real time, providing data support for game publishing, helping make cost-effective advertising plans.
 I worked as a data engineer on this project.
 The frameworks used in this project are Flink and TiDB.
+There is a notable feature of the project.
+We used Flink’s latest features, such as update streams, Flink-CDC, and Upsert-Kafka.
 
 The third  project is IZISwap :
 IZI Finance is a DeFi protocol operating on Ethereum and EVM-compatible chains (Polygon, BNB Chain).
 As part of the ecosystem, IZISwap is a DEX operating on the Ethereum chain.
 I worked as a Blockchain Backend Engineer.
 The frameworks used in this project are Go, Solidity, Hardhat, and OpenZeppelin.
+There is a notable feature of the project: use Transparent Proxy to Upgrade contract
 
 The latest  project is ClearPool :
 ClearPool is a decentralized lending protocol operating on Ethereum and EVM-compatible chains (Polygon, BNB Chain).
 Whitelisted institutions can borrow and lend digital assets from the liquidity pools.
 I worked as a Blockchain Backend Engineer on this project.
 The frameworks used in this project are Go, Solidity, Hardhat, and OpenZeppelin.
+There is a notable feature of the project.
+I designed and implemented Merkle-tree-based whitelisting mechanism， multi-signature , time-lock, and emergency pause mechanisms to enhance assets security
 
+There is a notable feature of the project.
+I designed and implemented a micro-batch(ˈmaɪkroʊ) approach(əˈproʊtʃ),
+which supports both real-time and batch statistics, and reduces database insert volume.
+create an intermediate table to record the last active time of each user per day.
+For real-time statistics, only join users active within the last hour, instead of all users active during the day, to reduce database insert volume.
+For batch statistics (such as daily reports), join users active during the day.
+By adjusting the time window, the approach can support both real-time and batch statistics
 
 
