@@ -35,7 +35,7 @@ Whitelisted institutions can borrow and lend digital assets from the liquidity p
 I worked as a Blockchain Backend Engineer on this project.
 The frameworks used in this project are Go, Solidity, Hardhat, and OpenZeppelin.
 There is a notable feature of the project.
-I designed and implemented Merkle-tree-based whitelisting mechanism， multi-signature , time-lock, and emergency pause mechanisms to ensure assets security
+I designed and implemented Merkle-tree-based whitelisting mechanism， multi-signature mechanism, time-lock mechanism, and emergency pause mechanism to ensure assets security
 
 There is a notable feature of the project.
 I designed and implemented a micro-batch(ˈmaɪkroʊ) approach(əˈproʊtʃ),
