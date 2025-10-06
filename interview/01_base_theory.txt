@@ -21,8 +21,8 @@ major (ˈmeɪdʒər)
 Q3: Proof of Work(Pow)
 Miners compete for the right to add new blocks to the chain by performing extensive complex hash computations.
 this process consumes a large  amount of energy.
-compete(kəmˈpiːt)
-extensiveɪkˈstensɪv）
+compete (kəmˈpiːt)
+extensive（ɪkˈstensɪv）
 large（lɑːrdʒ）
 consumes（kənˈsuːmz）
 energy（ˈe/nərdʒi）
@@ -34,7 +34,7 @@ this process consumes far less energy than Proof of Work
 
 Q5 : Bitcoin mining
 Hash=SHA256(SHA256(Version+Prev Hash+Merkle Root+Timestamp+Bits+Nonce))<Target
-Miners try different nonce values repeatedly
+Miners try different nonce values repeatedly（rɪˈpiːtɪdli）
 and compute the double hash of the block header using SHA-256
 until the hash is below the target,
 earning the right to add the block.
@@ -73,7 +73,7 @@ Transactions Trie: Stores all transactions in the block, ensuring transaction in
 Receipts Trie: Stores execution results and event logs for each transaction, used to verify outcomes.
 
 Q8 :  Difference between layer1,layer2 and layer3
-L1 is the base blockchain, such as Bitcoin and Ethereum;
+L1 is the base（beɪs） blockchain, such as Bitcoin and Ethereum;
 L2 is a scaling layer on top of L1.
 It processes transactions off-chain in batches and submits the results back to the main chain
 , which significantly increases TPS and reduces costs of gas , such as Polygon.
