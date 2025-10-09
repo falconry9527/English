@@ -2,14 +2,14 @@
 ```
 --------------------------
 EVM的数据存储：
-Memory (内存)     ：临时内存： 存储函数的参数和返回值。
-Stack (栈)        ：临时值： 存储计算过程中的中间结果。
-Storage (存储)    ：链上永久存储： 映射 (Mapping)，动态数组 等全局变量
-Calldata：只读数据，存储来自外部调用的函数参数。
+Memory：临时空间，用于函数调用时存储参数与返回值
+Stack：EVM 的计算引擎，用于中间计算结果
+Storage：链上永久存储，用于保存合约状态
+Calldata：外部调用传入的只读参数区
 
 EVM Data Storage:
 Memory: Temporary Memory, storing function parameters and return values .
-Stack: Temporary values, storing intermediate results during computations  within functions.
+Stack:  The computation engine of the EVM, storing intermediate results during computations  within functions.
 Storage: Permanent storage On-chain , storing global variables such as mappings and dynamic arrays.
 Calldata: Read-only data , storing function parameters  from external calls.
 
@@ -120,7 +120,7 @@ located(ˈloʊkeɪtɪd)
 ```
 安全问题：
 1. 使用基于 Merkle 树的白名单机制，防止 Sybil 攻击。
-2. 使用多重签名机制，防止密钥丢失或被盗。
+2. 使用多重签名机制，防止密钥丢失或被盗（OpenZeppelin 的 AccessControl + 自定义签名验证）。
     如果管理员想要提取交易费，需要至少 5 名管理员中的 3 名批准。
 3. 使用 OpenZeppelin 的安全合约（例如：Ownable、AccessControl、TimelockController、Pausable、ReentrancyGuard）。
 a. 使用 Pausable 合约进行紧急暂停。
