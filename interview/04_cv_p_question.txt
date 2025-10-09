@@ -42,7 +42,6 @@ Q7 : Please talk about Flash Loan Attack
 2.Delayed liquidation (TWAP — time-weighted average price) to prevent instantaneous liquidations (require the price to be below the liquidation threshold for three consecutive 10‑minute intervals).
 3.Limit the amount of each loan (maximum of $1000,000 per borrow).
 
-
 Q8 : please talk about tidb
 TiDB is a MySQL-compatible distributed MPP database.
 It supports OLTP (Online Transaction Processing) and OLAP (Online Analytical Processing) workloads.
