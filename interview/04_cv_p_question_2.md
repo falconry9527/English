@@ -68,16 +68,23 @@ call 最灵活、可自定义 gas、不自动回滚，是现代合约中最推�
 用户本次改变账户的实际利息 = 用户在借贷池里存入的资产 × （新累计利息 - 上次更新的累计利息）
 ```
 
-# 借贷协议常用主要方法
+# 借贷协议主要方法
 ```
-poolcreation :  创建流动性池子
-lengding （用户借出）:  添加流动性
-redeem （赎回）: 赎回存款和利息
+借贷协议主要方法 ：
+poolCreation：创建流动性池子（Pool）
+lending / supply：出借资产到协议，增加流动性，获得利息。
+redeem：出借方赎回存款和利息 。
+staking：质押资产到协议或流动性池子，以获得奖励或参与治理。
+borrow：借款方从协议借入资产。
+repayBorrow：借款方归还借款，包括本金和利息。
+liquidation（清算）：当借款方抵押率低于阈值时，协议触发清算。
 
-staking质押 : 质押资产到流动性池子
-Borrow（用户借入）: 
-repayBorrow（归还借款）: 
-
-清算 : 达到阈值，进行清算
-
+Main methods of  lending protocol ：
+PoolCreation: Create a liquidity pool.
+Lending/Supply: Lend assets to the protocol to increase liquidity and earn interest.
+Redeem: Lenders redeem their deposits and interest.
+Staking: Staking assets to the protocol or liquidity pool to earn rewards or participate in governance.
+Borrow: Borrow assets from the protocol.
+RepayBorrow: Borrowers repay their loans, including principal and interest.
+Liquidation: When a borrower's collateralization ratio falls below a threshold, the protocol triggers liquidation.
 ```
