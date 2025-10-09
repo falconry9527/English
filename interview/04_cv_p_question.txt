@@ -38,8 +38,10 @@ Q6 : How to ensure the safety of investors' assets
 2. 清算机制（Liquidation Mechanism）
 
 Q7 : Please talk about Flash Loan Attack
-Aggregate multiple price sources (Chainlink, backup oracles, DEX TWAP).
-Validate the price again before executing liquidation.
+1.Aggregate multiple price sources (Chainlink, Uniswap, BNB).
+2.Delayed liquidation (TWAP — time-weighted average price) to prevent instantaneous liquidations (require the price to be below the liquidation threshold for three consecutive 10‑minute intervals).
+3.Limit the amount of each loan (maximum of $100,000 per borrow).
+
 
 Q8 : please talk about tidb
 TiDB is a MySQL-compatible distributed MPP database.
