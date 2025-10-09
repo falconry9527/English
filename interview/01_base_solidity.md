@@ -1,17 +1,22 @@
 ## 常见问题
 ```
 --------------------------
+Storage (存储)    : 链上永久存储，因此操作它需要消耗 Gas，且非常昂贵： 映射 (Mapping)，动态数组 等全局变量
+
+
 EVM的数据存储：
 Memory：临时空间，用于函数调用时存储参数与返回值
-Stack：EVM 的计算引擎，用于中间计算结果
-Storage：链上永久存储，用于保存合约状态
+Stack：EVM 的计算引擎，用于存储中间计算结果
+Storage：链上永久存储，用于存储全局状态变量,比如mapping或者可变数组,所以，他消耗gas，而且，特别昂贵
 Calldata：外部调用传入的只读参数区
 
+
 EVM Data Storage:
-Memory: Temporary Memory, storing function parameters and return values .
-Stack:  The computation engine of the EVM, storing intermediate results during computations  within functions.
-Storage: Permanent storage On-chain , storing global variables such as mappings and dynamic arrays.
-Calldata: Read-only data , storing function parameters  from external calls.
+Memory: Temporary Memory, stores function parameters and return values .
+Stack:  The computation engine of the EVM, stores intermediate results during computations  within functions.
+Storage: Permanent storage On-chain , stores global variables such as mappings and dynamic arrays.
+          Therefore, it consumes gas and is very expensive.
+Calldata: Read-only data , stores function parameters  from external calls.
 
 intermediate(ˌɪntəˈmiːdiət)
 results(rɪˈzʌlts) 

@@ -1,8 +1,9 @@
 Q1: EVM Data Storage:
-Memory: Temporary Memory, storing function parameters and return values .
-Stack: The computation engine of the EVM, storing intermediate results during computations  within functions.
-Storage: Permanent storage On-chain , storing global variables such as mappings and dynamic arrays.
-Calldata: Read-only data , storing function parameters  from external calls.
+Memory: Temporary Memory, stores function parameters and return values .
+Stack:  The computation engine of the EVM, stores intermediate results during computations  within functions.
+Storage: Permanent storage On-chain , stores global variables such as mappings and dynamic arrays.
+          Therefore, it consumes gas and is very expensive.
+Calldata: Read-only data , stores function parameters  from external calls.
 
 Q2: Solidity Visibility:
 public: Accessible from anywhere: within the contract, derived contracts, and externally.
