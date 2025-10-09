@@ -52,3 +52,11 @@ transfer 会自动回滚、但受 2300 gas 限制；
 send 也受 2300 gas 限制且需要手动判断成功与否；
 call 最灵活、可自定义 gas、不自动回滚，是现代合约中最推荐的转账方式。
 ```
+
+## 代码审计
+```
+重入攻击（Reentrancy）
+逻辑顺序错误（Checks-Effects-Interactions 违规）
+闪电贷攻击（Flash Loan attacks）
+业务逻辑
+```
