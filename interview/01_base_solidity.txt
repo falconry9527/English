@@ -16,7 +16,7 @@ view: can only read the state
 pure: can neither read nor modify the state
 regular: can both read and modify the state
 
-Q4: Constructor: executed once when the contract is deployed, used to initialize state variables.
+Q4: Constructor: executes once when the contract is deployed, used to initialize state variables.
 Q5: Mapping : Cannot be iterated, Commonly used for address: data
 
 Q6: delegatecall vs(versus) call:
@@ -34,7 +34,7 @@ Q8: security problem:
    If an admin wants to withdraw trading fees, they will need approval from at least 3 out of 5 administrators.
 3.Use OpenZeppelin’s security contracts (Ownable, AccessControl,TimelockController,Pausable, ReentrancyGuard  ).
 a.  Pausable contract is used to Emergency Pause
-b.  ReentrancyGuard is used contract to prevent Reentrancy Attacks
+b.  ReentrancyGuard is used to prevent Reentrancy Attacks
    Update state first, then transfer funds
 
 Q9: gas optimization :
