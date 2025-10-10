@@ -10,35 +10,6 @@ DAO（去中心化自治组织）是一种在区块链上通过智能合约自�
 2. Chainlink 等服务在不同链上地址不同，需要修改合约参数。
 ```
 
-## uniswap v1 ,v2 和v3 主要的区别
-```
-Uniswap V1：仅支持 ETH ↔ ERC20 交易，流动性提供者资本效率低。
-Uniswap V2：支持 ERC20 ↔ ERC20 直接交易，并引入闪电贷和 on-chain 预言机。
-Uniswap V3：引入集中流动性和多手续费等级，大幅提升资本效率和灵活性。
-```
-
-## uniswap 的闪电贷
-```
-定义：Uniswap 的闪电贷（Flash Loan / Flash Swap）是一种允许用户在 无需预先资金的情况下 借入资产，
-并要求 在同一笔交易内归还 的机制，常用于套利、清算或复杂 DeFi 操作。
-
-借出的资产存在托管账户 。
-手续费: 一次性手续费（例如 Uniswap V2 通常为借款总额的 0.3%）
-临界点: 无法在同一笔交易中归还本金 + 手续费，EVM 会立刻触发回滚，整个交易状态恢复到借贷前，资金池本金不会损失。
-
-用户的风险: 
-1. 风险较高L多重套利，用户的套利必须多余借款的利率，失败率较高
-2. 如果失败，需要支付 gas ，复杂的套利需要消耗较多的gas
-
-触发点：
-1. Gas 费用必须提前支付
-2. 触发是否回滚（无法在同一笔交易中归还本金 + 手续费），是在用户套利结束的时候回滚
-
-避免闪电贷损失的方法
-1. 仅在回报覆盖手续费和 本金 时执行操作 （0.3，那边借出的利率必须高于0.3）
-2. 设置最大允许亏损阈值 → 如果潜在亏损过大，直接 revert 避免浪费 Gas
-```
-
 ## 重入攻击防护
 ```
 1. 使用 ReentrancyGuard 合约防止重入攻击。
@@ -53,9 +24,7 @@ call 是最灵活的方式，适用于复杂的合约交互（包括转账和函
 
 transfer and send are used for simple ETH transfers, both with a 2300 gas limit; transfer throws an exception on failure, while send returns false on failure.
 call is the most flexible method, suitable for complex contract interactions (including transfers and function calls), returns false on failure, but requires more error handling.
-
 ```
-
 
 ## 借贷协议利息计算
 ```
