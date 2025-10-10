@@ -165,9 +165,13 @@ Constructor (kənˈstrʌktər)
 使用 memory 作为临时变量，以避免存储写入。
 逻辑优化：使用 Merkle 树作为白名单，以降低存储成本。
 
-每次swap 都要算 每个用户的 userFee ，很消耗gas，怎么解决
-1. 批量更新（Batching Updates）: 每天更新一次
+iziswap: 每次swap 都要算 每个用户的 userFee ，很消耗gas，怎么解决
+1. 定时批量更新（Batching Updates）: 每10分钟更新一次
 2. 当用户查看的时候更新
+
+clearpool: 累计利息和用户利息都是 不是实时更新的
+累计利息： 定时批量更新（每一分钟，Aave是监控区块，每个区块更新一次 ）
+用户利息 ：1.定时批量更新 2.用户查看的时候更新
 
 gas optimization :
 1.Use uint256 instead of smaller integer types in storage to avoid the extra costs of slot packing and unpacking.

@@ -29,12 +29,15 @@ call is the most flexible method, suitable for complex contract interactions (in
 ## 借贷协议利息计算
 ```
 池子里每个存款代币都对应一个 累计利息
-当池子流动性发生变化（用户借出、赎回、用户借入、归还借款）时，需要更新每单位代币的累计利息
-用户本次改变账户的利息 = 用户在借贷池里存入的资产 × （新累计利息 - 上次更新的累计利息）
+用户本次改变账户的利息 = 用户在借贷池里存入的资产/借贷池子中总的 × （新累计利息 - 上次更新的累计利息）
+利息的增长 是持续进行的，而 利息的计算和更新 主要是在用户 偿还借款时（repay）或每个区块更新时进行的
 
-Each deposited token in the pool is associated with an accumulated interest 
-When the pool's liquidity changes (users lending, redeem, borrow, or repayBorrow), the accumulated interest per unit of token is updated.
-The interest earned on the user's account change = the user's deposited assets in the lending pool × (new accumulated interest - last updated accumulated interest)
+累计利息和用户利息都是 不是实时更新的
+累计利息： 定时批量更新（每一分钟，Aave是监控区块，每个区块更新一次 ）
+用户利息 ：1.定时批量更新 2.用户查看的时候更新
+updateBorrowInterest :
+updateLendInterest : 
+
 
 ```
 
