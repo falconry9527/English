@@ -46,15 +46,13 @@ Uniswap V3：引入集中流动性和多手续费等级，大幅提升资本效�
 3. 拉取支付（Pull Over Push）模式： 不直接向用户发送资金，而是让用户主动提取。
 ```
 
-## ETH 三种支付方式
+## ETH 三种转账方式
 ```
-transfer 会自动回滚、但受 2300 gas 限制；
-send 也受 2300 gas 限制且需要手动判断成功与否；
-call 最灵活、可自定义 gas、不自动回滚，是现代合约中最推荐的转账方式。
+transfer 和 send 用于简单 ETH 转账，均有 2300 gas 限制；transfer 失败抛异常，send 失败返回 false。
+call 是最灵活的方式，适用于复杂的合约交互（包括转账和函数调用），失败返回 false，但需要更多的错误处理。
 
-Transfers automatically revert but are subject to a 2300 gas limit.
-Sends are also subject to a 2300 gas limit and require manual verification of success.
-Calls offer the most flexibility, allow for customizable gas usage, and do not automatically revert, making them the most recommended transfer method in modern contracts.
+transfer and send are used for simple ETH transfers, both with a 2300 gas limit; transfer throws an exception on failure, while send returns false on failure.
+call is the most flexible method, suitable for complex contract interactions (including transfers and function calls), returns false on failure, but requires more error handling.
 
 ```
 

@@ -1,7 +1,6 @@
 Q1 : ETH three payment methods
-Transfers automatically revert but are subject to a 2300 gas limit.
-Sends are also subject to a 2300 gas limit and require manual verification of success.
-Calls offer the most flexibility, allow for customizable gas usage, and do not automatically revert, making them the most recommended transfer method in modern contracts.
+transfer and send are used for simple ETH transfers, both with a 2300 gas limit; transfer throws an exception on failure, while send returns false on failure.
+call is the most flexible method, suitable for complex contract interactions (including transfers and function calls), returns false on failure, but requires more error handling.
 
 Q2:  interest of lending protocol
 Each deposited token in the pool is associated with an accumulated interest
