@@ -19,7 +19,7 @@ mistress : 小三
 ## 对手
 ```
 rival : bussiness/ralatnship  
-        he is my rival in love 
+he is my rival in love 
 competitor(kəmˈpe/tɪtə(r)): game    
 opponent(əˈpoʊnənt): political 
 ```
