@@ -1,4 +1,4 @@
-Q1 : ETH three payment methods
+Q1 : Three methods of transferring ETH
 transfer and send are used for simple ETH transfers, both with a 2300 gas limit; transfer throws an exception on failure, while send returns false on failure.
 call is the most flexible method, suitable for complex contract interactions (including transfers and function calls), returns false on failure, but requires more error handling.
 
