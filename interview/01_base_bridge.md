@@ -9,6 +9,7 @@
 ## 原理
 ```
 wbtc: 用户在btc链上质押btc，获得在其他链（eth）等价的代币WBTC
+WETH
 steth: 
 锁定: 用户在btc链上质押btc
 铸造: 获得在其他链等价的代币WBTC
