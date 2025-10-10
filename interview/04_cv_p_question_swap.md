@@ -83,4 +83,9 @@ feeGrowthInsideLastX128:流动性提供者上次更新时的 手续费增长。
 
 feeGrowthInside0LastX128 和 feeGrowthInside1LastX128 通常会在 swap（交易） 或 burn（销毁流动性） 时更新。
 userFee也通常会在 swap（交易） 或 burn（销毁流动性） 时更新。
+
+每次swap 都要算 每个用户的 userFee ，这样岂不是很消耗gas，怎么解决
+1. 批量更新（Batching Updates）: 🇺每天更新一次
+2. 当用户查看的时候更新
+
 ```
