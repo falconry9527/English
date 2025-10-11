@@ -87,5 +87,10 @@ userFee也通常会在 swap（交易） 或 burn（销毁流动性） 时更新�
 每次swap 都要算 每个用户的 userFee ，这样岂不是很消耗gas，怎么解决
 1. 批量更新（Batching Updates）: 🇺每天更新一次
 2. 当用户查看的时候更新
+```
 
+## uniswap 怎么防止滑点过大
+```
+1. 用户设置 minAmountOut，售出价格 如果小于 minAmountOut 则回滚
+2. 设置滑点容忍度，滑点过大则回滚
 ```
