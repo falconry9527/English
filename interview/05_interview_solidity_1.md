@@ -11,7 +11,7 @@
 
 ## ETH
 ```
-1 ETH = 10的18次方 gwei
+1 ETH = 10的18次方 wei
 ```
 
 ## fallback 和 receive 的区别？
