@@ -42,6 +42,24 @@ Go 的 map
 写入的信息的时候 : 如果缓冲区慢，发生阻塞
 ```
 
+## interface
+```
+一. 定义
+interface 是一种 类型抽象
+
+二.方法判断
+interface 的底层是 两部分组成
+类型信息（type）
+数据指针（data）
+s := i.(string) // 断言 i 是 string
+v := i.(type)
+
+三.分类和作用:
+空接口 interface{} 不包含任何方法 ： 可以存储 任意类型的值 : 通用容器
+带方法的接口：Person 实现了 Speaker 接口，隐式实现，不需要显式声明 : 多态与抽象
+
+```
+
 ## Promise
 ```
 Promise 是 JS 异步操作的 封装，状态不可逆
