@@ -1,8 +1,3 @@
-1. 讲一下 go slice 的扩容
-2. 讲一下 mapping
-3. channel 的两种方式，有缓存和没有缓存的channel ， 向没有缓存的channel 写入信息，能不能成功
-4. 讲一下uniswap 的基本原理
-
 ## go slice 的扩容
 ```
 一. 定义: slice 是一个内部指向数组的 引用类型，包含，指针（指向底层数组）,len(当前长度),cap (当前容量)
