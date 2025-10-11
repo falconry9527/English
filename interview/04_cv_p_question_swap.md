@@ -1,8 +1,12 @@
-## uniswap v1 ,v2 和v3 主要的区别
+## uniswap 的基本原理
 ```
-Uniswap V1:仅支持 ETH ↔ ERC20 交易，流动性提供者资本效率低。
-Uniswap V2:支持 ERC20 ↔ ERC20 直接交易，并引入闪电贷和 on-chain 预言机。
-Uniswap V3:引入集中流动性和多手续费等级，大幅提升资本效率和灵活性。
+1.Uniswap 是 去中心化交易所（DEX）
+使用 AMM 自动做市商的方式 ，而不是订单薄
+
+自动做市商 通过 流动性池 来实现资产的买卖  。
+流动性池（Liquidity Pools）:AMM 基于流动性池来工作，流动性池是由两种或加密资产组成的池子（如 ETH 和 USDT）。这些资产由 流动性提供者（LPs） 存入池子中。
+常数乘积公式（x * y = k）:AMM 使用数学公式来保持池子中的两种资产的平衡。例如，Uniswap 使用 x * y = k 的公式，其中:
+k值在mint和burn(添加和减少流动性)的时候会成比例增大或缩小，在 swap的时候保持不变
 ```
 
 ## uniswap 的闪电贷
@@ -48,15 +52,6 @@ address recipient;
 uint256 deadline;
 ```
 
-## mint -> AMM
-```
-AMM（自动做市商，Automated Market Maker）
-它通过 智能合约和流动性池 来实现资产的买卖 而不是订单薄 。
-流动性池（Liquidity Pools）:AMM 基于流动性池来工作，流动性池是由两种或多种加密资产组成的池子（如 ETH 和 USDT）。这些资产由 流动性提供者（LPs） 存入池子中。
-常数乘积公式（x * y = k）:AMM 使用数学公式来保持池子中的两种资产的平衡。例如，Uniswap 使用 x * y = k 的公式，其中:
-k值在mint和burn(添加和减少流动性)的时候会成比例增大或缩小，在 swap的时候保持不变
-```
-
 ## mint -> getLiquidityForAmounts
 ```
 @param sqrtRatioX96 : 当前价格
@@ -92,5 +87,5 @@ userFee也通常会在 swap（交易） 或 burn（销毁流动性） 时更新�
 ## uniswap 怎么防止滑点过大
 ```
 1. 用户设置 minAmountOut，售出价格 如果小于 minAmountOut 则回滚
-2. 设置滑点容忍度，滑点过大则回滚
+2. 代码设置滑点容忍度，滑点过大则回滚
 ```
