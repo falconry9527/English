@@ -45,17 +45,16 @@ Go 的 map
 
 ## interface
 ```
-一. 定义
+一. 定义 和 数据结构
 interface 是一种 类型抽象
 
-二.方法判断
 interface 的底层是 两部分组成
 类型信息（type）
 数据指针（data）
 s := i.(string) // 断言 i 是 string
 v := i.(type)
 
-三.分类和作用:
+二.分类和作用:
 通用容器：空接口 interface{} 不包含任何方法 ： 可以存储 任意类型的值
 多态与抽象： 带方法的接口：Person 实现了 Speaker 接口，隐式实现，不需要显式声明
 
