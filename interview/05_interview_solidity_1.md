@@ -14,11 +14,20 @@
 1 ETH = 10的18次方 gwei
 ```
 
-## 常见问题
+## fallback 和 receive 的区别？
 ```
-fallback 和 receive 的区别？
 receive()：接收 ETH ；
 fallback()：处理未匹配函数或 ETH 调用。
 ```
+
+## call方法
+```
+call 是 Solidity 提供的 底层函数调用方法，用于在运行时动态调用其他合约的函数。
+_target.call(abi.encodeWithSelector(Target.setData.selector, _num, _text));
+
+
+```
+
+
 
 
