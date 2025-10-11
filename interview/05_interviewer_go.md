@@ -1,6 +1,6 @@
 ## go slice 的扩容
 ```
-一. 定义: slice 是一个内部指向数组的 封装类型，封装，指针（指向底层数组）,len(当前长度),cap (当前容量)
+一. 定义: slice 是一个 封装类型，封装，指针（指向底层数组）,len(当前长度),cap (当前容量)
 type slice struct {
     array unsafe.Pointer // 指向底层数组
     len   int            // 当前长度
