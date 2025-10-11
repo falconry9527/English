@@ -17,14 +17,7 @@ DAO（去中心化自治组织）是一种在区块链上通过智能合约自�
 3. 拉取支付（Pull Over Push）模式： 不直接向用户发送资金，而是让用户主动提取。
 ```
 
-## ETH 三种转账方式
-```
-transfer 和 send 用于简单 ETH 转账，均有 2300 gas 限制；transfer 失败抛异常，send 失败返回 false。
-call 是最灵活的方式，适用于复杂的合约交互（包括转账和函数调用），失败返回 false，但需要更多的错误处理。
 
-transfer and send are used for simple ETH transfers, both with a 2300 gas limit; transfer throws an exception on failure, while send returns false on failure.
-call is the most flexible method, suitable for complex contract interactions (including transfers and function calls), returns false on failure, but requires more error handling.
-```
 
 ## 借贷协议利息计算
 ```
