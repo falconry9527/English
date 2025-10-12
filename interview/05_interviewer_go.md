@@ -31,9 +31,19 @@ Go 的 map
 
 ## slice,map 创建的时候，应该指定长度吗
 ```
-1. 如果知道长度，建议 指定，减少多次扩容的消耗
-2. 如果长度很小（<100）或者大小不确定,可以不指定
+如果知道长度，建议 指定，减少多次扩容的消耗
 ```
+
+## make
+```
+切片：
+nums := make([]int, 3) // slice 必须指定长度
+map：
+m := make(map[string]int, 10) // map可以不指定长度，初始化长度为0
+channel：
+chan1 := make(chan int32) // channel 不指定长度，就是无缓冲区channel
+```
+
 
 ## channel 
 ```
