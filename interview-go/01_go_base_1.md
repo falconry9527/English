@@ -70,7 +70,7 @@ v : = i.(type)
 多态与抽象: 带方法的接口: Person 实现了 Speaker 接口，隐式实现，不需要显式声明
 ```
 
-## Goroutine and  Channel
+## Goroutine
 ```
 Goroutine（协程）: Goroutine 是一个轻量级线程,协程占用的内存空间极小，允许在单个Go程序中并发运行数十万个 Goroutine 。
 
@@ -80,17 +80,20 @@ java21（23年）以后，也引入了 虚拟线程，其实就是协程
 
 协程是不为操作系统所感知的，它由编程语言层面实现，上下文切换(协程切换)不需要经过内核态 ,调度模型是 GPM (如果有必要就讲一下)。
 
+```
+
+## channel 
+```
+
 Channel 是 Go 的 通信机制，用于 goroutine 之间安全地传递数据。
 Go 的并发哲学: 不要通过共享内存来通信，而通过通信来共享内存
 常见模式: 
 工作池（Worker Pool）: 主 goroutine 生成任务，发送到 channel，worker goroutine 从 channel 中取任务并处理。
 
-```
-
-## channel 
-```
 无缓冲 channel : 写入的信息的时候: 一直阻塞直到有接收
 有缓冲 channel : 写入的信息的时候 : 如果缓冲区慢，发生阻塞
+
+select 可以同时等待多个 channel,类似于switch
 ```
 
 ## channel : 对已经关闭的的chan进行读写
