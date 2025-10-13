@@ -78,3 +78,32 @@ exist :存在性检查， 先外后内 :拿着基础表的数据去逐条匹配 
 列转行 ： union
 ```
 
+## 聚集索引
+```
+聚集索引：物理存储按照索引排序（主键就是聚集索引）
+非聚集索引：物理存储不按照索引排序；
+```
+
+## mysql 分页很慢怎么办
+```
+SELECT * FROM users ORDER BY name LIMIT 1000000, 10;
+问题分析： LIMIT offset, size ,其中 OFFSET 越大，扫描行数越多 
+
+1.利用 排序列的索引，比如id，user_id , 避免 OFFSET 扫描
+2.改用 条件范围,使用 WHERE + 索引范围, 避免 OFFSET 扫描
+SELECT * FROM users WHERE id BETWEEN 1000001 AND 1000010 ;
+
+```
+
+## 乐观锁 和 悲观锁
+```
+悲观锁 (Pessimistic Lock) ：
+假设 数据冲突会频繁发生，在访问数据之前就加锁（查询的时候 for update），阻止其他事务修改，保证数据一致性。
+
+乐观锁 (Optimistic Lock) ：
+假设 数据冲突不常发生，不加锁，用 version 或者 时间戳 确定是否最新版本。
+UPDATE account SET balance=?, version=version+1 WHERE id=? AND version=?
+
+```
+
+
