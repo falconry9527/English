@@ -273,7 +273,6 @@ context： 管理 goroutines 的生命周期
 context 传递元数据 : 跨 goroutine 传递 请求相关信息，例如：
 用户 ID、Session ID、Trace ID（分布式跟踪）
 权限信息（Read/Write 权限标记）
-
 ```
 
 
@@ -289,6 +288,13 @@ WaitGroup : Go 提供的一个 等待一组 goroutine 完成 的机制。
 wg.Add(1) // 启动一个 goroutine，加1
 defer wg.Done() // 结束时减1
 wg.Wait() // 等待所有 goroutine 完成
-
 ```
+
+## Printf
+```
+Printf —— 打印到控制台（标准输出）
+Sprintf —— 格式化为字符串（不会打印）
+Fprintf —— 写入到文件
+```
+
 
