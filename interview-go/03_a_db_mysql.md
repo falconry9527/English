@@ -11,7 +11,6 @@ b+tree ： 多叉树（每个父节点可以有 100个子节点），树的深�
 事务是一组 逻辑上必须作为一个整体执行的 SQL 操作
 特点：原子性（Atomicity）、一致性（Consistency）、隔离性（Isolation）、持久性（Durability） → ACID
 
-MySQL InnoDB 支持 多种锁机制，主要是为了保证事务的 隔离性 和 一致性。
 脏读：读到未提交的数据
 不可重复读：同一事务中两次读取同一行不同
 幻读：同一事务中两次查询返回的行数不同
@@ -20,6 +19,9 @@ READ UNCOMMITTED （读未提交）：脏读，不可重复读，幻读
 READ COMMITTED （读已提交）：不可重复读，幻读
 REPEATABLE READ （可重复读）：幻读
 SERIALIZABLE （串行化）： 任何问题都不会出现
+
+MySQL InnoDB 支持 多种锁机制，主要是为了保证事务的 隔离性 和 一致性。
+
 ```
 
 ## 死锁
