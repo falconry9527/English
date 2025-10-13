@@ -99,10 +99,13 @@ SELECT * FROM users WHERE id BETWEEN 1000001 AND 1000010 ;
 ```
 悲观锁 (Pessimistic Lock) ：
 假设 数据冲突会频繁发生，在访问数据之前就加锁（查询的时候 for update），阻止其他事务修改，保证数据一致性。
+1. SELECT balance FROM account WHERE id=? FOR UPDATE
+2. UPDATE account SET balance=? WHERE id=?
 
 乐观锁 (Optimistic Lock) ：
 假设 数据冲突不常发生，不加锁，用 version 或者 时间戳 确定是否最新版本。
-UPDATE account SET balance=?, version=version+1 WHERE id=? AND version=?
+1. SELECT balance, version FROM account WHERE id=?
+2. UPDATE account SET balance=?, version=version+1 WHERE id=? AND version=?
 
 ```
 
