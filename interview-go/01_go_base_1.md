@@ -277,13 +277,18 @@ context 传递元数据 : 跨 goroutine 传递 请求相关信息，例如：
 ```
 
 
-## syn 包
+## sync 包
 ```
 Mutex ：普通互斥锁，读，写操作互斥。
 读写比例均衡或写操作频繁
 
 RWMutex ：读写锁，读操作可以并发（读写锁允许多个goroutine并发读取），写操作互斥。
 读操作远多于写操作
+
+WaitGroup : Go 提供的一个 等待一组 goroutine 完成 的机制。
+wg.Add(1) // 启动一个 goroutine，加1
+defer wg.Done() // 结束时减1
+wg.Wait() // 等待所有 goroutine 完成
 
 ```
 
