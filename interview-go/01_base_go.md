@@ -1,9 +1,11 @@
-
 ## go 语言的数据类型
 ```
-引用数据类型：切片、字典(map)、通道（channel）、接口（interface）、指针(pointer)
-值数据类型：
+值类型：int, float, bool, struct, array ，自定义类型，string 
+引用类型：slice, map, channel, interface, func
 
+引用数据类型：切片、字典(map)、通道（channel）、接口（interface）、指针(pointer)
+
+参考代码： 02_interface
 ```
 
 ## slice
@@ -56,6 +58,7 @@ chan1 : = make(chan int32) // channel 不指定长度，就是无缓冲区channe
 
 ## interface
 ```
+参考代码： 02_interface
 一. 定义 和 数据结构
 interface 是一种 类型抽象
 
