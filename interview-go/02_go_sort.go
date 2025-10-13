@@ -26,7 +26,7 @@ func bubbleSort(arr []int) {
 }
 
 // 选择排序
-// 原理：每次从未排序部分选择最小（或最大）的元素，放到已排序部分末尾
+// 原理：每次从未排序部分选择最大的元素，放到已排序部分末尾
 func selectionSort(arr []int) {
 	n := len(arr)
 	m := 0
