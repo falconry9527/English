@@ -56,11 +56,9 @@ keccak256 用于生成 唯一的存储位置
 2. 不能迭代 如果要遍历，需要额外数组记录key
 3. 删除 key
 delete balances[addr] 会重置为默认值，但 slot 不回收
-
 ```
 
-
-## view、pure、普通函数区别？
+##  函数对状态变量 的操作性
 ```
 view、pure、普通函数区别？
 view 只读状态；
@@ -99,12 +97,6 @@ transfer 和 send 都不推荐，原因：
 固定 2300 gas 限制容易导致失败
 受 EVM 升级影响，兼容性差
 ```
-
-## 如何在 Solidity 中编写高效的 gas 循环？
-```
-1. 先读取storage ，缓存在memory，执行完毕之后，再写入 storage
-```
-
 
 ## abi.encode 和 abi.encodePacked 之间有什么区别？
 ```
