@@ -88,30 +88,6 @@ v : = i.(type)
 多态与抽象: 带方法的接口: Person 实现了 Speaker 接口，隐式实现，不需要显式声明
 ```
 
-
-## go 的并发机制-csp模型
-```
-go 的并发机制是基于CSP（Communicating Sequential Processes）通信顺序进程
-核心理念：通过通信来共享内存,实现并发
-
-Go 的CSP模型主要由 Goroutine + Channel组成：
-goroutine : 轻量级线程 
-channel : 是 Go 的 通信机制，用于 goroutine 之间安全地传递数据。
-
-典型案例: 
-工作池（Worker Pool）: 主 goroutine 生成任务，发送到 channel，worker goroutine 从 channel 中取任务并处理。
-```
-
-## channel
-```
-Channel 是 Go 的 通信机制，用于 goroutine 之间安全地传递数据。
-无缓冲 channel → 发送和接收必须同时完成（同步通信），写入的信息的时候: 一直阻塞直到有接收
-带缓冲 channel → 异步通信，缓冲区满时发送阻塞
-
-select 可以同时等待多个 channel,类似于switch
-```
-
-
 ## Goroutine
 ```
 Goroutine（协程）: Goroutine 是一个轻量级线程,协程占用的内存空间极小，允许在单个Go程序中并发运行数十万个 Goroutine 。
@@ -123,9 +99,8 @@ Java 的线程 是由操作系统内核所感知的，它由操作系统层面�
 CPU 从线程 A 切到线程 B 时 ，保存线程 A 的寄存器、栈等上下文，恢复线程 B 的寄存器、栈等上下文
 java21（23年）以后，也引入了 虚拟线程，其实就是协程
 
-Goroutine 的切换不是 内核态 的，具体是  GPM 模型：
+Goroutine 的切换不是 内核态 的，具体是  GPM调度模型：开始讲 GPM调度模型
 ```
-
 
 ## GPM 调度模型
 ```
@@ -148,6 +123,31 @@ M 从 P 获取 G 并执行。
 如果 G 阻塞或调用系统调用（如网络 IO），M 会释放 P，去执行其他 P 上的 G
 （这个过程会存在内核切换，但是存在的可能性很低，几乎为0）。
 被阻塞的 G 会被 P 放入等待队列（wait queue），等待唤醒。
+```
+
+## channel
+```
+Channel 是 Go 的 通信机制，用于 goroutine 之间安全地传递数据。
+无缓冲 channel → 发送和接收必须同时完成（同步通信），写入的信息的时候: 一直阻塞直到有接收
+带缓冲 channel → 异步通信，缓冲区满时发送阻塞
+
+select 可以同时等待多个 channel,类似于switch
+
+是 go的并发机制-csp并发模型 的核心，开始讲 csp并发模型
+
+```
+
+## go 的并发机制-csp并发模型
+```
+go 的并发机制是基于CSP（Communicating Sequential Processes）通信顺序进程
+核心理念：通过通信来共享内存,实现并发
+
+Go 的CSP模型主要由 Goroutine + Channel组成：
+goroutine : 轻量级线程 
+channel : 是 Go 的 通信机制，用于 goroutine 之间安全地传递数据。
+
+典型案例: 
+工作池（Worker Pool）: 主 goroutine 生成任务，发送到 channel，worker goroutine 从 channel 中取任务并处理。
 ```
 
 ## channel : 对已经关闭的的chan进行读写
