@@ -132,11 +132,13 @@ SSTORE（storage 置零）
 在合约部署时执行一次，用于初始化状态变量。
 ```
 
-## 基础语法与概念
+## delegatecall 和 call 的不同
 ```
-delegatecall vs call
-delegatecall 在调用者上下文执行，修改调用者状态；
-call 在被调用者上下文执行，修改调用者状态；
+call 在被调用者上下文执行，修改被调用者状态。
+例如：eth 转账 可以调用 cal 
+
+delegatecall 在调用者上下文执行，修改调用者状态。
+例如： 可升级的代理合约，用于转发逻辑；
 ```
 
 
