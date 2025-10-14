@@ -10,13 +10,15 @@
 共识机制：数据块在加入链之前，必须得到大多数节点（服务器节点/矿机）的验证和确认。
 工作量证明（Proof of Work, PoW）：矿工通过执行大量复杂的哈希计算来竞争记账权。这个过程消耗了大量的能量。
 权益证明（PoS）：验证者通过质押的代币的数量和时间来获得记账权
+
+记账权： 把新的区块添加到链上的权利 
 ```
 
 ## 挖矿（mining）
 ```
 Hash=SHA256(SHA256(Version+Prev Hash+Merkle Root+Timestamp+Bits+Nonce))<Target
 
-矿工们反复尝试不同的Nonce值，并使用SHA-256计算区块头的双重哈希，直到哈希值低于目标值，从而获得添加该区块的权利（记账权）。
+矿工们反复尝试不同的Nonce值，使用SHA-256,计算区块头的双重哈希，直到哈希值低于目标值，从而获得记账权（把新的区块添加到链上的权利 ）。
 目标值会根据挖矿时间和难度进行调整，以使平均出块时间保持在约10分钟左右。
 
 ```
@@ -37,6 +39,14 @@ Nonce: Random number used for Proof of Work
 Contains all transactions packed in the block, each with its own inputs and outputs.
 ```
 
+## Merkle树
+``` 
+Merkle Tree 是哈希树/二叉树：叶子节点存数据哈希，父节点存子节点哈希组合，根节点递归组合所有子节点哈希。
+若任一子节点哈希变化，所有父节点哈希也会随之变化，从而便于高效验证。
+对于白名单，存储时只需保存根节点哈希，无需保存所有用户地址，从而显著减少存储开销。
+验证的时候，您只需要提供叶哈希和 Merkle 证明（兄弟哈希数组）。
+``` 
+
 ## eth数据结构
 ```
 ----区块头（Block Header）
@@ -51,6 +61,7 @@ Receipts Root：收据树根
 ----交易列表（Transactions）
 
 ---- 三种树
+MPT 树 （Merkle Patricia Trie）: 是Merkle 的升级，存储键值对（address → account_state）
 状态树（State Trie）：存储账户状态，包括余额、nonce 和合约存储。
 交易树（Transactions Trie）：存储区块内的所有交易，保证交易完整性。
 收据树（Receipts Trie）：存储每笔交易的执行结果和事件日志，用于验证交易结果。
