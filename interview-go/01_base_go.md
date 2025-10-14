@@ -166,6 +166,7 @@ func foo() *int {
 	return &x // x 逃逸到堆上
 }
 // 2. 将变量存入 interface
+借口的data是指针类型
 func bar() interface{} {
 	s1 : = "hello"
 	return s1 // s 逃逸
