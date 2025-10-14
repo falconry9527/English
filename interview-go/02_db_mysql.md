@@ -27,7 +27,7 @@ MySQL InnoDB 支持 多种锁机制，主要是为了保证事务的 隔离性 �
 
 ## 死锁
 ```
-死锁是指 两个或多个事务在数据库中互相等待对方持有的锁，从而无法继续执行。
+死锁是指 两个或多个事务在数据库中互相等待对方持有的锁，从而导致查询阻塞，无法继续执行。
 
 事务 T1 ：
 START TRANSACTION;
@@ -98,12 +98,14 @@ SELECT * FROM users WHERE id BETWEEN 1000001 AND 1000010 ;
 ## 乐观锁 和 悲观锁
 ```
 悲观锁 (Pessimistic Lock) ：
-假设 数据冲突会频繁发生，在访问数据之前就加锁（查询的时候 for update），阻止其他事务修改，保证数据一致性。
+场景：数据冲突会频繁发生
+思想：先加锁（查询的时候 for update,再访问/修改数据，阻止其他事务修改，保证数据一致性。
 1. SELECT balance FROM account WHERE id=? FOR UPDATE
 2. UPDATE account SET balance=? WHERE id=?
 
 乐观锁 (Optimistic Lock) ：
-假设 数据冲突不常发生，不加锁，用 version 或者 时间戳 确定是否最新版本。
+场景：数据冲突不常发生
+思想： 不加锁，用 version 或者 时间戳 来判断是否是当前版本。
 1. SELECT balance, version FROM account WHERE id=?
 2. UPDATE account SET balance=?, version=version+1 WHERE id=? AND version=?
 
