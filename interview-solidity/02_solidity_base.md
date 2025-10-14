@@ -33,11 +33,29 @@ enum Status { Pending, Shipped, Delivered }
 三. 其他类型
 函数类型（Function Types）
 合约类型（Contract Types）
-
 ```
+
+## 数组
+```
+定长数组：长度固定，元素是连续存储的，Gas 便宜
+动态数组：长度可变，元素是稀疏存储的，适合链上数据可变场景
+
+Stack 存储的是存储的指针 (slot索引) ,指向 storage的具体 slot:
+keccak256(i) + index (i:初始化slot,index 元素的角标，一个元素占用一个slot)
+```
+
 ## mapping
 ```
-无法遍历、默认值 0、常用于地址->数据。
+mapping 是一种 键值对存储结构，类似于 哈希表（HashMap）：
+1. 稀疏存储
+mapping 在 EVM 中是 稀疏存储，并不占用连续槽位，而是通过 哈希函数计算存储位置：
+storage_slot=keccak256(abi.encodePacked(key,slot))
+slot 是 mapping 声明时分配的槽位
+key 是映射的键
+keccak256 用于生成 唯一的存储位置
+2. 不能迭代 如果要遍历，需要额外数组记录key
+3. 删除 key
+delete balances[addr] 会重置为默认值，但 slot 不回收
 
 ```
 
@@ -139,6 +157,14 @@ call 在被调用者上下文执行，修改被调用者状态。
 
 delegatecall 在调用者上下文执行，修改调用者状态。
 例如： 可升级的代理合约，用于转发逻辑；
+```
+
+## gas
+```
+Gas 是 以太坊执行交易或智能合约操作的“燃料”。
+交易费用=Gas× Price(一般以wei来计算，当前约 0.347 Gwei)
+1 ETH = 10⁹ Gwei
+1 ETH = 10¹⁸ Wei
 ```
 
 

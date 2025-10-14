@@ -17,8 +17,5 @@ Calldata：外部函数调用的 只读输入参数存储区，存放 address、
 全局变量 : 默认存储在 storage
 对于链上存储的数组：
 Stack 存储的是存储的slot索引(可以理解为指针): keccak256(i) + index (i:初始化slot,index 元素的角标，一个元素占用一个slot)
-
-
-
 ```
 
