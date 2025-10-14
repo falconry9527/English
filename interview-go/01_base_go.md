@@ -19,7 +19,7 @@
 三、其他类型
 指针（Pointer）：*T，保存变量的内存地址，通过指针可以间接访问或修改数据。
 结构体（Struct）：struct {}，自定义的复合数据类型，用于组合多个字段。
-自定义类型（Type Alias / Type Definition）：type MyInt int，基于已有类型定义新类型或类型别名。
+自定义类型（Type Alias / Type Definition）：type MyInt struct，基于已有类型定义新类型或类型别名。
 
 ```
 
@@ -324,4 +324,10 @@ Sprintf —— 格式化为字符串（不会打印）
 Fprintf —— 写入到文件
 ```
 
+## new 与 make 的区别（和指针有关）
+```
+动作，返回，适用类型
+new：分配一块内存，返回指向零值的指针，适用于值类型（如 int、float、struct、数组等）
+make：创建并初始化对象，返回对象本身，适用于引用类型（slice、map、channel）.
+```
 
