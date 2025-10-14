@@ -327,7 +327,7 @@ Fprintf —— 写入到文件
 ## new 与 make 的区别（和指针有关）
 ```
 动作，返回，适用类型
-new：分配一块内存，返回指向零值的指针，适用于值类型（如 int、float、struct、数组等）
+new：分配一块内存但不初始化，返回指向零值的指针，适用于值类型（如 int、float、struct、数组等）
 make：创建并初始化对象，返回对象本身，适用于引用类型（slice、map、channel）.
 ```
 
