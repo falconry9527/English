@@ -20,3 +20,4 @@ Stack 存储的是存储的slot索引(可以理解为指针): keccak256(i) + ind
 全局变量 : 默认存储在 storage
 
 ```
+
