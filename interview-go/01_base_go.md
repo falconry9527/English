@@ -1,11 +1,26 @@
 ## go 语言的数据类型
 ```
-值类型：int, float, bool, struct, array ，自定义类型，string 
-引用类型：slice, map, channel, interface, func
+一、值类型（Value Types）
+整型（Integer）：int, int8, int16, int32, int64, 
+以及对应的无符号类型 uint8, uint16, uint32, uint64, uintptr。
+浮点型（Float）：float32, float64。
+复数类型（Complex）：complex64, complex128。
+布尔型（Boolean）：bool，取值为 true 或 false。
+字符串类型（String）：string，表示不可变的字节序列。
+数组类型（Array）：[N]T，固定长度的同类型元素序列，属于值类型，拷贝时会复制整个数组内容。
 
-引用数据类型：切片、字典(map)、通道（channel）、接口（interface）、指针(pointer)
+二、引用类型（Reference Types）
+切片（Slice）：[]T，动态数组，底层引用一个数组。
+映射（Map）：map[K]V，键值对存储结构。
+通道（Channel）：chan T，用于 goroutine 之间的通信。
+接口（Interface）：interface{}，可以存储任意类型的值，实现多态。
+函数类型（Func）：func()，函数本身也可以作为变量、参数或返回值。
 
-参考代码： 02_interface
+三、其他类型
+指针（Pointer）：*T，保存变量的内存地址，通过指针可以间接访问或修改数据。
+结构体（Struct）：struct {}，自定义的复合数据类型，用于组合多个字段。
+自定义类型（Type Alias / Type Definition）：type MyInt int，基于已有类型定义新类型或类型别名。
+
 ```
 
 ## slice
