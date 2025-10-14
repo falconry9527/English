@@ -13,11 +13,12 @@ Stack：EVM 执行计算的核心区域，存储值类型的 局部变量，生�
 Storage：合约的永久链上状态存储，存放全局变量、映射（mapping）、可变数组、结构体等，操作成本高，需要消耗 Gas。
 Calldata：外部函数调用的 只读输入参数存储区，存放 address、uint、bytes、string 等，生命周期仅在函数执行期间，成本低且不可修改。
 
-特殊案例: 对于链上存储的数组：
-Stack 存储的是存储的slot索引(可以理解为指针): keccak256(i) + index (i:初始化slot,index 元素的角标，一个元素占用一个slot)
-
 局部变量: 值类型默认存储在栈上，引用类型（可变数组，mapping）必须指定  memory、storage（没有关键词 Stack） 。
 全局变量 : 默认存储在 storage
+对于链上存储的数组：
+Stack 存储的是存储的slot索引(可以理解为指针): keccak256(i) + index (i:初始化slot,index 元素的角标，一个元素占用一个slot)
+
+
 
 ```
 
