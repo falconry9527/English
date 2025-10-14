@@ -1,20 +1,21 @@
 ## go 语言的数据类型
 ```
 一. 值类型（Value Types）
+1. 数字类型
 整数（Integer）
 有符号整数：int8 到 int256（步长为 8）
 无符号整数：uint8 到 uint256（步长为 8）
 默认：int 和 uint 等同于 int256 和 uint256
 
-布尔值（Boolean）：值为 true 或 false
+2.布尔值（Boolean）：值为 true 或 false
 
-地址（Address）
+3.地址（Address）
 address：存储 20 字节以太坊地址
 address payable：可以接收 ETH 并执行 transfer 或 send，call
 
+4. 字节和枚举
 固定大小字节（Fixed-size byte array）
 bytes1 到 bytes32
-
 枚举（Enum）
 enum Status { Pending, Shipped, Delivered }
 
@@ -145,7 +146,13 @@ SSTORE（storage 置零）
 ## delegatecall 和 call 的不同
 ```
 call 在被调用者上下文执行，修改被调用者状态。
-例如：eth 转账 可以调用 cal 
+例如：
+eth 转账 可以调用 cal 
+(bool success, ) = recipient.call{value: 1 ether}(""); // 使用 call 转移 1 ETH
+
+使用 call 调用目标合约的函数
+(bool success, bytes memory returnData) = _target.call{value: msg.value}(data);
+_target : 是目标合约的地址
 
 delegatecall 在调用者上下文执行，修改调用者状态。
 例如： 可升级的代理合约，用于转发逻辑；
@@ -158,5 +165,24 @@ Gas 是 以太坊执行交易或智能合约操作的“燃料”。
 1 ETH = 10⁹ Gwei
 1 ETH = 10¹⁸ Wei
 ```
+
+## fallback 和 receive 的区别？
+```
+receive()：接收 ETH ；
+fallback()：处理未匹配函数或 ETH 调用。
+```
+
+## 智能合约大小大约可以有多大？
+```
+200kb
+解决方法
+1. 使用升级合约，减少每次升级的部署量
+2. 模块化
+3. 编辑器优化 optimizer
+减少重复指令 → 减少字节码大小
+合并常量和计算 → 减少部署 gas
+```
+
+
 
 

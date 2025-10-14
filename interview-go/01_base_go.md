@@ -1,10 +1,12 @@
 ## go 语言的数据类型
 ```
 一、值类型（Value Types）
+数字型:
 整型（Integer）：int, int8, int16, int32, int64, 
 以及对应的无符号类型 uint8, uint16, uint32, uint64, uintptr。
 浮点型（Float）：float32, float64。
 复数类型（Complex）：complex64, complex128。
+
 布尔型（Boolean）：bool，取值为 true 或 false。
 字符串类型（String）：string，表示不可变的字节序列。
 数组类型（Array）：[N]T，固定长度的同类型元素序列，属于值类型，拷贝时会复制整个数组内容。
