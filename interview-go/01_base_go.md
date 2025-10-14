@@ -131,8 +131,8 @@ M 从 P 获取 G 并执行。
 ## channel
 ```
 Channel 是 Go 的 通信机制，用于 goroutine 之间安全地传递数据。
-无缓冲 channel → 发送和接收必须同时完成（同步通信），写入的信息的时候: 一直阻塞直到有接收
-带缓冲 channel → 异步通信，缓冲区满时发送阻塞
+无缓冲 channel → 同步通信，发送和接收必须同时完成,否则就会阻塞
+带缓冲 channel → 异步通信，缓冲区满时发生阻塞
 
 select 可以同时等待多个 channel,类似于switch
 
