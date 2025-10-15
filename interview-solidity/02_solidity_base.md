@@ -104,9 +104,7 @@ bytes memory data = abi.encode(a, b, c);
 不可逆：每个参数紧凑打包，没有固定大小或长度前缀
 解码时可能会出现二义性（例如两个动态类型参数拼在一起）
 案例 ： 生成唯一标识（create2 生成 合约的唯一标识）
-
 ```
-
 
 ## OpenZeppelin ERC721 实现中的 safeMint 与 mint 有何不同？
 ```
@@ -198,7 +196,17 @@ Stack 存储的是存储的slot索引(可以理解为指针)，指向具体的st
 
 ```
 
+## Solidity 函数选择器
+```
+函数选择器是 Solidity 中用于标识合约函数的 4 字节标识符。
+它是函数签名 functionName(type1,type2,...) 的 Keccak-256 哈希 的前 4 个字节。
+bytes4 selector = bytes4(keccak256("transfer(address,uint256)"));
 
+主要用于底层函数 call 和 delegatecall 的调用
+
+4字节存储（232≈4.3×109 43 亿个值）
+
+```
 
 
 
