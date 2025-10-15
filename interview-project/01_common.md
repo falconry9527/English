@@ -85,3 +85,9 @@ safeTransfer 是 OpenZeppelin对 transfer 的安全封装，
 SafeERC20.safeTransfer(IERC20 token, address to, uint256 value);
 
 ```
+
+## view 函数会不会消耗gas 
+```
+不会: view函数虽然可以修改局部变量（会消耗gas），但是不修改全局变量，
+gas 只会在 交易执行时（修改全局变量） 被实际消耗
+```
