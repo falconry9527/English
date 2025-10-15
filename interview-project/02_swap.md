@@ -31,7 +31,7 @@ k值在mint和burn(添加和减少流动性)的时候会成比例增大或缩小
 2. 设置最大允许亏损阈值 → 如果潜在亏损过大，直接 revert 避免浪费 Gas
 ```
 
-## 对于 原生资产 ETH,没有合约地址，怎么处理的
+## 对于 原生资产ETH,没有合约地址，怎么处理的
 ```
 token0 和 token1:交易对的两种代币地址。
 fee:交易池的手续费级别（例如:0.05%、0.30%、1%）。
@@ -61,7 +61,7 @@ uint256 deadline;
 @param amount1 : token1的数量
 @return liquidity : 流动性数值
 
-liquidity=min( amount0/（sqrt(R_B)-sqrt(R_A)）,amount1/（sqrt(R_B)-sqrt(R_A)）)
+liquidity=min(amount0/（sqrt(R_B)-sqrt(R_A)）,amount1/（sqrt(R_B)-sqrt(R_A)）)
 amount0 和 amount1 分别是流动性提供者提供的两种资产的数量（例如，ETH 和 USDT）。
 sqrt(R_A) 和 sqrt(R_B) 是价格区间的下限和上限的平方根，表示价格范围 [tickLower, tickUpper]。
 
