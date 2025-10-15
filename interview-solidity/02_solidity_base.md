@@ -94,18 +94,6 @@ transfer 和 send 都不推荐，原因：
 受 EVM 升级影响，兼容性差
 ```
 
-## abi.encode 和 abi.encodePacked 之间有什么区别？
-```
-bytes memory data = abi.encode(a, b, c);
-将输入参数按 ABI 编码（Solidity 标准 ABI）序列化，返回类型：bytes memory
-不可逆：每个参数都有固定大小或长度前缀
-案例：函数调用、签名消息
-
-不可逆：每个参数紧凑打包，没有固定大小或长度前缀
-解码时可能会出现二义性（例如两个动态类型参数拼在一起）
-案例 ： 生成唯一标识（create2 生成 池子的唯一标识）
-```
-
 ## OpenZeppelin ERC721 实现中的 safeMint 与 mint 有何不同？
 ```
 mint 创建 NFT，safeMint 在创建的同时检查接收方是否支持 ERC721，确保 NFT 不会被锁死在合约中。
@@ -194,6 +182,18 @@ Calldata：外部函数调用的 只读输入参数存储区，存放 address、
 Stack 存储的是存储的slot索引(可以理解为指针)，指向具体的storage 的slot
  keccak256(i) + index (i:初始化slot,index 元素的角标，一个元素占用一个slot)
 
+```
+
+## abi.encode 和 abi.encodePacked 之间有什么区别？
+```
+bytes memory data = abi.encode(a, b, c);
+将输入参数按 ABI 编码（Solidity 标准 ABI）序列化，返回类型：bytes memory
+不可逆：每个参数都有固定大小或长度前缀
+案例：函数调用、签名消息
+
+不可逆：每个参数紧凑打包，没有固定大小或长度前缀
+解码时可能会出现二义性（例如两个动态类型参数拼在一起）
+案例 ： 生成唯一标识（create2 生成 池子的唯一标识）
 ```
 
 ## Solidity 函数选择器
