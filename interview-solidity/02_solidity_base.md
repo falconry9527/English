@@ -103,7 +103,7 @@ bytes memory data = abi.encode(a, b, c);
 
 不可逆：每个参数紧凑打包，没有固定大小或长度前缀
 解码时可能会出现二义性（例如两个动态类型参数拼在一起）
-案例 ： 生成唯一标识（create2 生成 合约的唯一标识）
+案例 ： 生成唯一标识（create2 生成 池子的唯一标识）
 ```
 
 ## OpenZeppelin ERC721 实现中的 safeMint 与 mint 有何不同？
