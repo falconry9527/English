@@ -74,3 +74,17 @@ iziswap 的 PoolFactory 使用 CREATE2 创建池子（Pair）：
 例如: new Pool{salt: salt}() 
 
 ```
+
+## transfer 和 safeTransfer
+```
+transfer 和 safeTransfer
+transferFrom 和 safeTransferFrom
+
+transfer ERC20 的转账方法，转账失败，返回false,不会回滚revert
+function transfer(address to, uint256 amount) external returns (bool);
+
+safeTransfer 是 OpenZeppelin对 transfer 的安全封装，
+转账失败,返回false，并自动回滚revert, 保证转账安全。
+SafeERC20.safeTransfer(IERC20 token, address to, uint256 value);
+
+```
