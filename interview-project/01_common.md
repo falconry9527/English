@@ -83,11 +83,17 @@ function transfer(address to, uint256 amount) external returns (bool);
 safeTransfer 是 OpenZeppelin对 transfer 的安全封装，
 转账失败,返回false，并自动回滚revert, 保证转账安全。
 SafeERC20.safeTransfer(IERC20 token, address to, uint256 value);
-
 ```
 
 ## view 函数会不会消耗gas 
 ```
 不会: view函数虽然可以修改局部变量（会消耗gas），但是不修改全局变量，
 gas 只会在 交易执行时（修改全局变量） 被实际消耗
+```
+
+## 溢出 和下溢出
+```
+1. 溢出 ： 整数 超过 数据类型 的最大值  uint8 c = 156 + 1 ; // 溢出
+1. 溢出 ： 整数 小于 数据类型 的最小值  uint8 c = a - b; // 下溢
+unchecked 关键字用于 关闭整数运算的溢出/下溢检查 : 谨慎
 ```
