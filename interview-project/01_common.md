@@ -65,14 +65,11 @@ getAddress 用相同参数计算地址；
 三. 案例:
 iziswap 的 PoolFactory 使用 CREATE2 创建池子（Pair）：
 
-
-
 四. new 
 使用 new 创建合约的时候，
 不传 盐值（salt）,底层调用的就是 CREATE；
 传入 盐值（salt）,底层调用的就是 CREATE2 
 例如: new Pool{salt: salt}() 
-
 ```
 
 ## transfer 和 safeTransfer
