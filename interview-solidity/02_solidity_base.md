@@ -39,29 +39,23 @@ enum Status { Pending, Shipped, Delivered }
 ## 数组
 ```
 定长数组：长度固定，元素是连续存储的，Gas 便宜
-动态数组：长度可变，元素是稀疏存储的，适合链上数据可变场景
-
-Stack 存储的是存储的指针 (slot索引) ,指向 storage的具体 slot:
-keccak256(i) + index (i:初始化slot,index 元素的角标，一个元素占用一个slot)
+动态数组：长度可变，元素是稀疏存储的，并不占用连续slot，一个元素占用一个slot（不管变量实际大小）
 ```
 
 ## mapping
 ```
-mapping 是一种 键值对存储结构，类似于 哈希表（HashMap）：
+mapping 是一种 键值对存储结构，底层使用的算法是 Hash：
 1. 稀疏存储
-mapping 在 EVM 中是 稀疏存储，并不占用连续槽位，而是通过 哈希函数计算存储位置：
+mapping 在 EVM 中稀疏存储，并不占用连续槽位，而是通过 hash 计算存储位置：
 storage_slot=keccak256(abi.encodePacked(key,slot))
 slot 是 mapping 声明时分配的槽位
-key 是映射的键
-keccak256 用于生成 唯一的存储位置
 2. 不能迭代 如果要遍历，需要额外数组记录key
 3. 删除 key
 delete balances[addr] 会重置为默认值，但 slot 不回收
 ```
 
-##  函数对状态变量 的操作性
+##  view、pure、普通函数区别？
 ```
-view、pure、普通函数区别？
 view 只读状态；
 pure 不读写状态；
 普通函数可修改状态。
@@ -91,7 +85,8 @@ uint c = a + b; assert(c >= a);  // 确保没有溢出
 
 ## ETH 三种转账方式
 ```
-transfer 和 send 用于简单 ETH 转账，均有 2300 gas 限制；transfer 失败抛异常，send 失败返回 false。
+transfer 和 send 用于简单 ETH 转账，均有 2300 gas 限制；
+transfer 失败抛异常，send 失败返回 false。
 call  没有gas 限制，适用于复杂的合约交互（包括转账和函数调用），失败返回 false，但需要更多的错误处理。
 
 transfer 和 send 都不推荐，原因：
@@ -102,14 +97,14 @@ transfer 和 send 都不推荐，原因：
 ## abi.encode 和 abi.encodePacked 之间有什么区别？
 ```
 bytes memory data = abi.encode(a, b, c);
-将输入参数按 ABI 编码（Solidity 标准 ABI）序列化
-每个参数都有固定大小或长度前缀
-返回类型：bytes memory
+将输入参数按 ABI 编码（Solidity 标准 ABI）序列化，返回类型：bytes memory
+不可逆：每个参数都有固定大小或长度前缀
 案例：函数调用、签名消息
 
-将输入参数紧凑打包 不对齐、不加长度前缀
-不可逆：解码时可能会出现二义性（例如两个动态类型参数拼在一起）
+不可逆：每个参数紧凑打包，没有固定大小或长度前缀
+解码时可能会出现二义性（例如两个动态类型参数拼在一起）
 案例 ： 生成唯一标识、hash 计算
+
 ```
 
 
@@ -146,16 +141,10 @@ SSTORE（storage 置零）
 ## delegatecall 和 call 的不同
 ```
 call 在被调用者上下文执行，修改被调用者状态。
-例如：
-eth 转账 可以调用 cal 
-(bool success, ) = recipient.call{value: 1 ether}(""); // 使用 call 转移 1 ETH
-
-使用 call 调用目标合约的函数
-(bool success, bytes memory returnData) = _target.call{value: msg.value}(data);
-_target : 是目标合约的地址
+例如：合约A调用合约B的函数，函数是在 B的上下文执行，修改b的变量
 
 delegatecall 在调用者上下文执行，修改调用者状态。
-例如： 可升级的代理合约，用于转发逻辑；
+例如： 可升级合约的代理合约，转发用户的函数给实现合约，函数是在 代理合约 的上下文执行，修改 代理合约 的变量 ；
 ```
 
 ## gas
@@ -182,6 +171,35 @@ fallback()：处理未匹配函数或 ETH 调用。
 减少重复指令 → 减少字节码大小
 合并常量和计算 → 减少部署 gas
 ```
+
+
+## 什么是智能合约
+```
+智能合约（Smart Contract）是区块链上的一种 自动执行的脚本 ，
+当满足预设条件时，合约会自动运行，无需人工干预。
+极大丰富了区块链的应用生态
+```
+
+## EVM的数据存储
+```
+Memory：函数调用期间的临时存储，存放函数参数、局部变量，中间计算结果，调用结束后清空。
+Stack：EVM 执行计算的核心区域，存储值类型的 局部变量，中间计算结果，生命周期极短，最多 1024 个 slot。
+Storage：合约的永久链上状态存储，存放全局变量、映射（mapping）、可变数组、结构体等，操作成本高，需要消耗 Gas。
+Calldata：外部函数调用的 只读输入参数存储区，存放 address、uint、bytes、string 等，生命周期仅在函数执行期间，成本低且不可修改。
+
+全局变量 : 默认存储在 storage
+
+局部变量: 
+值类型默认存储在栈上，
+引用类型（可变数组，mapping）必须指定  memory、storage（没有关键词 Stack） 。
+当指定为 storage 的时候：
+Stack 存储的是存储的slot索引(可以理解为指针)，指向具体的storage 的slot
+ keccak256(i) + index (i:初始化slot,index 元素的角标，一个元素占用一个slot)
+
+```
+
+
+
 
 
 
