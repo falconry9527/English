@@ -46,14 +46,16 @@ sqrtPriceX96（可选）:池子当前的价格的平方根（对于初始创建�
 ## pool creation
 ```
 function createPool(
-    address tokenA,
-    address tokenB,
-    uint24 fee
+    address token0,
+    address token1,
+    uint24 fee,
 ) external returns (address pool);
+
+token0 和  token1 : 交易对
+fee: 以 100万为基数： 500，3000 ，10000
 ```
 
-
-## mint 
+## mint : 添加流动性
 ```
 address token0;
 address token1;
@@ -65,10 +67,9 @@ uint256 deadline;
 交易对地址: token0，token1
 最高/最低流动性价格: tickLower , tickUpper
 接收 流动性凭据的地址: recipient
-
 ```
 
-## Uniswap V3 中的流动性计算公式 
+## mint : 获取流动性： 流动性计算公式 
 ```
 @param sqrtRatioX96 : 当前价格
 @param sqrtRatioAX96 : 最高价
@@ -76,6 +77,8 @@ uint256 deadline;
 @param amount0 : token0的数量
 @param amount1 : token1的数量
 @return liquidity : 流动性数值
+
+sqrtRatioBX96 和 sqrtRatioAX96 是根据 tickLower，tickUpper 算出来的
 
 当前价格： P = token1 / token0
 价格区间： [Pa, Pb] ，其中 Pa < P < Pb
