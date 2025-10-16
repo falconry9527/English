@@ -1,12 +1,21 @@
 ## uniswap 的基本原理
 ```
 1.Uniswap 是 去中心化交易所（DEX）
-使用 AMM 自动做市商的方式 ，而不是订单薄
 
-自动做市商 通过 流动性池 来实现资产的买卖  。
-流动性池（Liquidity Pools）:AMM 基于流动性池来工作，流动性池是由两种或加密资产组成的池子（如 ETH 和 USDT）。这些资产由 流动性提供者（LPs） 存入池子中。
-常数乘积公式（x * y = k）:AMM 使用数学公式来保持池子中的两种资产的平衡。例如，Uniswap 使用 x * y = k 的公式，其中:
-k值在mint和burn(添加和减少流动性)的时候会成比例增大或缩小，在 swap的时候保持不变
+中心化交易所： 订单簿（Order Book）+ 订单撮合 的自动交易机制。
+Uniswap : 使用 AMM (Automated Market Maker) 自动做市商的方式  。
+通过 流动性池（Liquidity Pool）和 恒定乘积公式(x * y = k） 决定价格，并完成交易。
+
+流动性池（Liquidity Pools）: 存入一对加密资产的池子（如 ETH 和 USDT）。
+流动性提供者（LP）: 向池子 中存入 存入一对加密资产 获取 手续费收益 的用户 。
+
+恒定乘积公式L: x * y = k :
+X：tokenA 的 数量
+Y: tokenA 的 数量
+
+定价公式: 
+TokenA 对 TokenB 的价格=Y/X
+
 ```
 
 ## uniswap 的闪电贷
