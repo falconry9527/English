@@ -104,24 +104,24 @@ amount1 = L × (√P - √Pa)
 一. 计算公式:
 LP 获得的手续费 = 交易手续费 × （LP 提供的流动性 ÷ 池子总流动性）
 
-二. 过程 (单位流动性 累计手续费 + 交替更新模式):
+二. 过程 :
+核心： 单位流动性 累计手续费= 交易手续费/池子总流动性
 
+场景:
 假如发生了一个交易：
+交易产生 单位流动性 增长手续费 Fee :
 
-交易产生 单位流动性 增长手续费 ：
-单位流动性增长手续费 (growthFee) = 交易手续费 / 池子总流动性
+1.实时更新 ： 池子 单位流动性 累计手续费 :
+totalFeeOld
+totalFee=totalFeeOld+ Fee / 池子总流动性
 
-交易前后池子 单位流动性 累计手续费 :
-totalFee_before
-totalFee_later=totalFee_before+growthFee
+单位流动性 累计手续费 , 避免了池子流动性变化的干扰
 
-交易前后用户 单位流动性 累计手续费 :
-userFee_before
-userFee_later
+2.定时更新 ： 用户 单位流动性 累计手续费 ； 并计算新增的手续费 :
 
-1. userFeelast1 的价格更新为 totalFee_later
-2. 计算  LP获得的手续费 并更新
- LP获得的手续费 = （userFee_later-userFee_before） * LP提供的流动性
+a. LP新增的手续费 = （totalFee-userFee） * LP提供的流动性
+b. 更新 userFee=totalFee
+
 
 ```
 
