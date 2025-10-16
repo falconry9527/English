@@ -15,27 +15,43 @@ Y : token1 的 数量
 
 定价公式: 
 token0(对token1）的价格=Y/X
-
-
 ```
 
-## uniswap 的核心逻辑
+## 手续费范围
 ```
-1. mint
-2. burn
-3. swap
+fee:交易池的手续费级别（例如:0.05%、0.30%、1%）。
 ```
 
 ## 对于 原生资产ETH,没有合约地址，怎么处理的
 ```
 token0 和 token1: 交易对的两种代币地址。
 fee:交易池的手续费级别（例如:0.05%、0.30%、1%）。
-tickLower 和 tickUpper:流动性提供者选择的价格区间（以 tick 的形式表示）。
-sqrtPriceX96（可选）:池子当前的价格的平方根（对于初始创建来说不一定必须）。
 
 1. 对于 原生资产 ETH,没有合约地址，怎么处理的
 在 Uniswap V3 中，如果交易对涉及 ETH，ETH 会通过 WETH（Wrapped ETH）合约进行包装，作为 ERC-20 代币 使用。
 ```
+
+## uniswap 的核心逻辑
+```
+0.  pool creation ： 创建池子
+1. mint: 添加流动性
+2. burn: 移除流动性
+3. swap: 交易
+
+tickLower 和 tickUpper:流动性提供者选择的价格区间（以 tick 的形式表示）。
+sqrtPriceX96（可选）:池子当前的价格的平方根（对于初始创建来说不一定必须）。
+
+```
+
+## pool creation
+```
+function createPool(
+    address tokenA,
+    address tokenB,
+    uint24 fee
+) external returns (address pool);
+```
+
 
 ## mint 
 ```
@@ -52,7 +68,7 @@ uint256 deadline;
 
 ```
 
-## Uniswap V3 中的流动性计算公式 : mint -> getLiquidityForAmounts
+## Uniswap V3 中的流动性计算公式 
 ```
 @param sqrtRatioX96 : 当前价格
 @param sqrtRatioAX96 : 最高价
@@ -84,28 +100,29 @@ amount1 = L × (√P - √Pa)
 
 ```
 
-## mint -> userFee
+## mint：LP 获得的手续费（ lpUserFee）
 ```
 一. 计算公式:
 LP 获得的手续费 = 交易手续费 × （LP 提供的流动性 ÷ 池子总流动性）
 
-二. 过程:
-假如存在一个交易：
+二. 过程 (单位流动性 累计手续费 + 交替更新模式):
 
-交易产生 单位流动性 新增手续费 ：
-growthFee = 交易手续费 / 池子总流动性
+假如发生了一个交易：
+
+交易产生 单位流动性 增长手续费 ：
+单位流动性增长手续费 (growthFee) = 交易手续费 / 池子总流动性
 
 交易前后池子 单位流动性 累计手续费 :
-totalFeelast_before
-totalFeelast_later
+totalFee_before
+totalFee_later=totalFee_before+growthFee
 
 交易前后用户 单位流动性 累计手续费 :
-userFeelast_before
-userFeelast_later
+userFee_before
+userFee_later
 
-1. userFeelast1 的价格更新为 userFeelast_later
-2. 计算 LP 获得的手续费 = （userFeelast_later-userFeelast_before） * LP提供的流动性
-
+1. userFeelast1 的价格更新为 totalFee_later
+2. 计算  LP获得的手续费 并更新
+ LP获得的手续费 = （userFee_later-userFee_before） * LP提供的流动性
 
 ```
 
