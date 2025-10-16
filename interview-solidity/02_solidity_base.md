@@ -158,13 +158,20 @@ fallback()：处理未匹配函数或 ETH 调用。
 合并常量和计算 → 减少部署 gas
 ```
 
-
 ## 什么是智能合约
 ```
 智能合约（Smart Contract）是区块链上的一种 自动执行的脚本 ，
 当满足预设条件时，合约会自动运行，无需人工干预。
 极大丰富了区块链的应用生态
 ```
+
+
+## DAO
+```
+DAO（去中心化自治组织）是一种在区块链上通过智能合约自动执行规则、由社区成员共同治理的自治组织。
+没有管理员
+```
+
 
 ## EVM的数据存储
 ```
@@ -183,32 +190,6 @@ Stack 存储的是存储的slot索引(可以理解为指针)，指向具体的st
  keccak256(i) + index (i:初始化slot,index 元素的角标，一个元素占用一个slot)
 
 ```
-
-## abi.encode 和 abi.encodePacked 之间有什么区别？
-```
-bytes memory data = abi.encode(a, b, c);
-将输入参数按 ABI 编码（Solidity 标准 ABI）序列化，返回类型：bytes memory
-不可逆：每个参数都有固定大小或长度前缀
-案例：函数调用、签名消息
-
-不可逆：每个参数紧凑打包，没有固定大小或长度前缀
-解码时可能会出现二义性（例如两个动态类型参数拼在一起）
-案例 ： 生成唯一标识（create2 生成 池子的唯一标识）
-```
-
-## Solidity 函数选择器
-```
-函数选择器是 Solidity 中用于标识合约函数的 4 字节标识符。
-它是函数签名 functionName(type1,type2,...) 的 Keccak-256 哈希 的前 4 个字节。
-bytes4 selector = bytes4(keccak256("transfer(address,uint256)"));
-
-主要用于底层函数 call 和 delegatecall 的调用
-
-4字节存储（232≈4.3×109 43 亿个值）
-
-```
-
-
 
 
 
