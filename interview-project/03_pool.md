@@ -83,6 +83,8 @@ address onBehalfOf        // 还款目标地址（通常是借款人自己）
 1. 定时更新 ： 池子每单位资产累计利息 :
 池子最新每单位资产累计利息 totalInterest = 旧的每单位资产累计利息 totalInterestOld + Interest ÷ 池子总资产数量
 
+每单位资产累计利息 累计手续费 , 避免了池子资产变化的干扰
+
 2. 定时更新 ： 出借方新增的利息
 a.出借方新增利息 = （池子最新每单位资产累计利息 totalInterest - 用户上次记录的每单位资产累计利息 userInterest） × 出借方存入的资产数量
 b.更新用户的每单位资产累计利息记录：userInterest = totalInterest
