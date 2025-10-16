@@ -99,7 +99,7 @@ amount1 = L × (√P - √Pa)
 
 ```
 
-## mint：LP 获得的手续费（ lpUserFee）
+## swap ：LP 获得的手续费（ lpUserFee）
 ```
 一. 计算公式:
 LP 获得的手续费 = 交易手续费 × （LP 提供的流动性 ÷ 池子总流动性）
