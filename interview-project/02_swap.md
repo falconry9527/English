@@ -3,20 +3,27 @@
 Uniswap 是 去中心化交易所（DEX），
 使用 AMM (Automated Market Maker) 自动做市商的方式  。
 
-中心化交易所：      订单簿（Order Book）+ 撮合系统(最高买价 碰撞 最低卖价) 的自动交易机制。
+中心化交易所:      订单簿（Order Book）+ 撮合系统(最高买价 碰撞 最低卖价) 的自动交易机制。
 Uniswap : AMM 通过 流动性池（Liquidity Pool）和 恒定乘积公式(x * y = k） 决定价格，并完成交易。
 
-流动性池（Liquidity Pools）: 存入一个交易对 资产的池子（如 ETH 和 USDT）。
+流动性池（Liquidity Pools）: 存入一个交易对(token0和token1) 资产的池子（如 ETH 和 USDT）。
 流动性提供者（LP）: 向池子 中存入 存入一个交易对 资产，并 获取交易手续费收入 的用户，  。
 
 恒定乘积公式L: x * y = k :
-X：token0 的 数量
-Y: token1 的 数量
+X ：token0 的 数量
+Y : token1 的 数量
 
 定价公式: 
-token0 对 token1 的价格=Y/X
+token0(对token1）的价格=Y/X
 
 
+```
+
+## uniswap 的核心逻辑
+```
+1. mint
+2. burn
+3. swap
 ```
 
 ## 对于 原生资产ETH,没有合约地址，怎么处理的
@@ -39,10 +46,13 @@ uint256 tickUpper;
 address recipient;
 uint256 deadline;
 
+交易对地址: token0，token1
+最高/最低流动性价格: tickLower , tickUpper
+接收 流动性凭据的地址: recipient
 
 ```
 
-## mint -> getLiquidityForAmounts
+## Uniswap V3 中的流动性计算公式 : mint -> getLiquidityForAmounts
 ```
 @param sqrtRatioX96 : 当前价格
 @param sqrtRatioAX96 : 最高价
@@ -51,27 +61,52 @@ uint256 deadline;
 @param amount1 : token1的数量
 @return liquidity : 流动性数值
 
-liquidity=min(amount0/（sqrt(R_B)-sqrt(R_A)）,amount1/（sqrt(R_B)-sqrt(R_A)）)
-amount0 和 amount1 分别是流动性提供者提供的两种资产的数量（例如，ETH 和 USDT）。
-sqrt(R_A) 和 sqrt(R_B) 是价格区间的下限和上限的平方根，表示价格范围 [tickLower, tickUpper]。
+当前价格： P = token1 / token0
+价格区间： [Pa, Pb] ，其中 Pa < P < Pb
+内部采用平方根价格： √Pa, √P, √Pb
 
-当 ETH 的价格上升 时，burn（销毁）流动性 时提取的资产的 总价值（以 USDT 计）通常会增加
+情况 1：仅提供 token0（当前价格低于区间）
+L = (amount0 × √Pa × √Pb) / (√Pb - √Pa)
+
+情况 2：仅提供 token1（当前价格高于区间）
+L = amount1 / (√Pb - √Pa)
+
+情况 3：同时提供 token0 与 token1（当前价格在区间内）
+amount0 = L × (√Pb - √P) / (√P × √Pb)
+amount1 = L × (√P - √Pa)
+
+流动性计算公式 ，分三种情况
+情况 1：仅提供 token0（当前价格低于区间）
+情况 2：仅提供 token1（当前价格高于区间）
+情况 3：同时提供 token0 与 token1（当前价格在区间内）
+
+总的来说： 存入池子的代币数量amount0 /价格平方根的差 (√Pb - √Pa), 价格平方根的差 是一定的，主要取决于 存入池子的代币数量amount0
+
 ```
 
 ## mint -> userFee
 ```
-userFee=(L_provided/L_total)×(totalFeeGrowth−feeGrowthInsideLastX128)
-L_provided:流动性提供者在池子中的流动性份额。
-L_total:池子中的总流动性。
-feeGrowthInside:当前时刻该区间内的 手续费增长。
-feeGrowthInsideLastX128:流动性提供者上次更新时的 手续费增长。
+一. 计算公式:
+LP 获得的手续费 = 交易手续费 × （LP 提供的流动性 ÷ 池子总流动性）
 
-feeGrowthInside0LastX128 和 feeGrowthInside1LastX128 通常会在 swap（交易） 或 burn（销毁流动性） 时更新。
-userFee也通常会在 swap（交易） 或 burn（销毁流动性） 时更新。
+二. 过程:
+假如存在一个交易：
 
-每次swap 都要算 每个用户的 userFee ，这样岂不是很消耗gas，怎么解决
-1. 批量更新（Batching Updates）: 🇺每天更新一次
-2. 当用户查看的时候更新
+交易产生 单位流动性 新增手续费 ：
+growthFee = 交易手续费 / 池子总流动性
+
+交易前后池子 单位流动性 累计手续费 :
+totalFeelast_before
+totalFeelast_later
+
+交易前后用户 单位流动性 累计手续费 :
+userFeelast_before
+userFeelast_later
+
+1. userFeelast1 的价格更新为 userFeelast_later
+2. 计算 LP 获得的手续费 = （userFeelast_later-userFeelast_before） * LP提供的流动性
+
+
 ```
 
 ## uniswap 怎么防止滑点过大
@@ -79,7 +114,6 @@ userFee也通常会在 swap（交易） 或 burn（销毁流动性） 时更新�
 1. 用户设置 minAmountOut，售出价格 如果小于 minAmountOut 则回滚
 2. 代码设置滑点容忍度，滑点过大则回滚
 ```
-
 
 ## uniswap 的闪电贷(可以先pass)
 ```
