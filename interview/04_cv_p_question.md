@@ -86,26 +86,6 @@ Q6 : How to ensure the safety of investors' assets
 investors （ɪnˈvɛstərz）
 ```
 
-##  闪电贷攻击（Flash Loan Attack）
-```
-1. 聚合多个价格源（Chainlink、uniswap,bnb ）
-2. 延迟清算(TWAP), 时间加权平均价，避免瞬时清算（连续3个10分钟内都低于清算价格）
-3. 限制每笔借贷的金额（每次最高可以贷10万美金）
-
-闪电贷攻击（Flash Loan Attack）
-Oracle 数据安全（Chainlink, Band Protocol）
-Oracle 价格操纵 (Price manipulation)
-
-Q7 : Please talk about Flash Loan Attack
-1.Aggregate multiple price sources (Chainlink, Uniswap, BNB).
-2.Delayed liquidation (TWAP — time-weighted average price) to prevent instantaneous liquidations (require the price to be below the liquidation threshold for three consecutive 10‑minute intervals).
-3.Limit the amount of each loan (maximum of $100,000 per borrow).
-
-price（praɪs）
-prices（ˈpraɪsɪz）
-Aggregate（ˈæɡrɪɡeɪt）
-
-```
 
 ##  TiDB
 ```
