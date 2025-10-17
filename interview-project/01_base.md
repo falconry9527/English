@@ -10,10 +10,9 @@ Calldata：外部函数调用的 只读输入参数存储区，存放 address、
 值类型 → 默认 stack
 引用类型 → 必须指定 memory 或 storage（数组/struct）
 mapping →  只能是 合约级全局变量（contract-level state),只能存储在 stroage,不能在函数中定义
+栈上存储的是 mapping 起始 slot 索引，访问 key 时通过 keccak256(key, slot) 定位真实 storage
 
-array ，mapping 存储在栈上的时候, stack上存储 slot 索引（指针），指向具体 storage slot）
 数组/struct storage 引用：栈上存储的是起始  slot 索引，访问元素时根据 slot + 偏移计算 storage
-mapping storage 引用：栈上存储的是 mapping 起始 slot 索引，访问 key 时通过 keccak256(key, slot) 定位真实 storage
 
 ```
 
