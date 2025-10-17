@@ -45,12 +45,11 @@ enum Status { Pending, Shipped, Delivered }
 ## mapping
 ```
 mapping 是一种 键值对存储结构，底层使用的算法是 Hash：
-1. 稀疏存储
-mapping 在 EVM 中稀疏存储，并不占用连续槽位，而是通过 hash 计算存储位置：
-storage_slot=keccak256(abi.encodePacked(key,slot))
-slot 是 mapping 声明时分配的槽位
-2. 不能迭代 如果要遍历，需要额外数组记录key
-3. 删除 key
+1. 只能是 合约级全局变量（contract-level state),只能存储在 stroage,不能在函数中定义
+2. 稀疏存储 ,元素是稀疏存储的
+栈上存储的是 mapping 起始 slot 索引，访问 key 时通过 keccak256(key, slot) 定位真实 storage
+3. 不能迭代 如果要遍历，需要额外数组记录key
+4. 删除 key
 delete balances[addr] 会重置为默认值，但 slot 不回收
 ```
 
@@ -190,25 +189,5 @@ fallback()：处理未匹配函数或 ETH 调用。
 当满足预设条件时，合约会自动运行，无需人工干预。
 极大丰富了区块链的应用生态
 ```
-
-
-## EVM的数据存储
-```
-Memory：函数调用期间的临时存储，存放函数参数、局部变量，中间计算结果，调用结束后清空。
-Stack：EVM 执行计算的核心区域，存储值类型的 局部变量，中间计算结果，生命周期极短，最多 1024 个 slot。
-Storage：合约的永久链上状态存储，存放全局变量、映射（mapping）、可变数组、结构体等，操作成本高，需要消耗 Gas。
-Calldata：外部函数调用的 只读输入参数存储区，存放 address、uint、bytes、string 等，生命周期仅在函数执行期间，成本低且不可修改。
-
-全局变量 : 默认存储在 storage
-
-局部变量: 
-值类型默认存储在栈上，
-引用类型（可变数组，mapping）必须指定  memory、storage（没有关键词 Stack） 。
-当指定为 storage 的时候：
-Stack 存储的是存储的slot索引(可以理解为指针)，指向具体的storage 的slot
- keccak256(i) + index (i:初始化slot,index 元素的角标，一个元素占用一个slot)
-
-```
-
 
 

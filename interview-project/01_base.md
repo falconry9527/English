@@ -1,3 +1,24 @@
+## EVM的数据存储
+```
+Memory：函数调用期间的临时存储，存放函数参数、局部变量，中间计算结果，调用结束后清空。
+Stack：EVM 执行计算的核心区域，存储值类型的 局部变量，中间计算结果，生命周期极短，最多 1024 个 slot。
+Storage：合约的永久链上状态存储，存放全局变量、映射（mapping）、可变数组、结构体等，操作成本高，需要消耗 Gas。
+Calldata：外部函数调用的 只读输入参数存储区，存放 address、uint、bytes、string 等，生命周期仅在函数执行期间，成本低且不可修改。
+
+全局变量：默认在 storage（包括 mapping、array、struct、值类型）
+局部变量：
+值类型 → 默认 stack
+引用类型 → 必须指定 memory 或 storage（数组/struct）
+mapping →  只能是 合约级全局变量（contract-level state),只能存储在 stroage,不能在函数中定义
+
+array ，mapping 存储在栈上的时候, stack上存储 slot 索引（指针），指向具体 storage slot）
+数组/struct storage 引用：栈上存储的是起始  slot 索引，访问元素时根据 slot + 偏移计算 storage
+mapping storage 引用：栈上存储的是 mapping 起始 slot 索引，访问 key 时通过 keccak256(key, slot) 定位真实 storage
+
+```
+
+
+
 ## CREATE2
 ```
 定义: 它们都是 EVM 中的合约创建指令（opcode）。
