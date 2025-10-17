@@ -50,7 +50,7 @@ bytes memory data = abi.encode(a, b, c);
 解码时可能会出现二义性（例如两个动态类型参数拼在一起）
 案例 ： 生成唯一标识
 uniswap 的交易对池子是单独的合约，是唯一的，固定的 。
-使用 encodePacked，根据交易对的地址，生成唯一标识-盐值
+使用 encodePacked，uniswap中,生成交易对的唯一标识-盐值
 
 ```
 
