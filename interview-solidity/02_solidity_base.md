@@ -158,6 +158,11 @@ delegatecall 在调用者上下文执行，修改调用者状态。
 例如： 可升级合约的代理合约，转发用户的函数给实现合约，函数是在 代理合约 的上下文执行，修改 代理合约 的变量 ；
 
 delegatecall: 多次调用: msg.sender、msg.value 保持原值
+用户A->合约B--delegatecall/call--> 合约C
+
+合约C 的  msg.sender
+delegatecall : 用户A
+call : 合约B
 
 ```
 
