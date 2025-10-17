@@ -166,12 +166,6 @@ Gas 是 以太坊执行交易或智能合约操作的“燃料”。
 1 ETH = 10¹⁸ Wei
 ```
 
-## fallback 和 receive 的区别？
-```
-receive()：接收 ETH ；
-fallback()：处理未匹配函数或 ETH 调用。
-```
-
 ## 智能合约大小大约可以有多大？
 ```
 200kb

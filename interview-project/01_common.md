@@ -30,8 +30,9 @@ Merkle Tree 是哈希树/二叉树：
 ```
 一.常规优化
 在存储中使用 uint256 代替较小的整数类型，多个小的整数类型，会被打包在一个slot，存在 打包和解包的gas消耗。
-使用 memory, 存储 参数 和 临时变量，中间计算结果 ，以降低存储的gas 消耗。
+使用 memory, 存储  临时变量 ，以降低存储的gas 消耗。
 使用 calldata 存储 外部函数 参数，以降低存储的gas 消耗。
+使用 位移运算，替代 乘以2 和 除以2 的算法
 
 二.代码架构的优化:
 a. 链上只完成核心逻辑，复杂计算给到链下
@@ -78,6 +79,9 @@ ReentrancyGuard 会消耗额外 gas，主要是因为对 _status 变量的 stora
 不同点:
 Transparent Proxy: 升级逻辑在代理合约，更费gas，更安全
 UUPS :升级逻辑在实现合约，更节省gas
+
+Transparent： 代理管理升级，更费gas，更安全
+UUPS： 实现合约管理升级，代理只负责转发，轻量且更节省 Gas。
 
 代码层级: 
 openzepplin 更兼容的是: UUPS
