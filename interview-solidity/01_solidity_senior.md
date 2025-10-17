@@ -64,10 +64,10 @@ uniswap 的交易对池子是单独的合约，是唯一的，固定的。
 ```
 bytes memory data = abi.encode(a, b, c);
 将输入参数按 ABI 编码（Solidity 标准 ABI）序列化，返回类型：bytes memory
-不可逆：每个参数都有固定大小或长度前缀
+不可逆：每个参数都有固定大小（32字节填充，刚好放在一个slot）或长度前缀
 案例：函数调用、签名消息
 
-不可逆：每个参数紧凑打包，没有固定大小或长度前缀
+不可逆：每个参数紧凑打包，没有固定大小（没有做32字节填充），长度前缀
 解码时可能会出现二义性（例如两个动态类型参数拼在一起）
 案例 ： 生成唯一标识
 uniswap 的交易对池子是单独的合约，是唯一的，固定的 。
@@ -91,6 +91,25 @@ bytes4 selector = bytes4(keccak256("transfer(address,uint256)"));
 函数数量很多（几十个以上）：采用 分段/二分查找逻辑，时间复杂度 O(log n)，保证调度高效。
 
 如果选择器不匹配任何函数，跳转到 fallback 或 revert，保证安全。
+```
+
+## delegatecall 和 call 的不同
+```
+不同一：
+call 在被调用者上下文执行，修改被调用者状态。
+例如：合约A调用合约B的函数，函数是在 B的上下文执行，修改b的变量
+
+delegatecall 在调用者上下文执行，修改调用者状态。
+例如： 可升级合约的代理合约，转发用户的函数给实现合约，函数是在 代理合约 的上下文执行，修改 代理合约 的变量 ；
+
+不同二：
+delegatecall: msg.sender 是实际调用者
+call: msg.sender 是 直接调用者
+
+用户A->合约B--delegatecall/call--> 合约C
+合约C 的  msg.sender
+delegatecall : 用户A
+call : 合约B
 ```
 
 ## EIP-1559

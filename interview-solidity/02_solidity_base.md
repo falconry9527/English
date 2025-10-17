@@ -149,26 +149,6 @@ SSTORE（storage 置零）
 在合约部署时执行一次，用于初始化状态变量。
 ```
 
-## delegatecall 和 call 的不同
-```
-不同一：
-call 在被调用者上下文执行，修改被调用者状态。
-例如：合约A调用合约B的函数，函数是在 B的上下文执行，修改b的变量
-
-delegatecall 在调用者上下文执行，修改调用者状态。
-例如： 可升级合约的代理合约，转发用户的函数给实现合约，函数是在 代理合约 的上下文执行，修改 代理合约 的变量 ；
-
-不同二：
-delegatecall: msg.sender 是实际调用者
-call: msg.sender 是 直接调用者
-
-用户A->合约B--delegatecall/call--> 合约C
-合约C 的  msg.sender
-delegatecall : 用户A
-call : 合约B
-
-```
-
 ## gas
 ```
 Gas 是 以太坊执行交易或智能合约操作的“燃料”。
