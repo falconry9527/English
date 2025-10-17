@@ -1,5 +1,7 @@
 ## solidity 语言的数据类型
 ```
+solidity 是一个静态语言，变量类型必须明确，专门用于以太坊智能合约开发
+
 一. 值类型（Value Types）
 1. 数字类型
 整数（Integer）

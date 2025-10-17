@@ -170,5 +170,17 @@ payable(address)
 ```
 
 
+## Solidity字节码组成
+```
+Creation Code（部署字节码）
+Runtime Code（运行字节码） ：
+
+如果部署一个空合约，部署字节码 和运行字节码 （STOP 指令） 都是存在的，只是很短。整个合约没有任何逻辑
+
+```
+
+
+
+
 
 
