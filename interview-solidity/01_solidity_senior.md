@@ -180,6 +180,33 @@ Runtime Code（运行字节码） ：
 
 ```
 
+## private 修饰的变量，可以背访问吗 
+```
+private 只是防止其他合约直接访问
+但是，因为区块链是公开账本，storage 数据都是公开的，可以调用 web3.eth.getStorageAt  读取
+web3.eth.getStorageAt(contractAddress, slotIndex)
+
+解决：不要在合约中存储敏感信息，密码之类的。
+```
+
+## 为什么什么uint256 和 int256 存储 占用的字节都是 32 ，符号不占位置吗
+```
+使用 二进制补码（two’s complement） 表示符号
+最高位（bit 255）是符号位
+0 = 正数
+1 = 负数
+其余 255 位存储数值
+```
+
+## alldata 中的负数会消耗更多的 gas
+```
+先：填充到 32 字节（256 位）
+再：最高位补 0
+存储 消耗更多的gas
+```
+
+
+
 
 
 

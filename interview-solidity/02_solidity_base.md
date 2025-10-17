@@ -26,6 +26,7 @@ enum Status { Pending, Shipped, Delivered }
 固定长度数组：uint[5] numbers;
 动态数组：uint[] numbers;
 字节数组（Dynamic byte array）
+字符串 : 本质是一个 byte 动态数组
 
 映射（Mapping）
 键值对结构：mapping(keyType => valueType)
@@ -53,6 +54,12 @@ mapping 是一种 键值对存储结构，底层使用的算法是 Hash：
 3. 不能迭代 如果要遍历，需要额外数组记录key
 4. 删除 key
 delete balances[addr] 会重置为默认值，但 slot 不回收
+```
+
+## interface
+```
+interface 是合约的抽象类型，只声明函数，不实现函数。
+主要用于: 合约间交互,标准化接口,降低耦合
 ```
 
 ##  view、pure、普通函数区别？
