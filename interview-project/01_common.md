@@ -72,12 +72,12 @@ ReentrancyGuard 会消耗额外 gas，主要是因为对 _status 变量的 stora
 ## 什么是时间加权平均价格（TWAP）
 ```
 TWAP = 时间加权平均价格，用于平滑价格波动。
-核心作用：平滑价格、防止价格操纵、降低滑点。
+核心作用：平滑价格波动、防止价格操纵、降低滑点。
 
 Uniswap: 大额订单执行(把大的订单拆分成很多小的订单，分时间段执行)。
-clearpool :  价格监控
 
-Oracle :  
+clearpool : 闪电贷的低价清算防护
+
 ```
 
 ##  UUPS 和 透明代理（Transparent Proxy）的相同和区别
