@@ -113,5 +113,6 @@ UUPSUpgradeable -> Initializable(初始化)
 给代理合约的 变量 分配一个很大的，固定的slot初始化值，保证不会与逻辑合约的业务变量 slot 冲突：
 uups: keccak256("eip1967.proxy.implementation") - 1;
 
+storage slot 是 uint256 范围（≈ 1.1579×10⁷⁷），而 EIP-1967 _IMPLEMENTATION_SLOT ≈ 0.246×10⁷⁷
 ```
 
