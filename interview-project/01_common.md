@@ -29,7 +29,7 @@ Merkle Tree 是哈希树/二叉树：
 ## gas优化
 ```
 一.常规优化
-int 存储槽优化: 把能凭凑成 32 字节存储长度的数据，定义在一起（int128,int128 ）
+int 存储槽优化: 把小的变量定义在一起，凭凑成 32字节，打包到同一slot，减少storage的存储
 使用 memory, 存储  临时变量 ，以降低存储的gas 消耗。
 使用 calldata 存储 外部函数 参数，以降低存储的gas 消耗。
 使用 位移运算，替代 乘以2 和 除以2 的算法
@@ -61,7 +61,7 @@ c. iziswap中，定时计算 流动性提供者(LP)的手续费收入
 
 重入攻击防护 :
 1. 使用 ReentrancyGuard 合约防止重入攻击。
-2. 先检查,再修改状态, 最后 交互/资产转账（Check-Effect-Interaction）
+2. 先检查,再修改状态, 最后 交互/资产转账（CEI: Check-Effect-Interaction）
 3. 拉取支付（Pull Over Push）模式: 不直接向用户转账，而是让用户主动提取。
    iziswap 中，流动性提供者（lp），赎回资产 ， 存入余额，让用户自己提取，而不是直接转账给账户
 
@@ -74,9 +74,10 @@ ReentrancyGuard 会消耗额外 gas，主要是因为对 _status 变量的 stora
 TWAP = 时间加权平均价格，用于平滑价格波动。
 核心作用：平滑价格、防止价格操纵、降低滑点。
 
-Oracle : 预言机的价格来源 
 Uniswap: 大额订单执行(把大的订单拆分成很多小的订单，分时间段执行)。
 clearpool :  价格监控
+
+Oracle :  
 ```
 
 ##  UUPS 和 透明代理（Transparent Proxy）的相同和区别
