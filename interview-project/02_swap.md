@@ -48,12 +48,21 @@ fee:交易池的手续费级别（例如:0.05%、0.30%、1%）。
 在 Uniswap V3 中，如果交易对涉及 ETH，ETH 会通过 WETH（Wrapped ETH）合约进行包装，作为 ERC-20 代币 使用。
 ```
 
+## uniswap 的主要合约
+```
+PoolManager :  pool creation ， get 等
+PositionManager : mint , burn , swap 
+ISwapRouter : mint , burn , swapIn，swapOut
+
+```
+
 ## uniswap 的核心逻辑
 ```
 0.  pool creation ： 创建池子
 1. mint: 添加流动性
 2. burn: 移除流动性
 3. swap: 交易
+4. collect : 提取账户资产
 
 tickLower 和 tickUpper:流动性提供者选择的价格区间（以 tick 的形式表示）。
 sqrtPriceX96（可选）:池子当前的价格的平方根（对于初始创建来说不一定必须）。
