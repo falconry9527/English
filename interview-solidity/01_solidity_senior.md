@@ -182,7 +182,7 @@ Runtime Code（运行字节码） ：
 
 ```
 
-## private 修饰的变量，可以背访问吗 
+## private 修饰的变量，可以被访问吗 
 ```
 private 只是防止其他合约直接访问
 但是，因为区块链是公开账本，storage 数据都是公开的，可以调用 web3.eth.getStorageAt  读取
