@@ -222,14 +222,14 @@ Goroutine 没有及时关闭，导致数量越来越多
 a. 新增一个channel，发送 done 信号，让 worker Goroutine 安全退出；
 b. 使用 context.Context 控制生命周期，关闭 Goroutine；
 
+2. 切片保留底层数组
+go big := make([]byte,10_000_000); small := big[:10]; big=nil
+拷贝需要的数据到新切片：smallCopy := append([]byte(nil), small...)
+
 2. Channel 阻塞/未关闭
 使用无缓冲区的channel 或者 Channel 未关闭
 a. 使用有缓冲区的channel，避免阻塞
 b. defer 及时关闭  channel 
-
-3. 切片保留底层数组
-go big := make([]byte,10_000_000); small := big[:10]; big=nil
-拷贝需要的数据到新切片：smallCopy := append([]byte(nil), small...)
 
 4. Map / 缓存无限增长
 go cache[key]=value，长时间不删除
