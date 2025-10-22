@@ -43,6 +43,9 @@ enum Status { Pending, Shipped, Delivered }
 ```
 定长数组：长度固定，元素是连续存储的，Gas 便宜
 动态数组：长度可变，元素是稀疏存储的，并不占用连续slot，一个元素占用一个slot（不管变量实际大小）
+1. 栈上存储的是起始slot索引 : start_slot
+2. 每个元素的索引： keccak256(start_slot) + index
+slot连续，不代表物理存储连续
 ```
 
 ## mapping
@@ -50,7 +53,9 @@ enum Status { Pending, Shipped, Delivered }
 mapping 是一种 键值对存储结构，底层使用的算法是 Hash：
 1. 只能是 合约级全局变量（contract-level state),只能存储在 stroage,不能在函数中定义
 2. 稀疏存储 ,元素是稀疏存储的
-栈上存储的是 mapping 起始 slot 索引，访问 key 时通过 keccak256(key, slot) 定位真实 storage
+a. 栈上存储的是 mapping 起始 slot 索引： start_slot （指向具体的 stroage 的 slot）
+b. 每个元素的索引 : keccak256(abi.encode(key,start_slot))
+
 3. 不能迭代 如果要遍历，需要额外数组记录key
 4. 删除 key
 delete balances[addr] 会重置为默认值，但 slot 不回收
