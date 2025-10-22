@@ -27,7 +27,7 @@
 
 ## slice
 ```
-一. 定义和初始化: slice 是一个 封装类型，封装，指针（指向底层数组）,len(当前长度),cap (当前容量)
+一. 定义和初始化: slice 是一个 封装类型，封装了 指针（指向底层数组）,len(当前长度),cap (当前容量)
 type slice struct {
     array unsafe.Pointer // 指向底层数组
     len   int            // 当前长度
