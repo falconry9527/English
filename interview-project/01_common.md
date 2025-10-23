@@ -3,6 +3,13 @@
 处理方法
 1. 等待 12 个区块确认（约 3 分钟）后再处理数据。
 2. 同步 removed 字段，其中 removed = true 表示事件无效且已被废弃。
+
+removed 字段是类似 blockNumber 的一个属性字段
+
+由于区块已经被废弃，所以 同步 removed=true的数据方法
+1. websocket 监控
+2. 根据实时记录的blockhash ,进行循环查询
+
 ```
 
 ## evm 兼容链
