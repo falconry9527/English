@@ -56,11 +56,16 @@ getAddress 用相同参数计算地址；
 uniswap 的交易对池子是单独的合约，是唯一的，固定的。
 使用 CREATE2 创建的，
 
-四. new 
-使用 new 创建合约的时候，
+四. 实现方式 
+1. 使用 new 创建合约的时候，
 不传 盐值（salt）,底层调用的就是 CREATE；
 传入 盐值（salt）,底层调用的就是 CREATE2 
 例如: new Pool{salt: salt}() 
+
+2. assembly : 
+assembly 关键字允许你 直接使用以太坊虚拟机（EVM）的低级指令（Yul/汇编），
+绕过 Solidity 的高级抽象
+
 ```
 
 ## abi.encode 和 abi.encodePacked 之间有什么区别？
