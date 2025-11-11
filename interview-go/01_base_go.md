@@ -129,18 +129,6 @@ a. G 阻塞 : G 会被 P 放入等待队列（wait queue），等待唤醒
 b. M解绑P  :  会释放 P，去执行其他 P 上的 G（这个过程会存在内核切换，但是存在的可能性很低，几乎为0）。
 ```
 
-## channel
-```
-Channel 是 Go 的 通信机制，用于 goroutine 之间安全地传递数据。
-无缓冲 channel → 同步通信，发送和接收必须同时完成,否则就会阻塞
-带缓冲 channel → 异步通信，缓冲区满时发生阻塞
-
-select 可以同时等待多个 channel,类似于switch
-
-channel 是 go的并发机制-csp并发模型 的核心，开始讲 csp并发模型
-
-```
-
 ## go 的并发机制-csp并发模型
 ```
 go 的并发机制是基于CSP（Communicating Sequential Processes）通信顺序进程
@@ -150,12 +138,21 @@ Go 的CSP模型主要由 Goroutine + Channel组成：
 goroutine : 轻量级线程 
 channel : 是 Go 的 通信机制，用于 goroutine 之间安全地传递数据。
 
-典型案例: 
-工作池（Worker Pool）: 主 goroutine 生成任务，发送到 channel，worker goroutine 从 channel 中取任务并处理。
 ```
 
 ## channel : 对已经关闭的的chan进行读写
 ```
+go 的并发机制是基于CSP（Communicating Sequential Processes）通信顺序进程
+核心理念：通过通信来共享内存,实现并发
+
+Channel 是 Go 的 通信机制，用于 goroutine 之间安全地传递数据。
+无缓冲 channel → 同步通信，发送和接收必须同时完成,否则就会阻塞
+带缓冲 channel → 异步通信，缓冲区满时发生阻塞
+select 可以同时等待多个 channel,类似于switch
+
+典型案例: 
+工作池（Worker Pool）: 主 goroutine 生成任务，发送到 channel，worker goroutine 从 channel 中取任务并处理。
+
 channel 关闭后，不能再写（send），但还能读（receive）剩余的数据。
 对已关闭的channel
 写: 会直接报错: (panic: send on closed channel)
@@ -348,3 +345,22 @@ new：分配一块内存但不初始化，返回指向零值的指针，适用�
 make：创建并初始化对象，返回对象本身，适用于引用类型（slice、map、channel）.
 ```
 
+## CI/CD
+```
+CI/CD 自动化部署流程。
+
+Jenkins: 
+1. Jenkins 检测git提交 →  执行部署脚本
+2. Jenkins 构建完成镜像 → 推送镜像仓库 → Jenkins 脚本触发 Kubernetes 重新部署。
+
+------构建完成镜像 :
+1. go build -o app .
+2. docker build -t registry.cn-hangzhou.aliyuncs.com/demo/go-demo:1.0.0 .
+3. echo $ALIYUN_PASS | docker login -u $ALIYUN_USER --password-stdin registry.cn-hangzhou.aliyuncs.com
+------推送镜像仓库 :
+4. docker push registry.cn-hangzhou.aliyuncs.com/demo/go-demo:1.0.0
+------k8s部署 :
+5. kubectl set image deployment/go-demo go-demo=registry.cn-hangzhou.aliyuncs.com/demo/go-demo:1.0.0 -n prod
+6. kubectl rollout status deployment/go-demo -n prod
+
+```

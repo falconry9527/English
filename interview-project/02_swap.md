@@ -159,3 +159,17 @@ b. 更新 userFee=totalFee
 1. 用户设置 minAmountOut，售出价格 如果小于 minAmountOut 则回滚
 2. 代码设置滑点容忍度，滑点过大则回滚
 ```
+
+## 数据同步过程中,如何处理区块链分叉问题？
+```
+处理方法
+1. 等待 12 个区块确认（约 3 分钟）后再处理数据。
+2. 同步 removed 字段，其中 removed = true 表示事件无效且已被废弃。
+
+removed 字段是类似 blockNumber 的一个属性字段
+
+由于区块已经被废弃，所以 同步 removed=true的数据方法
+1. websocket 监控
+2. 根据实时记录的blockhash ,进行循环查询
+
+```

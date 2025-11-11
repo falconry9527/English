@@ -31,3 +31,109 @@ formula（ˈfɔːrmjələ） : 公式
 ```
 
 
+## introduction
+```
+Open Zeppelin (ˈzepəlɪn)
+Hardhat 
+Foundry （ˈfaʊn.dri）
+
+Ethers （ˈiː.ðəz）
+Ethereum : iˈ/θe/riə/m 
+
+Security (sɪˈkjʊərəti)
+Audit (ˈɔːdɪt)
+
+reentrancy (riːˈɛntrənsi) (trə -> tree ) prevention (prɪˈvenʃn)
+
+gas optimization (ˌɑːptɪməˈzeɪʃn)
+Proxy (ˈprɒksi)
+goroutines （ˈɡoʊˌruːˌtiːnz）
+channels （ˈtʃænlz）
+infra （ˈɪnfrə）
+ 
+```
+
+
+## introduction
+```
+calculate (ˈkælkjuleɪt)
+effective (ɪˈfektɪv) : 有效的 
+efficient （ɪˈfɪʃnt） : 高效的
+```
+
+## Project
+```
+registrations （ˌrɛdʒɪsˈtreɪʃənz）
+Integrated （ˈɪntɪɡreɪtɪd）
+targeted (ˈtɑːɡɪtɪd)
+metrics （ˈme-trɪks）
+
+identify（aɪˈdentɪfaɪ）
+
+churned(tʃɜːnd)
+funnel (ˈfʌnl) analytics
+
+```
+
+## introduction
+```
+multi-chain (mʌlti) :  multiple chains  
+DeFi （dai-fei）:Decentralized Finance
+protocol（ˈprəʊtəkɒl）
+
+ecosystem (ˈiːkəʊsɪstəm)
+cex (塞克斯):
+dex (desk): 
+
+efficient(ɪˈfɪʃnt)
+liquidity (lɪˈkwɪdəti)
+assets(ˈæsets)
+
+Open zeppelin （ˈoʊpən ˈzepəˌlɪn）  普林
+
+```
+
+## Project
+```
+creation (kriˈeɪʃn)
+upgraded (ˌʌpˈɡreɪdɪd)
+contracts (kənˈtrækts)
+Proxy (ˈprɒksi)
+process  (prəˈses)
+processing (prəˈsesɪŋ)
+slippage(ˈslɪpɪdʒ)
+simulating(ˈsɪmjuleɪtɪŋ)
+```
+
+## introduction
+```
+global(ˈɡləʊbl)
+delivery(dɪˈlɪvəri)
+statistics (stəˈtɪstɪks) -> (steiˈtɪstɪks) 
+ana/lyze (ˈænəlaɪz) （5个音节 2:3 ）
+
+transportation (ˌtrænspɔːˈteɪʃn)
+```
+
+## Project
+```
+dimensional （daɪˈmenʃənl）
+metris (ˈmetrɪk)
+dispatch （dɪˈspætʃ）
+arrival （əˈraɪvl）
+signature （ˈsɪɡnətʃə）
+depot (ˈdepəʊ), and courier （ˈkʊriər）.
+
+vehicle(ˈviːəkl)
+identify (aɪˈdentɪfaɪ)
+fastest(ˈfɑːstɪst)
+routes (ruːts)
+
+calculate (ˈkælkjuleɪt)
+
+heuristic (hjuˈrɪstɪk)
+algorithms (ˈælgərɪðmz) 艾尔-格-ri-ð姆z
+mechanism (ˈmekənɪzəm) 麦可尼 热幕  （复数 s读z）
+
+```
+
