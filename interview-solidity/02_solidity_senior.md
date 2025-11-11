@@ -101,25 +101,6 @@ bytes4 selector = bytes4(keccak256("transfer(address,uint256)"));
 如果选择器不匹配任何函数，跳转到 fallback 或 revert，保证安全。
 ```
 
-## delegatecall 和 call 的不同
-```
-不同一：
-call 在被调用者上下文执行，修改被调用者状态。
-例如：合约A调用合约B的函数，函数是在 B的上下文执行，修改b的变量
-
-delegatecall 在调用者上下文执行，修改调用者状态。
-例如： 可升级合约的代理合约，转发用户的函数给实现合约，函数是在 代理合约 的上下文执行，修改 代理合约 的变量 ；
-
-不同二：
-delegatecall: msg.sender 是实际调用者
-call: msg.sender 是 直接调用者
-
-用户A->合约B--delegatecall/call--> 合约C
-合约C 的  msg.sender
-delegatecall : 用户A
-call : 合约B
-```
-
 ## EIP-1559
 ```
 1559是以太坊的一个升级，改变 gas 计算规则
@@ -212,7 +193,19 @@ web3.eth.getStorageAt(contractAddress, slotIndex)
 存储 消耗更多的gas
 ```
 
+## gas优化
+```
+一.常规优化
+int 存储槽优化: 把小的变量定义在一起，拼凑成 32字节，打包到同一slot，减少storage的存储
+使用 memory, 存储  临时变量 ，以降低存储的gas 消耗。
+使用 calldata 存储 外部函数 参数，以降低存储的gas 消耗。
+使用 位移运算，替代 乘以2 和 除以2 的算法 （uniswap 的tick 价格区间）
 
+二.代码架构的优化:
+1. 复杂的统计逻辑，使用event 抓去做到链下进行统计
+2. 数据结构优化: 白名单机制使用 Merkle 而不是 mapping, 减少数据存储
+3. uniswap 单位流动性累计手续费 机制： 
+```
 
 ## Merkle tree
 ```
@@ -230,54 +223,25 @@ Merkle Tree 是哈希树/二叉树:
 验证的时候，您只需要提供叶验证哈希和 Merkle证明（叶验证哈希 兄弟节点哈希数组）。
 ```
 
-## gas优化
-```
-一.常规优化
-int 存储槽优化: 把小的变量定义在一起，拼凑成 32字节，打包到同一slot，减少storage的存储
-使用 memory, 存储  临时变量 ，以降低存储的gas 消耗。
-使用 calldata 存储 外部函数 参数，以降低存储的gas 消耗。
-使用 位移运算，替代 乘以2 和 除以2 的算法
-
-二.代码架构的优化:
-a. 数据结构优化： 贷款合约中，白名单机制使用 Merkle 而不是 mapping, 减少数据存储
-
-b. 链下监控计算，链上验证执行
-比如: 贷款合约中，链下监控价格，触发链上清算，链上验证和执行
-
-c. 定时执行，减少执行次数
-iziswap中，定时计算 流动性提供者(LP)的手续费收入
-每次swap ,流动性提供者(LP) 的手续费收入都会变化，如果每次计算 ，很消耗gas，怎么解决
-1. 定时批量更新（Batching Updates）: 每10分钟更新一次
-2. 当用户查看的时候更新
-
-交易手续费 : 平台抽取 1/6 , LP 获得 5/6 
-0.05%（低风险池）
-0.30%（中等波动池）
-1.00%（高波动池）
-```
-
 ##  安全和防御攻击
 ```
-白名单机制 : 防止 Sybil 攻击
-
-多签机制 :防止密钥丢失或被盗: 
-如果管理员想要提取交易费，需要至少 5 名管理员中的 3 名批准。
-    使用多重签名机制，防止密钥丢失或被盗（OpenZeppelin 的 AccessControl + 自定义签名验证）。
-
-时间锁: 延迟一些危险操作，比如 修改费率 （选答）
-紧急暂停机制: 特殊情况下，暂停业务逻辑（选答）
-
 重入攻击防护 :
 1. 使用 ReentrancyGuard 合约防止重入攻击。
 2. 先检查,再修改状态, 最后 交互/资产转账（CEI: Check-Effect-Interaction）
 3. 拉取支付（Pull Over Push）模式: 不直接向用户转账，而是让用户主动提取。
    iziswap 中，流动性提供者（lp），赎回资产 ， 存入余额，让用户自己提取，而不是直接转账给账户
-
+   
 ReentrancyGuard 会消耗额外 gas，主要是因为对 _status 变量的 storage 读写。
 规范代码习惯: 不能随意调整变量的大小和顺序
 
-闪电贷攻击和防护 : 具体见clearpool的闪电贷
+时间锁: 延迟一些危险操作，比如 修改费率 （选答）
+紧急暂停机制: 特殊情况下，暂停业务逻辑（选答）
 
+多签机制 :防止密钥丢失或被盗: 
+如果管理员想要提取交易费，需要至少 5 名管理员中的 3 名批准。
+    使用多重签名机制，防止密钥丢失或被盗（OpenZeppelin 的 AccessControl + 自定义签名验证）。
+
+闪电贷攻击和防护 : TWAP机制
 
 ```
 
@@ -315,6 +279,25 @@ uups: keccak256("eip1967.proxy.implementation") - 1;
 storage slot 是 uint256 范围（≈ 1.1579×10⁷⁷），而 EIP-1967 _IMPLEMENTATION_SLOT ≈ 0.246×10⁷⁷
 ```
 
+
+## delegatecall 和 call 的不同
+```
+不同一：
+call 在被调用者上下文执行，修改被调用者状态。
+例如：合约A调用合约B的函数，函数是在 B的上下文执行，修改b的变量
+
+delegatecall 在调用者上下文执行，修改调用者状态。
+例如： 可升级合约的代理合约，转发用户的函数给实现合约，函数是在 代理合约 的上下文执行，修改 代理合约 的变量 ；
+
+不同二：
+delegatecall: msg.sender 是实际调用者
+call: msg.sender 是 直接调用者
+
+用户A->合约B--delegatecall/call--> 合约C
+合约C 的  msg.sender
+delegatecall : 用户A
+call : 合约B
+```
 
 
 
