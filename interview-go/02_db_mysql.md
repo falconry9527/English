@@ -110,5 +110,3 @@ SELECT * FROM users WHERE id BETWEEN 1000001 AND 1000010 ;
 2. UPDATE account SET balance=?, version=version+1 WHERE id=? AND version=?
 
 ```
-
-
