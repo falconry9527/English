@@ -93,5 +93,30 @@ Owned Object : dynamic_field / dynamic_object_field / object_table  的add 方�
 Owned Object (Fast Path)：Owned Object 在任一时刻只有唯一 owner 拥有写权限，类似于单线程，没有并发修改 , 因此无需全局排序，不走共识机制 （sui的共识机制是 pos）
 Shared Object (Consensus Path)：允许所有用户同时修改，类似于多现场，存在并发修改冲突，通过 shared version + 共识锁 对交易进行全局排序 ，走共识机制 
 
+```
+
+
+## 范型 和 反射  
+```
+1. 范型
+Sui 的范型 是为了把 类型判断 前移到编译期，用类型系统保证资产安全。
+phantom ：T不占存储，只用于类型区分
+
+2. 反射
+Sui Move 没有运行时反射，而是 用范型 把 类型判断  前移到编译期。 只有类型反射 （type_name）
+
+类型反射 :
+let defining_type_name: TypeName = type_name::with_defining_ids<T>();
+let original_type_name: TypeName = type_name::with_original_ids<T>();
+
+// Returns only "ID" of the package.
+let defining_package: address = type_name::defining_id<T>();
+let original_package: address = type_name::original_id<T>();
 
 ```
+
+##  字段跨module访问
+```
+sui的字段都不能跨module 直接访问，需要提供对应的get 或者 set 方法
+```
+
