@@ -18,6 +18,20 @@ add方法的时候，绑定了 子Object 的owner 是父Object
 ```
 
 
+##  Resource 
+```
+Resource：具有线性类型（没有 copy 和 drop 能力，不能被复制和隐式丢弃，必须显式转移或销毁）语义的 struct
+Object = Resource + UID + 系统管理
+
+资源安全模型：
+Sui 的 Resource 安全模型通过 Move 的
+线性资源类型
+能力系统 
+OBJECT
+对象所有权，把 资产安全、并发安全  前移到语言和系统层，而不是依赖合约逻辑兜底。
+
+```
+
 
 ##  能力系统
 ```
@@ -50,21 +64,6 @@ coin::create_currency方法中要求使用 OTW ，从而确保 coin::TreasuryCap
 
 4 . OBJECT
 具有 key 能力的 + UID 的struct实例,被称为Object。Object被sui系统管理。
-
-```
-
-
-##  Resource 
-```
-Resource：具有线性类型（没有 copy 和 drop 能力，不能被复制和隐式丢弃，必须显式转移或销毁）语义的 struct
-Object = Resource + UID + 系统管理
-
-资源安全模型：
-Sui 的 Resource 安全模型通过 Move 的
-线性资源类型
-能力系统 
-OBJECT
-对象所有权，把 资产安全、并发安全  前移到语言和系统层，而不是依赖合约逻辑兜底。
 
 ```
 
