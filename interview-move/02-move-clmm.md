@@ -72,7 +72,7 @@ x * y = L^ 2 ; x = L / √P , y = L * √P
 初始价格 : √P = L / x  = y / L 
 √P (池子会保留当前的价格 current_sqrt_price)
 
-三. 交易公式 (输出公式) (L不变,√P变换 ,主要用于交易SWAP) 
+三. 交易公式 (输出公式) (L不变,√P变化,主要用于交易SWAP) 
 Δx = L * (1/√P_new - 1/√P_old )
 Δy = L * (√P_new  - √P_old )
 循环更新一个tick, P_new ，按照上面公式， 算出 Δx_step，Δy_step 直到 sum(Δx_step) >= Δx , 算出 amount_in(Δx) 和 amount_out(Δy)
