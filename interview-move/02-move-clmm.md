@@ -83,9 +83,9 @@ CLMM 的三段状态 （输入amount0 和 amount1 可以获得多少流动）
 
 情况 A：价格在区间内,同时提供 token0 和 token1 
 1. token0 需求
-amount0 = ΔL * (1/√P - 1/√Pb)  ===>  ΔL= amount0 / (1/√P - 1/√Pb) 
+amount0 = ΔL * (1/√P_cur - 1/√Pb)  ===>  ΔL= amount0 / (1/√P - 1/√Pb) 
 2. token1 需求
-amount1 = ΔL *  (√P - √Pa)  ===>   ΔL= amount1 / (√P - √Pa) 
+amount1 = ΔL *  (√P_cur - √Pa)  ===>   ΔL= amount1 / (√P - √Pa) 
 
 情况 B：价格低于区间，只需要 token0
 amount0 =  ΔL * (1/√P - 1/√Pb) ===>  ΔL= amount0 / (1/√P - 1/√Pb)
