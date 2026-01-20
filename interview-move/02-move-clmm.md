@@ -95,20 +95,23 @@ amount1 =  ΔL * (√P - √Pa)  ===>  ΔL= amount1 / (√P - √Pa)
 
 情况 B和C，池子退化成单边资产（但是池子其实还是有2种资产），只能添加单边资产
 
-五. 利息模型 
+五. 流动性收益计算
 1. 单位流动性累计利息
 2. tick 反向存储(fee_below,fee_above) ,而不是存储落在当前tick的利息，读取的时候 fee_inside=fee_global−fee_below−fee_above
 
 存储: 
+1. 全局单位流动性累计利息
 pool （update_fee_growth）
 fee_growth_global_a
 fee_growth_global_b
 
-Tick （pool.swap_in_pool-> 循环tick调用: tick.cross_by_swap 更新；update_by_liquidity 初始化）
+2. 全局单位流动性累计利息
+Tick （pool.swap_in_pool-> 循环tick调用: tick.cross_by_swap ; 更新；increase_liquidity / decrease_liquidity -> update_by_liquidity 初始化）
 fee_growth_outside_a
 fee_growth_outside_b
 
-读取 ： get_fee_in_range
+3. 获取利息
+领取 ：collect_fee-> get_fee_in_range
 fee_inside=fee_global−fee_below−fee_above
 
 
