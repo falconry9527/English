@@ -127,17 +127,17 @@ sui的字段都不能跨module 直接访问，需要提供对应的get 或者 se
 ##  合约升级
 ```
 定义:
-upgrade 会在链上发布一个新的 Package 对象（新的 packageId），旧 packageId 对应的代码不会被改写、仍然可用；新旧包存储共用
+upgrade : 由于 sui move 的数据（Object）和 合约是分开，所以升级就是发个 新的 合约,新旧package可以共存，同时操作共享数据(Object)
+兼容性约束
+1. 改变已发布 struct 的字段布局/类型（会影响链上对象的存储反序列化），可以新增Object
+2. 修改函数签名（方法名，参数 和返回值 ），可以新增方法
+
 UpgradeCap : 每次 publish 的时候 ，都会transfer 该合约的 UpgradeCap 给 发布者
 int 方法，只在 publish 的时候执行一次，upgrade 的时候不会执行 
 
 执行方法:
 sui client objects 0xec731dad64e781caff49561ed2a69e873b0c1977f923786b0b803c2386dfd19a --json   >> b.txt 
 sui client upgrade --upgrade-capability 0x90d16ddfa41cfa7b747cb6442a9ab7553e8a349e409e8191f232c6178020be15 
-
-兼容性约束
-1. 改变已发布 struct 的字段布局/类型（会影响链上对象的存储反序列化）
-2. 修改函数签名（方法名，参数 和返回值 ）
 
 ```
 
