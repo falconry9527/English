@@ -11,7 +11,7 @@ pool_create_pool_v3 -> factory::create_pool_v3/create_pool_internal-> pool::new
 create_pool_v3_with_creation_cap
 区别 : is_permission_pair,有些交易对，只能拥有PoolCreationCap才能创建
 
-唯一建 :   CoinTypeA，CoinTypeB , tick_spacing（fee_rate费率）
+唯一建 : CoinTypeA，CoinTypeB , tick_spacing（fee_rate费率）
 
 tick_lower_idx: u32,
 tick_upper_idx: u32, 
@@ -54,6 +54,7 @@ token1/token0 的价格 p = y / x
 (x+Δx) * (y-Δy) = x * y  = k 
 
 添加流动性公式(流动性计算公式):
+初始化流动性 ：L = √x * √y 
 ΔL = (Δx/x)  * L
 ΔL = (Δy/y) * L
 
@@ -96,10 +97,15 @@ amount1 =  ΔL * (√P - √Pa)  ===>  ΔL= amount1 / (√P - √Pa)
 情况 B和C，池子退化成单边资产（但是池子其实还是有2种资产），只能添加单边资产
 
 五. 流动性收益计算
-1. 单位流动性累计利息
-2. tick 反向存储(fee_below,fee_above) ,而不是存储落在当前tick的利息，读取的时候 fee_inside=fee_global−fee_below−fee_above
+AMM：流动性 = 池子份额/深度（一直在场）。
+CLMM：流动性 = 做市强度（只在区间内在场，且随价格跨 tick 动态变化）。
 
-存储: 
+1. 单位流动性累计利息
+2. tick + priceRange 
+a. 不是存储每个tick 的单位流动性累计利息，而是存储 每个tick 左边的累计利息高度
+b. 存储方式: 跨越tick，反转存储 
+
+代码辅助理解:
 1. 全局单位流动性累计利息
 pool （update_fee_growth）
 fee_growth_global_a
@@ -114,12 +120,11 @@ fee_growth_outside_b
 领取 ：collect_fee-> get_fee_in_range
 fee_inside=fee_global−fee_below−fee_above
 
-
 ```
 
 ## tick 价格模型
 ```
-CLMM 的价格不是平滑的，而是每个价格差距 千分之一的 等差价格点
+CLMM 的价格不是平滑的，而是每个价格差距 千分之一的 等比数列价格点
 
 tick 与价格的关系是指数映射
 p=1.0001^tick

@@ -127,7 +127,7 @@ sui的字段都不能跨module 直接访问，需要提供对应的get 或者 se
 ##  合约升级
 ```
 定义:
-upgrade 会在链上发布一个新的 Package 对象（新的 packageId），旧 packageId 对应的代码不会被改写、仍然可用；同时通过 版本/升级链（UpgradeCap 关联）把“同一个逻辑包”向前演进。
+upgrade 会在链上发布一个新的 Package 对象（新的 packageId），旧 packageId 对应的代码不会被改写、仍然可用；新旧包存储共用
 UpgradeCap : 每次 publish 的时候 ，都会transfer 该合约的 UpgradeCap 给 发布者
 int 方法，只在 publish 的时候执行一次，upgrade 的时候不会执行 
 
