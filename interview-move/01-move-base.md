@@ -127,12 +127,13 @@ sui的字段都不能跨module 直接访问，需要提供对应的get 或者 se
 ##  合约升级
 ```
 定义:
-在链上对同一个 package id 发布一版新的模块字节码, 并让之后的交易执行使用新版本的代码；旧版本代码不会被“改写”，而是通过 版本机制向前演进
-UpgradeCap : 每次 publish 的时候 ，都会transfer  该合约的 UpgradeCap 给 发布者
+upgrade 会在链上发布一个新的 Package 对象（新的 packageId），旧 packageId 对应的代码不会被改写、仍然可用；同时通过 版本/升级链（UpgradeCap 关联）把“同一个逻辑包”向前演进。
+UpgradeCap : 每次 publish 的时候 ，都会transfer 该合约的 UpgradeCap 给 发布者
 int 方法，只在 publish 的时候执行一次，upgrade 的时候不会执行 
 
 执行方法:
-sui client upgrade --upgrade-capability 0x06e13436f5c8e99958f79fb923186acbee9fd97dd8335d54308a573ba42b6389 
+sui client objects 0xec731dad64e781caff49561ed2a69e873b0c1977f923786b0b803c2386dfd19a --json   >> b.txt 
+sui client upgrade --upgrade-capability 0x90d16ddfa41cfa7b747cb6442a9ab7553e8a349e409e8191f232c6178020be15 
 
 兼容性约束
 1. 改变已发布 struct 的字段布局/类型（会影响链上对象的存储反序列化）
