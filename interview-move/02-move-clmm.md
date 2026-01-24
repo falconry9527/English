@@ -59,7 +59,7 @@ token1/token0 的价格 p = y / x
 ΔL = (Δy/y) * L
 
 5.手续费计算 : 
-单位流动性累计利息 , 按照 流动性份额 分配
+单位流动性累计手续费 , 按照 流动性份额 分配
 
 ```
 
@@ -100,23 +100,23 @@ amount1 =  ΔL * (√P - √Pa)  ===>  ΔL= amount1 / (√P - √Pa)
 AMM：流动性 = 池子份额/深度（一直在场）。
 CLMM：流动性 = 区间做市强度（价格区间范围内）。
 
-1. 单位流动性累计利息（pool 里面存储）
+1. 单位流动性累计手续费（pool 里面存储）
 2. tick + priceRange 
-a. 当价格跨过某个tick ， tick 更新的不是 当前tick单位流动性累计利息，而是 当前价格所在一侧的反面(outside) 单位流动性累计利息
+a. 当价格跨过某个tick ， tick 更新的不是 当前tick单位流动性累计手续费，而是 当前价格所在一侧的反面(outside) 单位流动性累计手续费
 b. 存储方式: 跨越tick，反转存储 
 
 代码辅助理解:
-1. 全局单位流动性累计利息
+1. 全局单位流动性累计手续费
 pool （update_fee_growth）
 fee_growth_global_a
 fee_growth_global_b
 
-2. 全局单位流动性累计利息
+2. 全局单位流动性累计手续费
 Tick （pool.swap_in_pool-> 循环tick调用: tick.cross_by_swap ; 更新；increase_liquidity / decrease_liquidity -> update_by_liquidity 初始化）
 fee_growth_outside_a
 fee_growth_outside_b
 
-3. 获取利息
+3. 获取手续费
 领取 ：collect_fee-> get_fee_in_range
 fee_inside=fee_global−fee_below−fee_above
 
