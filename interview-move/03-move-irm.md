@@ -11,8 +11,11 @@ speed = ADJUSTMENT_SPEED *  err （池子的资产利用率偏差)
 
 二. 曲线利率模型
 linear_adaptation = speed * seconds
-在 AdaptiveCurveIRM 里把 linear_adaptation 变成  e^linear_adaptation,实现平滑的指数式上调/下调（而不是简单加减）。
 
-泰勒近似值: e^r≈ 1 + r+ x^2/2 ,当r很小 : e^r≈1+r
+在 AdaptiveCurveIRM 里把 linear_adaptation 变成  （e^（linear_adaptation/WAD））* WAD, 实现即时更新 利率的逻辑
+
+泰勒近似值: e^r ≈ 1 + r+ x^2/2 ,当r很小 : e^r≈1+r
+梯形积分取平均数
+倍率缩放，提高即时反馈
 
 ``` 
