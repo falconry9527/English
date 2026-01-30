@@ -9,7 +9,7 @@
 
 table : value 通常是基础类型，没有key的普通struct 实例 
 
-dynamic_field：（父Object的） 子field 的  Key-vauleV索引系统（value 必须是必须有 store能力 ），子Object 的owner 必须是父Object
+dynamic_field : （父Object的） 子field 的  Key-vauleV索引系统（value 必须是必须有 store能力 ），子Object 的owner 必须是父Object
 dynamic_object_field: （父Object的） 子Object 的 Key-vauleV 索引系统（value 的 strcut 必须有 key 和 store能力），子 Object 可独立拥有 。
 
 object_table : 是 dynamic_object_field 的封装，但是 子Object 的 object owner 是父Object
