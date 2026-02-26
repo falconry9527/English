@@ -84,8 +84,8 @@ gas 只会在 交易执行时（修改全局变量） 被实际消耗
 ```
 public、external、internal、private 区别？
 public：链内外可访问；
-internal：合约及继承可访问；
 private：仅当前合约可访问。
+internal：合约及继承可访问；
 external：链外调用；
 ```
 
