@@ -122,7 +122,7 @@ transfer ERC20 的转账方法，转账失败，返回false,不会回滚revert
 function transfer(address to, uint256 amount) external returns (bool);
 
 safeTransfer 是 OpenZeppelin对 transfer 的安全封装，
-添加了 转账失败,返回false，自动回滚revert 的逻辑, 保证转账安全。
+添加了 转账失败,返回false，自动回滚revert 的逻辑, 保证 业务逻辑安全。
 SafeERC20.safeTransfer(IERC20 token, address to, uint256 value);
 ```
 
@@ -146,7 +146,7 @@ block.number
 
 ## 哪些操作会部分退还 gas？
 ```
-CALL/DELEGATECALL 的失败 ： EVM 会退回剩余 gas
+CALL/DELEGATECALL 的失败 : EVM 会退回剩余 gas
 SELFDESTRUCT : 销毁合约
 SSTORE（storage 置零）
 ```
