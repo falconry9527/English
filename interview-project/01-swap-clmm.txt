@@ -50,7 +50,7 @@ x * y = L^ 2 ; x = L / √P , y = L * √P
 三. 输出公式 (L不变,√P变化,主要用于交易SWAP)
 Δx = L * (1/√√P_old - 1/√P_new )
 Δy = L * (√P_new  - √P_old )
-循环更新tick, 算出每一步tick的 Δx_step，Δy_step 直到 sum(Δx_step) >= Δx , 算出 amount_in(Δx) 和 amount_out(Δy)
+循环tick, 算出每一步tick的 Δx_step，Δy_step 直到 sum(Δx_step) >= Δx , 算出 amount_in(Δx) 和 amount_out(Δy)
 
 四. 流动性公式 (√P不变，ΔL 和 amount 变化，主要用于添加流动性)
 
