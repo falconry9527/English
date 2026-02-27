@@ -55,7 +55,6 @@ token1/token0 的价格 p = y / x
 
 4.添加流动性公式(流动性计算公式):
 按比例添加时 : Δx/x = Δy/y = ΔL / L
-
 所以:
 ΔL = (Δx/x) * L = (Δy/y) * L  （L = √x * √y ）
 
@@ -71,13 +70,13 @@ token1/token0 的价格 p = y / x
 x * y = L^ 2 ; x = L / √P , y = L * √P
 
 二. 价格公式 
-初始价格 : √P = L / x  = y / L 
+初始价格 : p  = y / x ，最相近的tick 价格
 √P (池子会保留当前的价格 current_sqrt_price)
 
 三. 输出公式 (L不变,√P变化,主要用于交易SWAP) 
-Δx = L * (1/√P_new - 1/√P_old )
+Δx = L * (1/√√P_old - 1/√P_new )
 Δy = L * (√P_new  - √P_old )
-循环更新一个tick, P_new ，按照上面公式， 算出 Δx_step，Δy_step 直到 sum(Δx_step) >= Δx , 算出 amount_in(Δx) 和 amount_out(Δy)
+循环更新一个tick, 算出每一步的 Δx_step，Δy_step 直到 sum(Δx_step) >= Δx , 算出 amount_in(Δx) 和 amount_out(Δy)
 
 四. 流动性公式 (√P不变，ΔL 和 amount 变化，主要用于添加流动性)
 
