@@ -13,12 +13,13 @@ Calldata：外部函数调用的 只读输入参数存储区，存放 address、
 引用类型 → 必须指定 memory 或 storage（数组/struct）
 
 mapping →  只能是 合约级全局变量（contract-level state),只能存储在 stroage,不能在函数中定义
-1. 栈上存储的是 mapping 起始 slot 索引,指向具体的 stroage 的 start_slot
+1. Stack 存储的是 mapping 起始 slot 索引,指向具体的 stroage 的 start_slot
 2. 每个元素的索引 :  keccak256(abi.encode(key, start_slot))
 
 数组：
 1. 栈上存储的是起始slot索引 : start_slot
 2. 每个元素的索引： keccak256(start_slot) + index
+
 ```
 
 ## CREATE2
@@ -43,9 +44,9 @@ address = keccak256(
     salt,
     keccak256(bytecode)
 )[12:]  // 取后 20 字节
-取决于 ： 部署者地址 + 盐值（salt） + 合约字节码
+取决于 ：部署合约地址 + 盐值（salt） + 合约字节码
 
-部署者地址（sender） → 部署者地址（比如 Factory 合约地址）
+部署者地址（sender） → 部署合约地址（比如 Factory 合约地址）
 盐值（salt） → 由部署者自定义（常用 keccak256(token0, token1)）
 合约字节码（bytecode) → 待部署合约的字节码（creationCode）
 
@@ -72,14 +73,16 @@ assembly 关键字允许你 直接使用以太坊虚拟机（EVM）的低级指�
 ```
 bytes memory data = abi.encode(a, b, c);
 将输入参数按 ABI 编码（Solidity 标准 ABI）序列化，返回类型：bytes memory
-可逆：每个参数都有固定大小（32字节填充，刚好放在一个slot）或长度前缀
+可逆：每个参数都有固定大小（32字节填充）或 长度前缀
 案例：函数调用、签名消息
 
 不可逆：每个参数紧凑打包，没有固定大小（没有做32字节填充），长度前缀
 解码时可能会出现二义性（例如两个动态类型参数拼在一起）
+
 案例 ： 生成唯一标识
 uniswap 的交易对池子是单独的合约，是唯一的，固定的 。
 使用 encodePacked，uniswap中,生成交易对的唯一标识-盐值
+
 ```
 
 ## Solidity 函数选择器
