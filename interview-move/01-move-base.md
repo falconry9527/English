@@ -140,5 +140,3 @@ sui client objects 0xec731dad64e781caff49561ed2a69e873b0c1977f923786b0b803c2386d
 sui client upgrade --upgrade-capability 0x90d16ddfa41cfa7b747cb6442a9ab7553e8a349e409e8191f232c6178020be15 
 
 ```
-
-
