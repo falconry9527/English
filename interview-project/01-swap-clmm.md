@@ -48,7 +48,7 @@ x : token0 的 数量
 y : token1 的 数量
 
 2.价格公式: 
-token1/token0 的价格 p = y / x
+token0/token1 的价格 p = y / x
 
 3.输出公式
 (x+Δx) * (y-Δy) = x * y  = k 
