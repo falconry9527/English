@@ -37,6 +37,7 @@ enum Status { Pending, Shipped, Delivered }
 三. 其他类型
 函数类型（Function Types）
 合约类型（Contract Types）
+
 ```
 
 ## 数组
@@ -105,7 +106,8 @@ uint c = a + b; assert(c >= a);  // 确保没有溢出
 ## ETH 三种转账方式
 ```
 transfer 和 send 用于简单 ETH 转账，均有 2300 gas 限制；
-transfer 失败抛异常，send 失败返回 false。
+transfer 失败抛异常，自动回滚
+send 失败返回 false，不自动一滚
 call  没有gas 限制，适用于复杂的合约交互（包括转账和函数调用），失败返回 false，但需要更多的错误处理。
 
 transfer 和 send 都不推荐，原因：
@@ -113,17 +115,18 @@ transfer 和 send 都不推荐，原因：
 受 EVM 升级影响，兼容性差
 ```
 
-## transfer 和 safeTransfer
+## ERC20 的  transfer 和 safeTransfer
 ```
 transfer 和 safeTransfer
 transferFrom 和 safeTransferFrom
 
-transfer ERC20 的转账方法，转账失败，返回false,不会回滚revert
-function transfer(address to, uint256 amount) external returns (bool);
+1. transfer 和 transferFrom 的区别
+transfer 比 transferFrom 少一个from参数，transfer调用者就是 from 
 
-safeTransfer 是 OpenZeppelin对 transfer 的安全封装，
-添加了 转账失败,返回false，自动回滚revert 的逻辑, 保证 业务逻辑安全。
-SafeERC20.safeTransfer(IERC20 token, address to, uint256 value);
+2. transfer 和 safeTransfer 
+transfer ： transfer 失败抛异常，自动回滚 
+safeTransfer ： 内部是 用 call的方法调用 transfer ， 失败的时候会 回滚代码
+
 ```
 
 ## 溢出 和下溢出
