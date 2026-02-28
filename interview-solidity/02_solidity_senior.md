@@ -72,6 +72,10 @@ UUPS: 实现合约管理升级，代理只负责转发，轻量且更节省 Gas�
 openzepplin 更兼容的是: UUPS
 TransparentUpgradeableProxy -> ProxyAdmin (权限管理)
 UUPSUpgradeable -> Initializable(初始化)
+
+合约升级的兼容性
+1. 不能修改struct，但是可以新增
+2. 不能修改函数的签名，但是可以修改函数的逻辑，也可以新增函数
 ```
 
 ## 升级合约的 存储冲突
