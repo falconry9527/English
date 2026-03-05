@@ -193,3 +193,26 @@ Gas 是 以太坊执行交易或智能合约操作的“燃料”。
 ```
 
 
+##  一个 Solidity event 最多多少个参数
+```
+最多可以有任意数量的参数
+最多只能有 3 个 indexed 参数
+topics 最多 4 个,topic[0] 被事件签名占用
+```
+
+
+##  在什么情况下，函数可以接收映射作为参数
+```
+函数几乎不能直接接收 mapping 作为参数: 
+1. mapping 不可遍历
+2. mapping 只能存在于 storage
+
+唯一允许的情况 : internal / private + storage 引用
+
+```
+
+
+##   一个 Solidity 函数最多多少个参数？
+```
+Solidity 语法上没有硬性参数上限，但受 EVM stack 限制（Stack too deep），实际可用参数通常不超过十几个。工程上推荐使用 struct 打包参数以避免栈深问题。
+```
