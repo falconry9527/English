@@ -92,3 +92,12 @@ Flink 提供了三种时间语义，用于确定窗口计算的时间基础:
 在分布式系统中，数据在网络传输过程中可能会因为延迟而改变到达顺序，导致数据产生乱序。
 
 ```
+
+
+## flink 更新流 RowKind
+```
++I	INSERT	插入
+-D	DELETE	删除
+-U	UPDATE_BEFORE	更新前
++U	UPDATE_AFTER	更新后
+```
