@@ -317,3 +317,12 @@ web3.eth.getStorageAt(contractAddress, slotIndex)
 再：最高位补 0
 存储 消耗更多的gas
 ```
+
+## RPC节点 
+```
+RPC节点 是应用访问以太坊链的唯一标准入口，所有读链、写链、监听事件的操作，都要通过 RPC 节点完成。
+
+自建rpc :
+常见三方rpc : Alchemy / Infura / QuickNode 
+
+```
