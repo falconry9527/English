@@ -320,9 +320,10 @@ web3.eth.getStorageAt(contractAddress, slotIndex)
 
 ## RPC节点 
 ```
+RPC 节点 = 常规区块链全节点 + 开启了 RPC 接口
 RPC节点 是应用访问以太坊链的唯一标准入口，所有读链、写链、监听事件的操作，都要通过 RPC 节点完成。
 
-自建rpc :
+自建rpc : 很简单
 常见三方rpc : Alchemy / Infura / QuickNode 
 
 ```
