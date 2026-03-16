@@ -130,7 +130,6 @@ sui的字段都不能跨module 直接访问，需要提供对应的get 或者 se
 upgrade : 由于 sui move 的数据（Object）和 合约是分开，所以升级就是发个 新的 合约,新旧package可以共存，同时操作共享数据(Object)
 兼容性约束
 1. 改变已发布 struct 的字段布局/类型（会影响链上对象的存储反序列化），可以新增Object
-2. 修改函数签名（方法名，参数 和返回值 ），可以新增方法
 
 UpgradeCap : 每次 publish 的时候 ，都会transfer 该合约的 UpgradeCap 给 发布者
 init 方法，只在 publish 的时候执行一次，upgrade 的时候不会执行 
