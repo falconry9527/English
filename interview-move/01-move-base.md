@@ -80,7 +80,7 @@ Ownership ：
 coin.split 的时候，更改原来coin代币的余额，生成新uid的 coin
 coin.join 的时候，delete 合并coin，把余额合并到主coin
 
-2. OBJECT 的 Owner 三种类型
+2. OBJECT 的 三种归属类型
 Owned address（私有对象）: transfer::transfer(obj, recipient);
 Shared Object（共享对象）: transfer::share_object(obj); 
 Immutable Object（不可变对象） : transfer::freeze_object(obj);
