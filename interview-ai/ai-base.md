@@ -10,7 +10,9 @@ Tools（工具/手脚）	: 暴露给LLM的外部能力（skill）：查数据、
 Memory（记忆）: 	短期=对话历史，长期=跨会话事实	chat_messages 历史 + chat_memories 长期记忆
 Loop（循环）: 多步迭代直到完成或停止	服务端 streaming agent loop
 
-OpenRouter : 一个 LLM 聚合路由(router),把 chatgpt、claude、gemini、deepseek 等几百个模型统一到一个 OpenAI 兼容的
+MCP(Model Context Protocol,模型上下文协议):主要用来给 LLM 暴露能力，比如，抓取网页，获取持仓等
+
+OpenRouter : 一个 LLM 聚合路由(router),把 chatgpt、claude、gemini、deepseek 等几百个模型统一到一起
 
 prompt(系统提示词) : prompt 是 system + 记忆 + 历史 + 用户消息 + 工具的完整上下文整体。
 用户消息是 prompt 的输入之一;
