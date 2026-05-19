@@ -3,12 +3,12 @@
 ```
 AIGC = AI-Generated Content（人工智能生成内容）-> 内容生成式AI
 
-Agent: （智能体） 具有思考决策，调用工具，记忆，循环能力的系统。
+Agent: （智能体） 具有思考决策，记忆，调用工具 能力的系统。
 一个 Agent 通常由四部分组成
 LLM（大脑）:	推理、决策下一步做什么	Claude（OpenRouter）
 Tools（工具/手脚）	: 暴露给LLM的外部能力（skill）：查数据 READ 工具 + 下单 WRITE preview 工具、MCP（Chatbot 只会聊）
 Memory（记忆）: 	短期=对话历史，长期=跨会话事实	chat_messages 历史 + chat_memories 长期记忆
-Loop（循环）: 多步迭代直到完成或停止	服务端 streaming agent loop
+Loop（循环）:  一次请求，自己调整，多次调用大模型	服务端 streaming agent loop
 
 MCP(模型上下文协议):主要用来给 LLM 暴露能力，比如，抓取网页，获取持仓等
 
@@ -31,6 +31,7 @@ prompt caching(省重复输入) : 大行情分析，缓存1分钟，减少ai 的
 
 # 其他没有用到的 
 ```
-ARG 
+ARG : 检索增强生成,回答前先去内部知识库检索相关内容 : 非结构化文档里,且文档量大/更新快/私有
+
 
 ```

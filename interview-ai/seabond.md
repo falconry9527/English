@@ -64,6 +64,8 @@
 | **Fire-and-forget（发后不管）** | 异步起任务、不阻塞响应。 | `afterRound`：标题生成 + 记忆汇总 + bump，单项失败只 WARN |
 | **Backoff / retry（退避重试）** | 重试间隔逐步拉长。 | 上游断流退避 200ms→800ms |
 | **Cache TTL by volatility（按波动率定缓存时长）** | 缓存寿命随数据变化速度调整。 | mark price 不缓存；新闻 30–60s；宏观 5–10min |
+| **LangChain** | LLM 应用开发框架，把 Prompt/Memory/Retriever/Tool/Chain 抽象成统一接口、链式拼装；偏线性流程。 | **未用**（项目是 Go、手写 agent loop）；但暴露 OpenAI 兼容接口，别人可用 LangChain 当客户端来调 |
+| **LangGraph** | LangChain 团队的 agent 编排引擎，把流程建模成带状态/循环/条件边的图（State/Node/Edge/Checkpointer），专治循环、分支、human-in-the-loop。 | **未用**，但本项目手写的 streaming agent loop 解决的正是 LangGraph 的核心场景（见 Part 2 Q24） |
 
 ---
 
@@ -149,6 +151,9 @@ OpenAI 形态的 `/v1/chat/completions` → 过滤客户端 `system` → 拼装 
 
 **Q23. 厂商抽象：为什么走 OpenRouter 而不直连 Anthropic？**
 网关把多厂商统一到一个 OpenAI 兼容 API 后面：支持 per-request 模型覆盖（如按请求钉到音频模型而不影响其它请求）、厂商故障转移；客户端只需换 `baseURL` + key 就能直接用标准 OpenAI SDK / LangChain。
+
+**Q24. 为什么手写 agent loop，而不用 LangChain / LangGraph？**
+先认知对齐：**LangChain** 偏线性链（Prompt|Model|Parser），表达不了"反复调工具→看结果→再决定"的循环；**LangGraph** 正是为此而生——把 agent 建成带状态/循环/条件边的图，原生支持 loop、分支、human-in-the-loop。本项目的 streaming agent loop（模型→tool_call→执行→回喂→循环，WRITE 工具短路成 preview = 人在回路）**解决的就是 LangGraph 的核心场景**，但选择手写：① 项目是 Go，LangChain/LangGraph 是 Python/JS 生态；② 流式 SSE 生命周期事件、上游断流透明重试、断流不计费、两段式落库、prompt 两段缓存这些**生产细节要精确掌控**，不被框架抽象绑架；③ 依赖更少、可控性更高。能讲清"我懂 LangGraph 解决什么、也知道为什么选择不用"，比"我会用 LangChain"更有说服力。
 
 ---
 
