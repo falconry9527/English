@@ -12,14 +12,6 @@ Calldata：外部函数调用的 只读输入参数存储区，存放 address、
 值类型 → 默认 stack
 引用类型 → 必须指定 memory 或 storage（数组/struct）
 
-mapping →  只能是 合约级全局变量（contract-level state),只能存储在 stroage,不能在函数中定义
-1. Stack 存储的是 mapping 起始 slot 索引,指向具体的 stroage 的 start_slot
-2. 每个元素的索引 :  keccak256(abi.encode(key, start_slot))
-
-数组：
-1. 栈上存储的是起始slot索引 : start_slot
-2. 每个元素的索引： keccak256(start_slot) + index
-
 ```
 
 
