@@ -332,3 +332,18 @@ Foundry：用 Rust，用 Solidity 写测试，速度极快。
 
 总结：Foundry 做合约测试和安全，Hardhat 做部署脚本和前端集成，常两者结合用。
 ```
+
+
+# USDC / USDT Gas 代付方案（面试讲解版）
+```
+USDC(自带签名能力,最轻):
+permit (EIP-2612):链下签名 → relayer 提交,无前置交易
+transferWithAuthorization (EIP-3009):链下签名 → relayer 提交,无前置交易
+
+USDT (代币不自带签名),三种替代,彼此平级:
+Permit2:链下签名,但需先花一笔链上 approve(Permit2, max) 打底
+EIP-7702:链下签名;靠 delegate 让 msg.sender 仍是用户 → 能原子多步 + 非托管,任意币通用
+
+gas 支付： relayer , paymaster 地址
+
+```
